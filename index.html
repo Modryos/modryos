@@ -120,7 +120,7 @@
   <section class="all" id="everything">
     <div class="wrap">
       <h2 class="reveal">Everything it makes.</h2>
-      <p class="sub reveal">Each of these was made in the studio and photographed in a running game. Click any picture to see it bigger.</p>
+      <p class="sub reveal">Each of these was made in the studio and photographed in a running game. Click any picture to see it bigger, and click again to look closer.</p>
 
       <div class="group">
         <h3 class="reveal">Creatures, items and recipes</h3>
@@ -215,7 +215,10 @@
   const open = el => {
     const big = el.tagName === "VIDEO" ? Object.assign(document.createElement("video"), { src: el.currentSrc || el.src, autoplay: true, loop: true, muted: true, playsInline: true, controls: true })
                                        : Object.assign(document.createElement("img"), { src: el.currentSrc || el.src, alt: el.alt });
-    body.replaceChildren(big);
+    const frame = document.createElement("div");
+    frame.className = "lb-frame";
+    frame.append(big);
+    body.replaceChildren(frame);
     const cap = el.closest("figure")?.querySelector("figcaption");
     text.textContent = cap ? cap.innerText.replace(/\n+/g, " - ") : (el.alt || el.getAttribute("aria-label") || "");
     lb.showModal();
@@ -226,7 +229,16 @@
     el.addEventListener("click", () => open(el));
     el.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(el); } });
   });
-  lb.addEventListener("click", e => { if (e.target === lb || e.target.closest("button")) lb.close(); });
+  const aim = (im, e) => {
+    const r = im.parentElement.getBoundingClientRect();
+    im.style.transformOrigin = `${(e.clientX - r.left) / r.width * 100}% ${(e.clientY - r.top) / r.height * 100}%`;
+  };
+  lb.addEventListener("click", e => {
+    const im = e.target.closest(".lb-frame img");
+    if (im) { aim(im, e); im.classList.toggle("zoomed"); return; }
+    if (!e.target.closest(".lb-frame")) lb.close();
+  });
+  lb.addEventListener("mousemove", e => { const im = lb.querySelector("img.zoomed"); if (im) aim(im, e); });
   lb.addEventListener("close", () => body.replaceChildren());
 
   const items = document.querySelectorAll(".reveal");
