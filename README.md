@@ -67,10 +67,10 @@ Save a version, compare any two, and see what changed, element by element.
 
 - Minecraft 1.21.1, NeoForge and Fabric
 - 1.0.0 is coming soon
-- The first mod made with it: [Goat Apples](https://github.com/NeryosX/goat-apples)
+- The first mod made with it: [Goat Apples](https://www.curseforge.com/minecraft/mc-mods/goat-apples) ([source](https://github.com/NeryosX/goat-apples))
 
 Website: [modryos.com](https://modryos.com)
 
 ---
 
-Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.
+NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.

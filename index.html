@@ -8,125 +8,10 @@
 <meta property="og:title" content="Modryos - the mod engine for Minecraft">
 <meta property="og:description" content="One desktop studio for Minecraft mods. 1.0.0 is coming soon.">
 <meta property="og:image" content="https://modryos.com/media/quest-builder.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #0d0f12;
-    --panel: #15181d;
-    --line: #242830;
-    --text: #e8eaed;
-    --muted: #9aa1ab;
-    --accent: #3fb950;
-    --accent-dim: rgba(63, 185, 80, .14);
-    --radius: 14px;
-  }
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font: 16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    -webkit-font-smoothing: antialiased;
-  }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
-
-  header.top {
-    position: sticky; top: 0; z-index: 10;
-    background: rgba(13, 15, 18, .82);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--line);
-  }
-  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; }
-  .wordmark { font-weight: 800; font-size: 20px; letter-spacing: -.02em; color: var(--text); }
-  .wordmark span { color: var(--accent); }
-  nav a { color: var(--muted); font-size: 14px; font-weight: 500; margin-left: 22px; }
-  nav a:hover { color: var(--text); text-decoration: none; }
-
-  .hero { padding: 88px 0 40px; text-align: center; }
-  .pill {
-    display: inline-flex; align-items: center; gap: 8px;
-    padding: 6px 14px; border-radius: 999px;
-    background: var(--accent-dim); color: var(--accent);
-    font-size: 13px; font-weight: 600;
-  }
-  .pill::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
-  h1 {
-    font-size: clamp(40px, 7vw, 76px); line-height: 1.02; letter-spacing: -.035em;
-    margin: 22px 0 18px; font-weight: 800;
-  }
-  .lede { font-size: clamp(17px, 2.2vw, 20px); color: var(--muted); max-width: 640px; margin: 0 auto; }
-  .cta { margin-top: 30px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-  .btn {
-    display: inline-block; padding: 11px 20px; border-radius: 10px;
-    font-weight: 600; font-size: 15px; border: 1px solid var(--line); color: var(--text);
-  }
-  .btn.primary { background: var(--accent); border-color: var(--accent); color: #06130a; }
-  .btn:hover { text-decoration: none; filter: brightness(1.08); }
-
-  .shot {
-    display: block; width: 100%; height: auto;
-    border-radius: var(--radius); border: 1px solid var(--line);
-    background: var(--panel);
-    box-shadow: 0 30px 80px rgba(0, 0, 0, .45);
-  }
-  .hero-shot { margin-top: 56px; position: relative; }
-  .hero-shot .inset {
-    position: absolute; right: -18px; bottom: -34px; width: 34%; height: auto;
-    border-radius: 12px; border: 1px solid var(--line);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, .6);
-  }
-  .caption { color: var(--muted); font-size: 14px; margin-top: 14px; text-align: center; }
-
-  section.feature { padding: 110px 0 0; }
-  .feature .grid { display: grid; grid-template-columns: 4fr 8fr; gap: 56px; align-items: center; }
-  .feature.flip .grid { grid-template-columns: 8fr 4fr; }
-  .feature.flip .text { order: 2; }
-  .eyebrow { color: var(--accent); font-weight: 600; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; }
-  h2 { font-size: clamp(26px, 3vw, 34px); line-height: 1.12; letter-spacing: -.025em; margin: 10px 0 16px; }
-  .text p { color: var(--muted); font-size: 17px; margin: 0; }
-  .stack { display: grid; gap: 16px; }
-  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-
-  .game { padding: 110px 0 0; }
-  .game h2 { text-align: center; }
-  .game .sub { text-align: center; color: var(--muted); font-size: 17px; max-width: 620px; margin: 0 auto 36px; }
-  .mosaic { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; align-items: start; }
-  .mosaic .side { display: grid; gap: 16px; }
-  .pixel { image-rendering: pixelated; }
-
-  .status { padding: 110px 0 100px; }
-  .card {
-    background: var(--panel); border: 1px solid var(--line); border-radius: 18px;
-    padding: 44px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center;
-  }
-  .card ul { list-style: none; margin: 0; padding: 0; }
-  .card li { padding: 12px 0; border-bottom: 1px solid var(--line); color: var(--muted); display: flex; justify-content: space-between; gap: 16px; }
-  .card li:last-child { border-bottom: 0; }
-  .card li b { color: var(--text); font-weight: 600; }
-
-  footer { border-top: 1px solid var(--line); padding: 32px 0 48px; color: var(--muted); font-size: 13px; }
-  footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-
-  @media (max-width: 860px) {
-    .feature .grid, .feature.flip .grid, .card, .mosaic { grid-template-columns: 1fr; gap: 28px; }
-    .feature.flip .text { order: 0; }
-    .hero { padding-top: 56px; }
-    .hero-shot .inset { right: 8px; bottom: -24px; width: 44%; }
-    section.feature, .game { padding-top: 76px; }
-    .card { padding: 28px; }
-    nav a { margin-left: 14px; }
-  }
-  @media (max-width: 520px) {
-    .wrap { padding: 0 16px; }
-    nav .hide-sm { display: none; }
-    .pair { grid-template-columns: 1fr; }
-  }
-</style>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="site.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
 
@@ -135,6 +20,7 @@
     <a class="wordmark" href="#">Modryos<span>.</span></a>
     <nav>
       <a class="hide-sm" href="#studio">Studio</a>
+      <a class="hide-sm" href="#screens">Screens</a>
       <a class="hide-sm" href="#rules">Rules</a>
       <a href="https://github.com/Modryos/modryos">GitHub</a>
     </nav>
@@ -144,97 +30,105 @@
 <main>
   <section class="hero">
     <div class="wrap">
-      <span class="pill">1.0.0 coming soon</span>
-      <h1>The mod engine<br>for Minecraft.</h1>
-      <p class="lede">Models, textures, animations, screens, quests and the rules that tie them together, in one desktop studio. Press Play and the mod opens in the game.</p>
-      <div class="cta">
+      <span class="pill rise">1.0.0 coming soon</span>
+      <h1 class="rise" style="--d:.08s">The mod engine<br>for Minecraft.</h1>
+      <p class="lede rise" style="--d:.16s">Models, textures, animations, screens, quests and the rules that tie them together, in one desktop studio. Press Play and the mod opens in the game.</p>
+      <div class="cta rise" style="--d:.24s">
         <a class="btn primary" href="https://github.com/Modryos/modryos">Watch on GitHub</a>
         <a class="btn" href="#studio">See the studio</a>
       </div>
-      <div class="hero-shot">
+      <div class="hero-shot rise" style="--d:.36s">
         <img class="shot" src="media/quest-builder.png" alt="Laying out a quest screen in the Modryos studio" width="1600" height="900">
         <img class="inset pixel" src="media/quest-in-game.png" alt="The same quest screen in the game" width="1584" height="861">
       </div>
-      <p class="caption" style="margin-top:52px">Laid out in the studio, opened in the game. Minecraft 1.21.1, NeoForge and Fabric.</p>
+      <p class="caption rise" style="margin-top:52px;--d:.5s">Laid out in the studio, opened in the game. Minecraft 1.21.1, NeoForge and Fabric.</p>
     </div>
   </section>
 
   <section class="feature" id="studio">
     <div class="wrap grid">
-      <div class="text">
+      <div class="text reveal">
         <div class="eyebrow">Models and animation</div>
         <h2>Shape it, paint it, make it move.</h2>
-        <p>A block model editor with a live 3D preview, a pixel painter for textures, and a timeline for animations. All of it saved into the same project as the rest of the mod.</p>
+        <p>A model editor with a live 3D preview, a pixel painter for textures, and a timeline for animations. The wyrm here was modelled, its scales painted and its breathing animated this way, all in the same project as the rest of the mod.</p>
       </div>
       <div class="stack">
-        <img class="shot" src="media/model-editor.png" alt="The model editor with a dragon" loading="lazy" width="1600" height="900">
+        <figure class="reveal"><img class="shot" src="media/model-editor.png" alt="The wyrm's body in the model editor" loading="lazy" width="1600" height="900"><figcaption>Model</figcaption></figure>
         <div class="pair">
-          <img class="shot" src="media/texture-painter.png" alt="The texture painter" loading="lazy" width="1600" height="900">
-          <img class="shot" src="media/animation-editor.png" alt="The animation timeline" loading="lazy" width="1600" height="900">
+          <figure class="reveal" style="--d:.1s"><img class="shot" src="media/texture-painter.png" alt="Painting the dragon scale's texture" loading="lazy" width="1600" height="900"><figcaption>Texture</figcaption></figure>
+          <figure class="reveal" style="--d:.2s"><img class="shot" src="media/animation-editor.png" alt="The wyrm's breathing on the animation timeline" loading="lazy" width="1600" height="900"><figcaption>Animation</figcaption></figure>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="feature flip">
+  <section class="feature flip" id="screens">
     <div class="wrap grid">
-      <div class="text">
+      <div class="text reveal">
         <div class="eyebrow">Screens</div>
-        <h2>Screens for any mod.</h2>
-        <p>Machine screens, HUD bars, books and quest views. Drag controls onto the screen, give them a look, and tie them to what the mod knows: a tank's level, a player's mana, the foods they've tasted.</p>
+        <h2>Build a screen here. Open it there.</h2>
+        <p>Machine screens, HUD bars, books and quest views. Drag controls onto the screen, give them a look, and tie them to what the mod knows: the foods a player has tasted, a tank's level, their mana. What you lay out is what opens in the game.</p>
       </div>
       <div class="stack">
-        <img class="shot" src="media/food-book-builder.png" alt="A food book in the screen builder" loading="lazy" width="1600" height="900">
-        <img class="shot" src="media/screen-builder.png" alt="A machine screen in the screen builder" loading="lazy" width="1600" height="900">
+        <figure class="reveal"><img class="shot" src="media/food-book-builder.png" alt="A food book laid out in the screen builder" loading="lazy" width="1600" height="900"><figcaption>In the studio</figcaption></figure>
+        <div class="arrow reveal">then Play</div>
+        <figure class="reveal"><img class="shot pixel" src="media/food-book-in-game.png" alt="The same food book open in the game" loading="lazy" width="1584" height="861"><figcaption class="game">In the game</figcaption></figure>
       </div>
     </div>
   </section>
 
   <section class="feature" id="rules">
     <div class="wrap grid">
-      <div class="text">
+      <div class="text reveal">
         <div class="eyebrow">Rules</div>
         <h2>Say what happens. In sentences, or in Java.</h2>
         <p>When the sword hits something, set it on fire, and if it was a player, warn whoever holds the sword. Conditions nest into groups the way a game engine's visual scripting does. Each sentence is Java underneath, and the code view is always one click away.</p>
       </div>
       <div class="stack">
-        <img class="shot" src="media/logic-sentences.png" alt="Rules written as sentences" loading="lazy" width="1600" height="900">
-        <img class="shot" src="media/conditions.png" alt="Conditions grouped with If, Else if and Else" loading="lazy" width="1227" height="569">
+        <figure class="reveal"><img class="shot" src="media/logic-sentences.png" alt="A sword's rules written as sentences" loading="lazy" width="1600" height="900"><figcaption>Sentences</figcaption></figure>
+        <figure class="reveal"><img class="shot" src="media/conditions.png" alt="Conditions grouped with If, Else if and Else" loading="lazy" width="1227" height="569"><figcaption>Conditions</figcaption></figure>
       </div>
     </div>
   </section>
 
   <section class="feature flip">
     <div class="wrap grid">
-      <div class="text">
-        <div class="eyebrow">Quests and versions</div>
-        <h2>Quests on a map. Every version kept.</h2>
-        <p>Chapters, quests and the lines between them, drawn on a map. Save a version whenever you like, compare any two, and see what changed, element by element.</p>
+      <div class="text reveal">
+        <div class="eyebrow">Quests</div>
+        <h2>Quests on a map.</h2>
+        <p>Chapters, quests and the lines between them, drawn on a map. Each quest's page is laid out in the screen builder, like the one at the top of this page.</p>
       </div>
-      <div class="stack">
-        <img class="shot" src="media/quest-map.png" alt="The quest map" loading="lazy" width="1600" height="900">
-        <img class="shot" src="media/versions.png" alt="Comparing two versions" loading="lazy" width="1600" height="900">
+      <figure class="reveal"><img class="shot" src="media/quest-map.png" alt="A chapter's quests drawn on the quest map" loading="lazy" width="1600" height="900"><figcaption>Quest map</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="feature">
+    <div class="wrap grid">
+      <div class="text reveal">
+        <div class="eyebrow">Versions</div>
+        <h2>Every version kept.</h2>
+        <p>Save a version whenever you like, compare any two, and see what changed, element by element. Here a dragon scale's stack size went from 64 to 16.</p>
       </div>
+      <figure class="reveal"><img class="shot" src="media/versions-compare.png" alt="Comparing two saved versions of a project" loading="lazy" width="1066" height="279"></figure>
     </div>
   </section>
 
   <section class="game">
     <div class="wrap">
-      <h2>What it looks like in the game.</h2>
-      <p class="sub">Everything below was built in the studio and photographed in a running game.</p>
+      <h2 class="reveal">More from a running game.</h2>
+      <p class="sub reveal">Machine screens and a HUD bar, each built in the studio and photographed in the game.</p>
       <div class="mosaic">
-        <img class="shot pixel" src="media/food-book-in-game.png" alt="A food book open in the game" loading="lazy" width="1584" height="861">
+        <figure class="reveal"><img class="shot pixel" src="media/tank-in-game.png" alt="A boiler's lava tank in a machine screen" loading="lazy" width="1584" height="861"><figcaption class="game">A boiler</figcaption></figure>
         <div class="side">
-          <img class="shot pixel" src="media/alchemy-in-game.png" alt="An alchemy still screen" loading="lazy" width="552" height="522">
-          <img class="shot pixel" src="media/hud-in-game.png" alt="A mana bar on the HUD" loading="lazy" width="600" height="210">
+          <figure class="reveal" style="--d:.1s"><img class="shot pixel" src="media/alchemy-in-game.png" alt="An alchemy still's screen" loading="lazy" width="552" height="522"><figcaption class="game">An alchemy still</figcaption></figure>
+          <figure class="reveal" style="--d:.2s"><img class="shot pixel" src="media/hud-in-game.png" alt="A mana bar on the HUD" loading="lazy" width="600" height="210"><figcaption class="game">A mana bar</figcaption></figure>
         </div>
       </div>
-      <img class="shot pixel" style="margin-top:16px" src="media/tank-in-game.png" alt="A tank of lava in a machine screen" loading="lazy" width="1584" height="861">
     </div>
   </section>
 
   <section class="status">
-    <div class="wrap card">
+    <div class="wrap card reveal">
       <div>
         <div class="eyebrow">Where it stands</div>
         <h2>1.0.0 is coming soon.</h2>
@@ -246,19 +140,37 @@
       <ul>
         <li><span>Minecraft</span><b>1.21.1</b></li>
         <li><span>Loaders</span><b>NeoForge and Fabric</b></li>
-        <li><span>First mod made with it</span><b><a href="https://github.com/NeryosX/goat-apples">Goat Apples</a></b></li>
+        <li><span>First mod made with it</span><b><a href="https://www.curseforge.com/minecraft/mc-mods/goat-apples">Goat Apples</a></b></li>
         <li><span>Release</span><b>1.0.0, coming soon</b></li>
       </ul>
     </div>
   </section>
 </main>
 
+<div class="notice"><div class="wrap">NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</div></div>
 <footer>
   <div class="wrap">
-    <span>&copy; 2026 Neryos</span>
-    <span>Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</span>
+    <span>&copy; 2026 Neryos. Minecraft is a trademark of Mojang Synergies AB.</span>
+    <nav>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://github.com/Modryos/modryos/issues">Contact</a>
+    </nav>
   </div>
 </footer>
 
+<script>
+(() => {
+  const head = document.querySelector("header.top");
+  const onScroll = () => head.classList.toggle("scrolled", scrollY > 8);
+  addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+  const items = document.querySelectorAll(".reveal");
+  if (!("IntersectionObserver" in window)) { items.forEach(el => el.classList.add("in")); return; }
+  const io = new IntersectionObserver(entries => {
+    for (const e of entries) if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+  }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
+  items.forEach(el => io.observe(el));
+})();
+</script>
 </body>
 </html>
