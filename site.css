@@ -18,6 +18,7 @@
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+section, .group { scroll-margin-top: 72px; }
 body {
   margin: 0;
   background: var(--bg);
@@ -81,7 +82,7 @@ figcaption {
   margin-top: 10px; color: var(--muted); font-size: 13px; font-weight: 500;
 }
 figcaption::before { content: ""; width: 6px; height: 6px; border-radius: 2px; background: #5b6370; }
-figcaption.game::before { background: var(--accent); }
+figcaption.live::before { background: var(--accent); }
 
 .hero-shot { margin-top: 56px; position: relative; }
 .hero-shot .inset {
@@ -131,6 +132,38 @@ footer nav a { margin: 0 0 0 20px; font-size: 13px; }
 .prose h2 { font-size: 20px; margin: 36px 0 10px; }
 .prose p, .prose li { color: var(--muted); font-size: 16px; }
 .prose ul { padding-left: 20px; }
+
+.zoom { cursor: zoom-in; }
+.zoom:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+video.shot { aspect-ratio: auto; }
+
+.all { padding: 120px 0 0; }
+.all > .wrap > h2, .all > .wrap > .sub { text-align: center; }
+.all .sub { color: var(--muted); font-size: 17px; max-width: 620px; margin: 0 auto 8px; }
+.group { margin-top: 56px; }
+.group h3 { font-size: 15px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); margin: 0 0 18px; }
+.cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.cards figure img, .cards figure video { aspect-ratio: 16 / 10; object-fit: cover; }
+.cards figcaption { display: block; margin-top: 12px; }
+.cards figcaption::before { display: none; }
+.cards figcaption b { display: block; color: var(--text); font-size: 15px; font-weight: 600; }
+.cards figcaption span { display: block; color: var(--muted); font-size: 14px; font-weight: 400; margin-top: 2px; }
+
+.next { margin-top: 64px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center; }
+.next .label { color: var(--muted); font-size: 14px; margin-right: 6px; }
+.chip { border: 1px dashed #3a404b; color: var(--text); border-radius: 999px; padding: 6px 14px; font-size: 13px; font-weight: 500; }
+.chip small { color: var(--muted); font-size: 12px; margin-left: 6px; }
+
+dialog.lb { border: 0; padding: 0; background: transparent; max-width: min(1400px, 94vw); width: 100%; color: var(--text); }
+dialog.lb::backdrop { background: rgba(5, 6, 8, .88); backdrop-filter: blur(4px); }
+dialog.lb[open] { animation: lb-in .25s var(--ease); }
+dialog.lb img, dialog.lb video { display: block; width: 100%; max-height: 84vh; object-fit: contain; border-radius: 12px; border: 1px solid var(--line); background: var(--panel); }
+dialog.lb p { text-align: center; color: var(--muted); font-size: 14px; margin: 12px 0 0; }
+dialog.lb button { position: absolute; top: 10px; right: 10px; width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--line); background: rgba(13, 15, 18, .85); color: var(--text); font-size: 20px; line-height: 1; cursor: pointer; }
+dialog.lb button:hover { border-color: #3a404b; }
+@keyframes lb-in { from { opacity: 0; transform: scale(.97); } to { opacity: 1; transform: none; } }
+@media (max-width: 860px) { .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; } .all { padding-top: 84px; } }
+@media (max-width: 520px) { .cards { grid-template-columns: 1fr; } }
 
 /* Motion: only when scripts run, and never for people who asked for less. */
 .js .reveal { opacity: 0; transform: translateY(26px); transition: opacity .8s var(--ease), transform .8s var(--ease); transition-delay: var(--d, 0s); }
