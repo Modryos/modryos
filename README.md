@@ -1,5 +1,10 @@
 # Modryos
 
+[![Website](https://img.shields.io/badge/Website-modryos.com-3fb950)](https://modryos.com)
+[![1.0.0 coming soon](https://img.shields.io/badge/1.0.0-coming%20soon-555555)](https://github.com/Modryos/modryos)
+[![Made with it: Goat Apples](https://img.shields.io/badge/Made%20with%20it-Goat%20Apples-F16436?logo=curseforge&logoColor=white)](https://www.curseforge.com/minecraft/mc-mods/goat-apples)
+[![Stars](https://img.shields.io/github/stars/Modryos/modryos?label=Stars)](https://github.com/Modryos/modryos/stargazers)
+
 **The mod engine for Minecraft.**
 
 Models, textures, animations, screens, quests and the rules that tie them together, in one desktop
