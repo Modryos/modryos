@@ -1,0 +1,27 @@
+# Modryos
+
+> Modryos is a desktop studio for making Minecraft Java Edition mods without writing code. Models, textures, animations, creatures, items, recipes, machines, screens, quests and rules are made in one project, and Play opens the mod in the game. It is not released yet: 1.0.0 is coming soon, there is no download today, and its price and licence are not announced.
+
+Facts, as of 22 October 2026:
+
+- Minecraft Java Edition versions: 1.21.1, 1.21.11, 26.1.2, 26.2 and 26.3.
+- Loaders: NeoForge and Fabric, both from the same project.
+- Also makes data packs and resource packs. It does not make Bedrock add-ons.
+- Rules are written as sentences picked from a list; each sentence is Java underneath. A project can hold its own Java classes and mixins.
+- Play starts the game with the mod, with one or two players on the same PC; many changes reach a running game without a restart.
+- Runs on Windows.
+- The first mod made with it is Goat Apples, on CurseForge.
+- Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.
+
+## Pages
+
+- [Home](https://modryos.com/): what Modryos is, with pictures from the studio and the game
+- [Features](https://modryos.com/features.html): each capability, how it is made in the studio and how it looks in the game
+- [Modryos and MCreator compared](https://modryos.com/compare.html): a dated side-by-side comparison, with where MCreator is the better choice and where other tools fit
+- [Questions and answers](https://modryos.com/faq.html): making mods without coding, Java, versions, loaders, Bedrock, price, release
+
+## Optional
+
+- [Privacy](https://modryos.com/privacy.html): what the website collects (nothing)
+- [Source repository and release notices](https://github.com/Modryos/modryos)
+- [Goat Apples on CurseForge](https://www.curseforge.com/minecraft/mc-mods/goat-apples)

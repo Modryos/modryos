@@ -3,15 +3,75 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Modryos - the mod engine for Minecraft</title>
-<meta name="description" content="Models, textures, animations, screens, quests and rules in one desktop studio. Press Play and the mod opens in the game. Modryos 1.0.0 is coming soon.">
-<meta property="og:title" content="Modryos - the mod engine for Minecraft">
-<meta property="og:description" content="One desktop studio for Minecraft mods. 1.0.0 is coming soon.">
-<meta property="og:image" content="https://modryos.com/media/quest-builder.png">
+<title>Modryos - make Minecraft mods without coding</title>
+<meta name="description" content="Modryos is a desktop studio for making Minecraft Java mods without writing code: models, machines, screens, quests and rules, for NeoForge and Fabric. Not released yet.">
+<link rel="canonical" href="https://modryos.com/">
+<meta name="theme-color" content="#0d0f12">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Modryos">
+<meta property="og:url" content="https://modryos.com/">
+<meta property="og:title" content="Modryos - make Minecraft mods without coding">
+<meta property="og:description" content="One desktop studio for Minecraft Java mods, on NeoForge and Fabric. 1.0.0 is coming soon.">
+<meta property="og:image" content="https://modryos.com/media/og-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A quest page laid out in the Modryos screen builder">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css">
 <script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://modryos.com/#org",
+      "name": "Modryos",
+      "url": "https://modryos.com/",
+      "logo": "https://modryos.com/media/logo-512.png",
+      "sameAs": ["https://github.com/Modryos/modryos"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://modryos.com/#website",
+      "name": "Modryos",
+      "url": "https://modryos.com/",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://modryos.com/#org" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://modryos.com/#app",
+      "name": "Modryos",
+      "url": "https://modryos.com/",
+      "description": "A desktop studio for making Minecraft Java Edition mods without writing code. Models, textures, animations, machines, screens, quests and rules in one project, played in the game on NeoForge and Fabric for Minecraft 1.21.1, 1.21.11, 26.1.2, 26.2 and 26.3. Not released yet; 1.0.0 is coming soon.",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Windows",
+      "image": "https://modryos.com/media/og-card.jpg",
+      "screenshot": [
+        "https://modryos.com/media/model-editor.webp",
+        "https://modryos.com/media/screen-builder.webp",
+        "https://modryos.com/media/logic-sentences.webp",
+        "https://modryos.com/media/quest-map.webp"
+      ],
+      "featureList": [
+        "Model editor with a live 3D preview",
+        "Pixel painter for textures",
+        "Animation timeline",
+        "Screen builder for machine screens, HUD, books and quest pages",
+        "Rules written as sentences, with Java underneath",
+        "Machines, energy, cables, fluid pipes and item ducts",
+        "Quests on a map",
+        "One project for NeoForge and Fabric on five Minecraft versions",
+        "Every version of a project kept and compared"
+      ],
+      "publisher": { "@id": "https://modryos.com/#org" }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -19,11 +79,10 @@
   <div class="wrap">
     <a class="wordmark" href="#">Modryos<span>.</span></a>
     <nav>
-      <a class="hide-sm" href="#studio">Studio</a>
-      <a class="hide-sm" href="#screens">Screens</a>
-      <a class="hide-sm" href="#rules">Rules</a>
-      <a class="hide-sm" href="#everything">Everything</a>
-      <a href="https://github.com/Modryos/modryos">GitHub</a>
+      <a href="features.html">Features</a>
+      <a href="compare.html">Compare</a>
+      <a href="faq.html">FAQ</a>
+      <a class="hide-sm" href="https://github.com/Modryos/modryos">GitHub</a>
     </nav>
   </div>
 </header>
@@ -33,13 +92,13 @@
     <div class="wrap">
       <span class="pill rise">1.0.0 coming soon</span>
       <h1 class="rise" style="--d:.08s">The mod engine<br>for Minecraft.</h1>
-      <p class="lede rise" style="--d:.16s">Models, textures, animations, screens, quests and the rules that tie them together, in one desktop studio. Press Play and the mod opens in the game.</p>
+      <p class="lede rise" style="--d:.16s">Make Minecraft mods without writing code. Models, textures, animations, screens, quests and the rules that tie them together, in one desktop studio. Press Play and the mod opens in the game.</p>
       <div class="cta rise" style="--d:.24s">
         <a class="btn primary" href="https://github.com/Modryos/modryos">Watch on GitHub</a>
         <a class="btn" href="#everything">See what it makes</a>
       </div>
       <div class="hero-shot rise" style="--d:.36s">
-        <img class="shot zoom" src="media/start-welcome.webp" alt="Modryos' first screen: What are you making today?" width="1600" height="900">
+        <img class="shot zoom" src="media/start-welcome.webp" alt="Modryos' first screen: What are you making today?" width="1600" height="900" fetchpriority="high">
         <img class="inset zoom" src="media/start-new.webp" alt="The New window, listing every kind of thing Modryos makes" width="1197" height="1037">
       </div>
       <p class="caption rise" style="margin-top:52px;--d:.5s">Every mod starts here: press New and pick what to make, from a block or a tool to a machine, a creature or a screen.</p>
@@ -54,10 +113,10 @@
         <p>A model editor with a live 3D preview, a pixel painter for textures, and a timeline for animations. The wyrm here was modelled, its scales painted and its breathing animated this way, all in the same project as the rest of the mod.</p>
       </div>
       <div class="stack">
-        <figure class="reveal"><img class="shot zoom" src="media/model-editor.png" alt="The wyrm's body in the model editor" loading="lazy" width="1600" height="900"><figcaption>Model</figcaption></figure>
+        <figure class="reveal"><img class="shot zoom" src="media/model-editor.webp" alt="The wyrm's body in the model editor" loading="lazy" width="1600" height="900"><figcaption>Model</figcaption></figure>
         <div class="pair">
-          <figure class="reveal" style="--d:.1s"><img class="shot zoom" src="media/texture-painter.png" alt="Painting the dragon scale's texture" loading="lazy" width="1600" height="900"><figcaption>Texture</figcaption></figure>
-          <figure class="reveal" style="--d:.2s"><video class="shot zoom" src="media/v-animate-play.mp4" poster="media/v-animate-play.webp" autoplay muted loop playsinline preload="none" width="1258" height="628" aria-label="An animation playing on the timeline"></video><figcaption>Animation, playing</figcaption></figure>
+          <figure class="reveal" style="--d:.1s"><img class="shot zoom" src="media/texture-painter.webp" alt="Painting the dragon scale's texture" loading="lazy" width="1600" height="900"><figcaption>Texture</figcaption></figure>
+          <figure class="reveal" style="--d:.2s"><video class="shot zoom" data-src="media/v-animate-play.mp4" poster="media/v-animate-play.webp" autoplay muted loop playsinline preload="none" width="1258" height="628" aria-label="An animation playing on the timeline"></video><figcaption>Animation, playing</figcaption></figure>
         </div>
       </div>
     </div>
@@ -71,9 +130,9 @@
         <p>Machine screens, HUD bars, books and quest views. Drag controls onto the screen, give them a look, and tie them to what the mod knows: the foods a player has tasted, a tank's level, their mana. What you lay out is what opens in the game.</p>
       </div>
       <div class="stack">
-        <figure class="reveal"><img class="shot zoom" src="media/food-book-builder.png" alt="A food book laid out in the screen builder" loading="lazy" width="1600" height="900"><figcaption>In the studio</figcaption></figure>
+        <figure class="reveal"><img class="shot zoom" src="media/food-book-builder.webp" alt="A food book laid out in the screen builder" loading="lazy" width="1600" height="900"><figcaption>In the studio</figcaption></figure>
         <div class="arrow reveal">then Play</div>
-        <figure class="reveal"><img class="shot pixel zoom" src="media/food-book-in-game.png" alt="The same food book open in the game" loading="lazy" width="1584" height="861"><figcaption class="live">In the game</figcaption></figure>
+        <figure class="reveal"><img class="shot pixel zoom" src="media/food-book-in-game.webp" alt="The same food book open in the game" loading="lazy" width="1584" height="861"><figcaption class="live">In the game</figcaption></figure>
       </div>
     </div>
   </section>
@@ -86,8 +145,8 @@
         <p>When the sword hits something, set it on fire, and if it was a player, warn whoever holds the sword. Conditions nest into groups the way a game engine's visual scripting does. Each sentence is Java underneath, the code view is one click away, and your own Java classes and mixins sit right beside it.</p>
       </div>
       <div class="stack">
-        <figure class="reveal"><img class="shot zoom" src="media/logic-sentences.png" alt="A sword's rules written as sentences" loading="lazy" width="1600" height="900"><figcaption>Sentences</figcaption></figure>
-        <figure class="reveal"><img class="shot zoom" src="media/conditions.png" alt="Conditions grouped with If, Else if and Else" loading="lazy" width="1227" height="569"><figcaption>Conditions</figcaption></figure>
+        <figure class="reveal"><img class="shot zoom" src="media/logic-sentences.webp" alt="A sword's rules written as sentences" loading="lazy" width="1600" height="900"><figcaption>Sentences</figcaption></figure>
+        <figure class="reveal"><img class="shot zoom" src="media/conditions.webp" alt="Conditions grouped with If, Else if and Else" loading="lazy" width="1227" height="569"><figcaption>Conditions</figcaption></figure>
       </div>
     </div>
   </section>
@@ -100,8 +159,8 @@
         <p>Chapters, quests and the lines between them, drawn on a map. Each quest's page is laid out in the screen builder and opens in the game exactly as you drew it.</p>
       </div>
       <div class="stack">
-        <figure class="reveal"><div class="hero-shot" style="margin:0"><img class="shot zoom" src="media/quest-builder.png" alt="Laying out a quest's page in the screen builder" loading="lazy" width="1600" height="900"><img class="inset pixel zoom" src="media/quest-in-game.png" alt="The same quest page in the game" loading="lazy" width="1584" height="861"></div><figcaption style="margin-top:44px">A quest's page, in the studio and in the game</figcaption></figure>
-        <figure class="reveal"><img class="shot zoom" src="media/quest-map.png" alt="A chapter's quests drawn on the quest map" loading="lazy" width="1600" height="900"><figcaption>Quest map</figcaption></figure>
+        <figure class="reveal"><div class="hero-shot" style="margin:0"><img class="shot zoom" src="media/quest-builder.webp" alt="Laying out a quest's page in the screen builder" loading="lazy" width="1600" height="900"><img class="inset pixel zoom" src="media/quest-in-game.webp" alt="The same quest page in the game" loading="lazy" width="1584" height="861"></div><figcaption style="margin-top:44px">A quest's page, in the studio and in the game</figcaption></figure>
+        <figure class="reveal"><img class="shot zoom" src="media/quest-map.webp" alt="A chapter's quests drawn on the quest map" loading="lazy" width="1600" height="900"><figcaption>Quest map</figcaption></figure>
       </div>
     </div>
   </section>
@@ -113,7 +172,7 @@
         <h2>Every version kept.</h2>
         <p>Save a version whenever you like, compare any two, and see what changed, element by element. Here a dragon scale's stack size went from 64 to 16.</p>
       </div>
-      <figure class="reveal"><img class="shot zoom" src="media/versions-compare.png" alt="Comparing two saved versions of a project" loading="lazy" width="1066" height="279"><figcaption>Two versions compared</figcaption></figure>
+      <figure class="reveal"><img class="shot zoom" src="media/versions-compare.webp" alt="Comparing two saved versions of a project" loading="lazy" width="1066" height="279"><figcaption>Two versions compared</figcaption></figure>
     </div>
   </section>
 
@@ -137,7 +196,7 @@
       <div class="group">
         <h3 class="reveal">Machines and tech</h3>
         <div class="cards">
-          <figure class="reveal"><video class="shot zoom" src="media/v-carve.mp4" poster="media/v-carve.webp" autoplay muted loop playsinline preload="none" width="830" height="476" aria-label="Carving a machine's block model"></video><figcaption><b>Block models</b><span>A machine's casing, carved in the model editor.</span></figcaption></figure>
+          <figure class="reveal"><video class="shot zoom" data-src="media/v-carve.mp4" poster="media/v-carve.webp" autoplay muted loop playsinline preload="none" width="830" height="476" aria-label="Carving a machine's block model"></video><figcaption><b>Block models</b><span>A machine's casing, carved in the model editor.</span></figcaption></figure>
           <figure class="reveal" style="--d:.08s"><img class="shot zoom" src="media/g-press.webp" alt="A large press machine" loading="lazy" width="1600" height="871"><figcaption><b>Machines</b><span>With energy, inputs, outputs and a screen.</span></figcaption></figure>
           <figure class="reveal" style="--d:.16s"><img class="shot zoom" src="media/g-cell.webp" alt="An energy cell, full" loading="lazy" width="1600" height="871"><figcaption><b>Energy</b><span>Cells that store energy and pass it along.</span></figcaption></figure>
           <figure class="reveal"><img class="shot zoom" src="media/g-duct.webp" alt="Items travelling through a glass duct" loading="lazy" width="1600" height="871"><figcaption><b>Item ducts</b><span>Items travel through pipes you can see into.</span></figcaption></figure>
@@ -149,7 +208,7 @@
       <div class="group">
         <h3 class="reveal">Screens and quests</h3>
         <div class="cards">
-          <figure class="reveal"><video class="shot zoom" src="media/v-screen-machine.mp4" poster="media/v-screen-machine.webp" autoplay muted loop playsinline preload="none" width="946" height="458" aria-label="Laying out a machine screen"></video><figcaption><b>Machine screens</b><span>Laid out by dragging, tried on the spot.</span></figcaption></figure>
+          <figure class="reveal"><video class="shot zoom" data-src="media/v-screen-machine.mp4" poster="media/v-screen-machine.webp" autoplay muted loop playsinline preload="none" width="946" height="458" aria-label="Laying out a machine screen"></video><figcaption><b>Machine screens</b><span>Laid out by dragging, tried on the spot.</span></figcaption></figure>
           <figure class="reveal" style="--d:.08s"><img class="shot zoom" src="media/g-hud.webp" alt="Gauges on the player's HUD" loading="lazy" width="1584" height="861"><figcaption><b>HUD</b><span>Bars and gauges over the game.</span></figcaption></figure>
           <figure class="reveal" style="--d:.16s"><img class="shot pixel zoom" src="media/g-bestiary.webp" alt="A bestiary listing mobs" loading="lazy" width="1584" height="861"><figcaption><b>Books and bestiaries</b><span>Guides, lists and pages with search.</span></figcaption></figure>
           <figure class="reveal"><img class="shot pixel zoom" src="media/g-skills.webp" alt="A skill tree with a skill bought" loading="lazy" width="1584" height="861"><figcaption><b>Skill trees</b><span>Points to spend, skills to unlock.</span></figcaption></figure>
@@ -160,7 +219,6 @@
 
       <div class="next reveal">
         <span class="label">Coming next</span>
-        <span class="chip">Minecraft 26.x<small>in 1.0</small></span>
         <span class="chip">Dimensions and the world<small>after 1.0</small></span>
         <span class="chip">Modpacks<small>after 1.0</small></span>
       </div>
@@ -176,9 +234,10 @@
         <div class="cta" style="justify-content:flex-start">
           <a class="btn primary" href="https://github.com/Modryos/modryos">Watch on GitHub</a>
         </div>
+        <p class="more">New to modding? Read <a href="faq.html">the questions people ask</a>, or see <a href="compare.html">how Modryos compares with MCreator</a>.</p>
       </div>
       <ul>
-        <li><span>Minecraft</span><b>1.21.1</b></li>
+        <li><span>Minecraft Java Edition</span><b>1.21.1, 1.21.11, 26.1.2, 26.2, 26.3</b></li>
         <li><span>Loaders</span><b>NeoForge and Fabric</b></li>
         <li><span>First mod made with it</span><b><a href="https://www.curseforge.com/minecraft/mc-mods/goat-apples">Goat Apples</a></b></li>
         <li><span>Release</span><b>1.0.0, coming soon</b></li>
@@ -198,56 +257,15 @@
   <div class="wrap">
     <span>&copy; 2026 Neryos. Minecraft is a trademark of Mojang Synergies AB.</span>
     <nav>
+      <a href="features.html">Features</a>
+      <a href="compare.html">Compare</a>
+      <a href="faq.html">FAQ</a>
       <a href="privacy.html">Privacy</a>
       <a href="https://github.com/Modryos/modryos/issues">Contact</a>
     </nav>
   </div>
 </footer>
 
-<script>
-(() => {
-  const head = document.querySelector("header.top");
-  const onScroll = () => head.classList.toggle("scrolled", scrollY > 8);
-  addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
-
-  const lb = document.getElementById("lb"), body = lb.querySelector(".lb-body"), text = lb.querySelector("p");
-  const open = el => {
-    const big = el.tagName === "VIDEO" ? Object.assign(document.createElement("video"), { src: el.currentSrc || el.src, autoplay: true, loop: true, muted: true, playsInline: true, controls: true })
-                                       : Object.assign(document.createElement("img"), { src: el.currentSrc || el.src, alt: el.alt });
-    const frame = document.createElement("div");
-    frame.className = "lb-frame";
-    frame.append(big);
-    body.replaceChildren(frame);
-    const cap = el.closest("figure")?.querySelector("figcaption");
-    text.textContent = cap ? cap.innerText.replace(/\n+/g, " - ") : (el.alt || el.getAttribute("aria-label") || "");
-    lb.showModal();
-  };
-  document.querySelectorAll(".zoom").forEach(el => {
-    el.tabIndex = 0;
-    el.setAttribute("role", "button");
-    el.addEventListener("click", () => open(el));
-    el.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(el); } });
-  });
-  const aim = (im, e) => {
-    const r = im.parentElement.getBoundingClientRect();
-    im.style.transformOrigin = `${(e.clientX - r.left) / r.width * 100}% ${(e.clientY - r.top) / r.height * 100}%`;
-  };
-  lb.addEventListener("click", e => {
-    const im = e.target.closest(".lb-frame img");
-    if (im) { aim(im, e); im.classList.toggle("zoomed"); return; }
-    if (!e.target.closest(".lb-frame")) lb.close();
-  });
-  lb.addEventListener("mousemove", e => { const im = lb.querySelector("img.zoomed"); if (im) aim(im, e); });
-  lb.addEventListener("close", () => body.replaceChildren());
-
-  const items = document.querySelectorAll(".reveal");
-  if (!("IntersectionObserver" in window)) { items.forEach(el => el.classList.add("in")); return; }
-  const io = new IntersectionObserver(entries => {
-    for (const e of entries) if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
-  }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
-  items.forEach(el => io.observe(el));
-})();
-</script>
+<script src="site.js" defer></script>
 </body>
 </html>

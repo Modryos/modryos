@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Features - Modryos, the Minecraft mod maker</title>
+<meta name="description" content="What Modryos makes and how: models, textures and animation, creatures, items, recipes, machines and pipes, screens, quests, rules in sentences or Java, and Play on NeoForge and Fabric.">
+<link rel="canonical" href="https://modryos.com/features.html">
+<meta name="theme-color" content="#0d0f12">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Modryos">
+<meta property="og:url" content="https://modryos.com/features.html">
+<meta property="og:title" content="Features - Modryos, the Minecraft mod maker">
+<meta property="og:description" content="Everything Modryos makes, each made in the studio and played in the game.">
+<meta property="og:image" content="https://modryos.com/media/og-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A quest page laid out in the Modryos screen builder">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Modryos", "item": "https://modryos.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Features", "item": "https://modryos.com/features.html" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="wordmark" href="./">Modryos<span>.</span></a>
+    <nav>
+      <a href="features.html" aria-current="page">Features</a>
+      <a href="compare.html">Compare</a>
+      <a href="faq.html">FAQ</a>
+      <a class="hide-sm" href="https://github.com/Modryos/modryos">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="page-head">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="./">Modryos</a> / Features</nav>
+      <h1>What Modryos makes, and how.</h1>
+      <p>Modryos is a desktop studio for making Minecraft Java Edition mods without writing code. Everything on this page was made in the studio and photographed in a running game. Each capability is played in the game on NeoForge and Fabric, on every Minecraft version Modryos supports, by an automated test run.</p>
+      <p>Modryos is not released yet. 1.0.0 is coming soon.</p>
+      <ul class="toc">
+        <li><a href="#start">Start</a></li>
+        <li><a href="#models">Models and animation</a></li>
+        <li><a href="#creatures">Creatures</a></li>
+        <li><a href="#items">Items and armour</a></li>
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#machines">Machines and pipes</a></li>
+        <li><a href="#screens">Screens and HUD</a></li>
+        <li><a href="#quests">Quests and books</a></li>
+        <li><a href="#rules">Rules and Java</a></li>
+        <li><a href="#play">Play and test</a></li>
+        <li><a href="#versions">Versions and loaders</a></li>
+        <li><a href="#history">History</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="feature" id="start">
+    <div class="wrap grid">
+      <div class="text">
+        <div class="eyebrow">Start</div>
+        <h2>Pick what to make.</h2>
+        <p>Press New and choose a kind: blocks and items, crafting and loot, machines and networks, mobs and models, logic and code, screens and guides. Each kind opens with its settings beside it, in plain words.</p>
+      </div>
+      <figure><img class="shot zoom" src="media/start-new.webp" alt="The New window, listing the kinds of thing Modryos makes" width="1197" height="1037"><figcaption>The New window</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="feature flip" id="models">
+    <div class="wrap grid">
+      <div class="text">
+        <div class="eyebrow">Models, textures and animation</div>
+        <h2>Shape it, paint it, make it move.</h2>
+        <p>A model editor with a live 3D preview builds the shape of a block, an item or a creature. A pixel painter paints its textures, and a timeline animates it. The same model and clips play in the game, and they live in the same project as the rest of the mod.</p>
+      </div>
+      <div class="stack">
+        <figure><img class="shot zoom" src="media/model-editor.webp" alt="A wyrm's body in the model editor, with its parts listed beside the 3D preview" loading="lazy" width="1600" height="900"><figcaption>Model editor</figcaption></figure>
+        <div class="pair">
+          <figure><img class="shot zoom" src="media/texture-painter.webp" alt="Painting a dragon scale's texture in the pixel painter" loading="lazy" width="1600" height="900"><figcaption>Pixel painter</figcaption></figure>
+          <figure><img class="shot zoom" src="media/animation-editor.webp" alt="The animation timeline with a creature's clips" loading="lazy" width="1600" height="900"><figcaption>Animation timeline</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature" id="creatures">
+    <div class="wrap grid">
+      <div class="text">
+        <div class="eyebrow">Creatures</div>
+        <h2>Creatures with a mind of their own.</h2>
+        <p>Model a creature, animate it, and give it behaviours from a list: how it moves, what it does and when. Creatures can be tamed and ridden. Small animals and large beasts are made the same way.</p>
+      </div>
+      <div class="pair">
+        <figure><img class="shot zoom" src="media/g-wyrm.webp" alt="A wyrm breathing fire in the game" loading="lazy" width="1600" height="871"><figcaption class="live">A wyrm, in the game</figcaption></figure>
+        <figure><img class="shot zoom" src="media/g-beetle.webp" alt="A small animal standing in a field in the game" loading="lazy" width="800" height="450"><figcaption class="live">A small animal, in the game</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature flip" id="items">
+    <div class="wrap grid">
+      <div class="text">
+        <div class="eyebrow">Blocks, items and armour</div>
+        <h2>Tools, weapons and armour with their own feel.</h2>
+        <p>Blocks, items, tools, weapons, armour, food and fuel. Bows and crossbows with their own draw, armour sets that show on the player, and items that hold energy with a charge bar in the hotbar.</p>
+      </div>
+      <div class="stack">
+        <figure><img class="shot zoom" src="media/g-bow.webp" alt="A long bow drawn back in the game" loading="lazy" width="1600" height="871"><figcaption class="live">A bow, in the game</figcaption></figure>
+        <div class="pair">
+          <figure><img class="shot zoom" src="media/g-armour.webp" alt="Two sets of armour on stands in the game" loading="lazy" width="1600" height="871"><figcaption class="live">Armour</figcaption></figure>
+          <figure><img class="shot zoom" src="media/g-magnet.webp" alt="A magnet in the hotbar with its charge bar" loading="lazy" width="1584" height="861"><figcaption class="live">A charged item</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature" id="recipes">
+    <div class="wrap grid">
+      <div class="text">
+        <div class="eyebrow">Recipes</div>
+        <h2>Recipes that show in the recipe viewers.</h2>
+        <p>Crafting and the game's other recipe kinds, made by placing items in the grid. The recipes a mod adds show in JEI and the other recipe viewers.</p>
+      </div>
+      <figure><img class="shot pixel zoom" src="media/g-recipe.webp" alt="A crafting recipe shown in JEI in the game" loading="lazy" width="1584" height="861"><figcaption class="live">A recipe in JEI, in the game</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="feature flip" id="machines">
+    <div class="wrap grid">
+      <div class="text">
+        <div class="eyebrow">Machines, energy and pipes</div>
+        <h2>Machines, without writing their code.</h2>
+        <p>A machine is a block with inputs, outputs, energy and a screen. Energy cells store power and pass it along. Cables, fluid pipes and item ducts join machines, and each face of a block can take in, give out, follow redstone or filter what passes.</p>
+      </div>
+      <div class="stack">
+        <figure><img class="shot zoom" src="media/g-rig.webp" alt="Machines joined by cables and a fluid pipe in the game" loading="lazy" width="1600" height="871"><figcaption class="live">Machines joined by cables and a pipe</figcaption></figure>
+        <div class="pair">
+          <figure><img class="shot zoom" src="media/g-duct.webp" alt="Items travelling through a glass duct in the game" loading="lazy" width="1600" height="871"><figcaption class="live">An item duct</figcaption></figure>
+          <figure><img class="shot pixel zoom" src="media/g-filter.webp" alt="The settings of one face of an item conduit" loading="lazy" width="1584" height="861"><figcaption class="live">Settings for one face</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature" id="screens">
+    <div class="wrap grid">
+      <div class="text">
+        <div class="eyebrow">Screens and HUD</div>
+        <h2>Build a screen here. Open it there.</h2>
+        <p>Machine screens, HUD bars, books and quest views. Drag controls onto the screen, give them a look, and tie them to what the mod knows: a tank's level, a player's mana, the foods they have tasted. What you lay out is what opens in the game.</p>
+      </div>
+      <div class="stack">
+        <figure><img class="shot zoom" src="media/screen-builder.webp" alt="A machine screen in the screen builder" loading="lazy" width="1600" height="900"><figcaption>Screen builder</figcaption></figure>
+        <div class="pair">
+          <figure><img class="shot pixel zoom" src="media/tank-in-game.webp" alt="A tank of lava in a machine screen in the game" loading="lazy" width="1584" height="861"><figcaption class="live">A machine screen, in the game</figcaption></figure>
+          <figure><img class="shot zoom" src="media/g-hud.webp" alt="Gauges on the player's HUD in the game" loading="lazy" width="1584" height="861"><figcaption class="live">HUD gauges, in the game</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature flip" id="quests">
+    <div class="wrap grid">
+      <div class="text">
+        <div class="eyebrow">Quests, books and skill trees</div>
+        <h2>Quests on a map, pages as you drew them.</h2>
+        <p>Chapters, quests and the lines between them, drawn on a map. Each quest's page is laid out in the screen builder and opens in the game as you drew it. Guide books, bestiaries with search, skill trees with points to spend, and altars with rituals on a ring of pedestals are made the same way.</p>
+      </div>
+      <div class="stack">
+        <figure><img class="shot zoom" src="media/quest-map.webp" alt="A chapter's quests drawn on the quest map" loading="lazy" width="1600" height="900"><figcaption>Quest map</figcaption></figure>
+        <div class="pair">
+          <figure><img class="shot pixel zoom" src="media/g-bestiary.webp" alt="A bestiary listing mobs in the game" loading="lazy" width="1584" height="861"><figcaption class="live">A bestiary, in the game</figcaption></figure>
+          <figure><img class="shot pixel zoom" src="media/g-skills.webp" alt="A skill tree with a skill bought in the game" loading="lazy" width="1584" height="861"><figcaption class="live">A skill tree, in the game</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature" id="rules">
+    <div class="wrap grid">
+      <div class="text">
+        <div class="eyebrow">Rules and Java</div>
+        <h2>Say what happens. In sentences, or in Java.</h2>
+        <p>When the sword hits something, set it on fire, and if it was a player, warn whoever holds the sword. Rules are sentences you pick from, and conditions nest into groups with If, Else if and Else. Each sentence is Java underneath, the code view is one click away, and your own Java classes and mixins sit beside the rules in the same project.</p>
+      </div>
+      <div class="stack">
+        <figure><img class="shot zoom" src="media/logic-sentences.webp" alt="A sword's rules written as sentences" loading="lazy" width="1600" height="900"><figcaption>Rules as sentences</figcaption></figure>
+        <div class="pair">
+          <figure><img class="shot zoom" src="media/conditions.webp" alt="Conditions grouped with If, Else if and Else" loading="lazy" width="1227" height="569"><figcaption>Conditions</figcaption></figure>
+          <figure><img class="shot zoom" src="media/java-class.webp" alt="A Java class of the project's own, open in the code editor" loading="lazy" width="1600" height="900"><figcaption>Your own Java class</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature flip" id="play">
+    <div class="wrap grid">
+      <div class="text">
+        <div class="eyebrow">Play and test</div>
+        <h2>Press Play. The mod opens in the game.</h2>
+        <p>Play starts Minecraft with your mod on the loader and version you pick, with one player or two on the same PC. Data such as recipes reaches a running game with a reload, and many code changes are swapped in while it runs, so most changes do not need a restart.</p>
+      </div>
+      <div class="stack">
+        <figure><img class="shot zoom" src="media/food-book-builder.webp" alt="A food book laid out in the screen builder" loading="lazy" width="1600" height="900"><figcaption>In the studio</figcaption></figure>
+        <div class="arrow">then Play</div>
+        <figure><img class="shot pixel zoom" src="media/food-book-in-game.webp" alt="The same food book open in the game" loading="lazy" width="1584" height="861"><figcaption class="live">In the game</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature" id="versions">
+    <div class="wrap">
+      <div class="text" style="max-width:780px">
+        <div class="eyebrow">Versions and loaders</div>
+        <h2>One project, both loaders, five versions.</h2>
+        <p>The same project makes the mod for NeoForge and for Fabric, on each of these Minecraft Java Edition versions. You choose where to Play, and Modryos builds the jar files for the versions and loaders you choose, ready to upload to CurseForge or Modrinth.</p>
+      </div>
+      <ul class="targets" aria-label="Supported Minecraft versions">
+        <li>1.21.1<small>NeoForge and Fabric</small></li>
+        <li>1.21.11<small>NeoForge and Fabric</small></li>
+        <li>26.1.2<small>NeoForge and Fabric</small></li>
+        <li>26.2<small>NeoForge and Fabric</small></li>
+        <li>26.3<small>NeoForge and Fabric</small></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="feature flip" id="history">
+    <div class="wrap grid">
+      <div class="text">
+        <div class="eyebrow">History</div>
+        <h2>Every version of your project kept.</h2>
+        <p>Save a version whenever you like, compare any two, and see what changed, element by element. Here a dragon scale's stack size went from 64 to 16.</p>
+      </div>
+      <figure><img class="shot zoom" src="media/versions.webp" alt="The Versions window: a project's saved versions, one compared with the project as it is now" loading="lazy" width="1600" height="900"><figcaption>Saved versions, one compared with now</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="status">
+    <div class="wrap card">
+      <div>
+        <div class="eyebrow">Where it stands</div>
+        <h2>1.0.0 is coming soon.</h2>
+        <p style="color:var(--muted);margin:0">There is no download yet. Watch the repository on GitHub to hear when it's out.</p>
+        <div class="cta" style="justify-content:flex-start">
+          <a class="btn primary" href="https://github.com/Modryos/modryos">Watch on GitHub</a>
+        </div>
+        <p class="more">See <a href="compare.html">how Modryos compares with MCreator</a>, or read <a href="faq.html">the questions people ask</a>.</p>
+      </div>
+      <ul>
+        <li><span>Minecraft Java Edition</span><b>1.21.1, 1.21.11, 26.1.2, 26.2, 26.3</b></li>
+        <li><span>Loaders</span><b>NeoForge and Fabric</b></li>
+        <li><span>First mod made with it</span><b><a href="https://www.curseforge.com/minecraft/mc-mods/goat-apples">Goat Apples</a></b></li>
+        <li><span>Release</span><b>1.0.0, coming soon</b></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<dialog class="lb" id="lb" aria-label="Picture, bigger">
+  <button type="button" aria-label="Close">&times;</button>
+  <div class="lb-body"></div>
+  <p></p>
+</dialog>
+
+<div class="notice"><div class="wrap">NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</div></div>
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Neryos. Minecraft is a trademark of Mojang Synergies AB.</span>
+    <nav>
+      <a href="./">Home</a>
+      <a href="compare.html">Compare</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://github.com/Modryos/modryos/issues">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>
