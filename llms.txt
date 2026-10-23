@@ -17,7 +17,6 @@ Facts, as of 22 October 2026:
 
 - [Home](https://modryos.com/): what Modryos is, with pictures from the studio and the game
 - [Features](https://modryos.com/features.html): each capability, how it is made in the studio and how it looks in the game
-- [Modryos and MCreator compared](https://modryos.com/compare.html): a dated side-by-side comparison, with where MCreator is the better choice and where other tools fit
 - [Questions and answers](https://modryos.com/faq.html): making mods without coding, Java, versions, loaders, Bedrock, price, release
 
 ## Optional
