@@ -243,6 +243,26 @@
       </ul>
     </div>
   </section>
+<section class="news-band" id="news">
+    <div class="wrap">
+      <div class="news-text">
+        <div class="eyebrow">Launch news</div>
+        <h2>Hear it first when Modryos opens.</h2>
+        <p>One email when the doors open to everyone. Nothing else.</p>
+      </div>
+      <div class="form-card">
+        <form class="form" data-api="https://api.modryos.com/v1/news" data-ok="Check your inbox to confirm." novalidate>
+          <label for="news-email">Email</label>
+          <input id="news-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+          <label class="check"><input type="checkbox" name="age15" required> I am 15 or older</label>
+          <p class="consent">Send me news about the Modryos launch. You can unsubscribe in every email.</p>
+          <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+          <button class="btn primary" type="submit">Sign up for news</button>
+          <p class="status-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
 </main>
 
 <dialog class="lb" id="lb" aria-label="Picture, bigger">
