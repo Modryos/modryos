@@ -248,3 +248,24 @@ table.compare { width: 100%; border-collapse: collapse; font-size: 15px; line-he
   .compare tbody th { margin-bottom: 4px; }
   .compare td::before { content: attr(data-label) ": "; color: var(--text); font-weight: 600; }
 }
+
+/* forms: waitlist, launch news */
+.form { display: grid; gap: 12px; max-width: 460px; text-align: left; }
+.news { padding: 20px 0 80px; text-align: center; }
+.news .sub { color: var(--muted); }
+.news .form { margin: 0 auto; }
+.form label { font-size: 14px; font-weight: 600; }
+.form input[type=email] {
+  width: 100%; padding: 11px 14px; border-radius: 10px; border: 1px solid var(--line);
+  background: var(--panel); color: var(--text); font: inherit;
+}
+.form .check { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; color: var(--muted); }
+.form .check input { margin-top: 4px; accent-color: var(--accent); }
+.form .consent { margin: 0; color: var(--muted); font-size: 14px; }
+.form input:focus-visible, .form button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.form button { cursor: pointer; font: inherit; font-weight: 600; justify-self: start; }
+.form button:disabled { opacity: .6; cursor: default; transform: none; }
+.status-msg { margin: 0; min-height: 1.4em; font-size: 15px; color: var(--muted); }
+.status-msg.ok { color: var(--accent); }
+.status-msg.err { color: var(--text); }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
