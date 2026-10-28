@@ -74,8 +74,8 @@ Save a version, compare any two, and see what changed, element by element.
 - 1.0.0 is coming soon
 - The first mod made with it: [Goat Apples](https://www.curseforge.com/minecraft/mc-mods/goat-apples) ([source](https://github.com/NeryosX/goat-apples))
 
-Website: [modryos.com](https://modryos.com): [features](https://modryos.com/features.html),
-[how it compares with MCreator](https://modryos.com/compare.html) and [questions and answers](https://modryos.com/faq.html).
+Website: [modryos.com](https://modryos.com): [features](https://modryos.com/features.html)
+and [questions and answers](https://modryos.com/faq.html).
 
 ---
 
