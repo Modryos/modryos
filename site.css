@@ -383,3 +383,28 @@ footer nav a, footer nav a:first-child { margin: 0; }
 .beta-hero.split .form-card { margin: 0; padding: 26px; }
 .beta-hero.split .form { gap: 10px; }
 @media (max-width: 900px) { .beta-hero.split .wrap { grid-template-columns: 1fr; gap: 28px; } .beta-hero.split .shot { display: none; } }
+
+/* polish: product window, legal contents card, news band on phones */
+.beta-hero.split { padding-bottom: 48px; }
+.beta-hero.split .wrap { grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); grid-template-areas: "side win" "form win"; gap: 24px 48px; }
+.beta-hero.split .side { grid-area: side; }
+.beta-hero.split .form-card { grid-area: form; }
+.window { grid-area: win; margin: 0; align-self: stretch; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: var(--panel); box-shadow: 0 40px 100px -30px rgba(0, 0, 0, .85), 0 0 90px -25px rgba(63, 185, 80, .35); }
+.window .bar { display: flex; gap: 7px; padding: 11px 14px; border-bottom: 1px solid var(--line); }
+.window .bar i { width: 10px; height: 10px; border-radius: 50%; background: var(--line); }
+.window img { flex: 1; width: 100%; min-height: 0; object-fit: cover; display: block; }
+@media (max-width: 900px) { .beta-hero.split .wrap { grid-template-columns: 1fr; grid-template-areas: "side" "form"; } .window { display: none; } }
+.toc-legal { padding: 20px 24px; background: linear-gradient(180deg, var(--panel), var(--bg)); box-shadow: 0 18px 50px -30px rgba(0, 0, 0, .8); }
+.toc-legal strong { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.toc-legal ol { columns: 2; column-gap: 40px; padding-left: 22px; }
+.toc-legal li::marker { color: var(--accent); font-weight: 600; }
+.toc-legal a { color: var(--text); }
+.toc-legal a:hover { color: var(--accent); }
+@media (max-width: 600px) {
+  .news-band { padding: 16px 0 56px; }
+  .news-band .wrap { gap: 18px; padding: 24px 18px; }
+  .news-band h2 { font-size: 24px; margin: 4px 0 6px; }
+  .news-band .form-card { padding: 18px; }
+  .news-band .form { gap: 8px; }
+  .news-band .eyebrow { display: none; }
+}
