@@ -24,20 +24,32 @@
   </div>
 </header>
 
-<main class="wrap"><div class="prose">
-  <h1>Request access</h1>
-  <p class="lead">Modryos is now in closed beta. Leave your email and we will send you a link to confirm it. Testers get the download link in their invite email.</p>
-  <form class="form" data-api="https://api.modryos.com/v1/waitlist" data-ok="Check your inbox: we sent a link to confirm your email." novalidate>
-    <label for="wl-email">Email</label>
-    <input id="wl-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
-    <label class="check"><input type="checkbox" name="age15" required> I am 15 or older</label>
-    <label class="check"><input type="checkbox" name="terms" required> <span>I agree to the <a href="terms.html">Terms of Use</a> and <a href="privacy.html">Privacy Policy</a></span></label>
-    <label class="check"><input type="checkbox" name="news"> Send me launch news (you can unsubscribe any time)</label>
-    <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
-    <button class="btn primary" type="submit">Request access</button>
-    <p class="status-msg" role="status" aria-live="polite"></p>
-  </form>
-</div></main>
+<main class="beta">
+  <section class="beta-hero">
+    <div class="wrap">
+      <span class="pill">Now in closed beta</span>
+      <h1>Be one of the first to build with Modryos.</h1>
+      <p class="lede">We let testers in a few at a time. Ask for a place and we will send an invite when your turn comes.</p>
+      <ul class="perks">
+        <li><b>Early access</b><span>Use the studio before everyone else.</span></li>
+        <li><b>Your say</b><span>Tell us what to fix and what to add next.</span></li>
+        <li><b>Free to try</b><span>No payment and no card. Just your email.</span></li>
+      </ul>
+      <div class="form-card">
+        <form class="form" data-api="https://api.modryos.com/v1/waitlist" data-ok="Check your inbox: we sent a link to confirm your email." novalidate>
+          <label for="wl-email">Email</label>
+          <input id="wl-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" aria-describedby="wl-msg">
+          <label class="check"><input type="checkbox" name="age15" required> I am 15 or older</label>
+          <label class="check"><input type="checkbox" name="terms" required> <span>I agree to the <a href="terms.html">Terms of Use</a> and <a href="privacy.html">Privacy Policy</a></span></label>
+          <label class="check"><input type="checkbox" name="news"> Send me launch news (you can unsubscribe any time)</label>
+          <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+          <button class="btn primary" type="submit">Request access</button>
+          <p class="status-msg" id="wl-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
 
 <div class="notice"><div class="wrap">NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.</div></div>
 <footer>
@@ -49,6 +61,7 @@
       <a href="terms.html">Terms</a>
       <a href="beta-agreement.html">Beta agreement</a>
       <a href="cookies.html">Cookies</a>
+      <a href="email-consent.html">Email consent</a>
       <a href="data-deletion.html">Data deletion</a>
       <a href="https://github.com/Modryos/modryos/issues">Contact</a>
     </nav>

@@ -1,7 +1,7 @@
 # Modryos
 
 [![Website](https://img.shields.io/badge/Website-modryos.com-3fb950)](https://modryos.com)
-[![1.0.0 coming soon](https://img.shields.io/badge/1.0.0-coming%20soon-555555)](https://github.com/Modryos/modryos)
+[![Closed beta](https://img.shields.io/badge/Now%20in-closed%20beta-3fb950)](https://modryos.com/request-access.html)
 [![Made with it: Goat Apples](https://img.shields.io/badge/Made%20with%20it-Goat%20Apples-F16436?logo=curseforge&logoColor=white)](https://www.curseforge.com/minecraft/mc-mods/goat-apples)
 [![Stars](https://img.shields.io/github/stars/Modryos/modryos?label=Stars)](https://github.com/Modryos/modryos/stargazers)
 
@@ -10,8 +10,8 @@
 Models, textures, animations, screens, quests and the rules that tie them together, in one desktop
 studio. Press Play and the mod opens in the game.
 
-> **Modryos 1.0.0 is coming soon.** This page shows where it stands today. Watch this repository to
-> hear when it's out.
+> **Modryos is now in closed beta.** [Request access](https://modryos.com/request-access.html). Testers get the
+> download link in their invite email.
 
 ![Laying out a quest screen in Modryos](media/quest-builder.webp)
 
@@ -71,7 +71,7 @@ Save a version, compare any two, and see what changed, element by element.
 ## Where it stands
 
 - Minecraft Java Edition 1.21.1, 1.21.11, 26.1.2, 26.2 and 26.3, on NeoForge and Fabric
-- 1.0.0 is coming soon
+- Now in closed beta - request access at modryos.com
 - The first mod made with it: [Goat Apples](https://www.curseforge.com/minecraft/mc-mods/goat-apples) ([source](https://github.com/NeryosX/goat-apples))
 
 Website: [modryos.com](https://modryos.com): [features](https://modryos.com/features.html)
