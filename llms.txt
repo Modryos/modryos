@@ -1,6 +1,6 @@
 # Modryos
 
-> Modryos is a desktop studio for making Minecraft Java Edition mods without writing code. Models, textures, animations, creatures, items, recipes, machines, screens, quests and rules are made in one project, and Play opens the mod in the game. It is not released yet: 1.0.0 is coming soon, there is no download today, and its price and licence are not announced.
+> Modryos is a desktop studio for making Minecraft Java Edition mods without writing code. Models, textures, animations, creatures, items, recipes, machines, screens, quests and rules are made in one project, and Play opens the mod in the game. It is now in closed beta: request access at https://modryos.com/request-access.html. Testers get the download link in their invite email. Its price and licence are not announced.
 
 Facts, as of 22 October 2026:
 
