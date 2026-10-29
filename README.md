@@ -20,14 +20,14 @@ studio. Press Play and the mod opens in the game.
 The screen you lay out in the studio is the screen that opens in the game. Minecraft Java Edition
 1.21.1, 1.21.11, 26.1.2, 26.2 and 26.3, on NeoForge and Fabric, from the same project.
 
-![The same quest screen in the game](media/quest-in-game.webp)
+![The same quest screen in the game](media/g-questmap.webp)
 
 ## Models, textures and animations
 
 A block model editor with a live 3D preview, a pixel painter for textures, and a timeline for
 animations.
 
-![The model editor with a dragon](media/model-editor.webp)
+![The model editor with a fox](media/model-editor.webp)
 
 ![The texture painter](media/texture-painter.webp)
 
@@ -36,15 +36,15 @@ animations.
 ## Screens for any mod
 
 Machine screens, HUD bars, books and quest views. Drag controls onto the screen, give them a look,
-and tie them to what the mod knows: a tank's level, a player's mana, the foods they've tasted.
+and tie them to what the mod knows: a tank's level, a player's mana, the pages of a guide book.
 
 ![A machine screen in the screen builder](media/screen-builder.webp)
 
-![A food book in the studio](media/food-book-builder.webp)
+![A guide book in the studio](media/food-book-builder.webp)
 
-![The same food book in the game](media/food-book-in-game.webp)
+![The same guide book in the game](media/g-bestiary.webp)
 
-![A tank of lava in a machine screen](media/tank-in-game.webp)
+![A tank block in the world](media/g-tank.webp)
 
 ## Rules in sentences, or in Java
 
