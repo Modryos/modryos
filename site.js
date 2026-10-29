@@ -41,7 +41,7 @@
 
   // Videos load only when they come near the screen; autoplay would otherwise fetch them all at once.
   const videos = document.querySelectorAll("video[data-src]");
-  const start = v => { v.src = v.dataset.src; v.play?.().catch(() => {}); };
+  const start = v => { if (v.dataset.webm) { v.innerHTML = `<source src="${v.dataset.src}" type="video/mp4"><source src="${v.dataset.webm}" type="video/webm">`; v.load(); } else v.src = v.dataset.src; v.play?.().catch(() => {}); };
   if ("IntersectionObserver" in window) {
     const vo = new IntersectionObserver(entries => {
       for (const e of entries) if (e.isIntersecting) { start(e.target); vo.unobserve(e.target); }
