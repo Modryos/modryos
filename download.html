@@ -46,6 +46,13 @@
           <li><span>Games</span><b>Minecraft Java Edition</b></li>
         </ul>
       </div>
+      <div class="info-card" id="install">
+        <h2>Installing the beta: Windows will warn you</h2>
+        <p>The beta is not signed with a paid certificate yet, so the first time you open the installer Windows shows a blue box, "Windows protected your PC". That is expected. Press <b>More info</b>, check that the app is <b>Modryos-Install</b>, then press <b>Run anyway</b>.</p>
+        <img class="shot" src="media/smartscreen-steps.svg" alt="The two presses: More info, then Run anyway" width="880" height="330" loading="lazy">
+        <p><b>Check the file first (optional).</b> Every build has a SHA-256 checksum beside it, and our server lists them all at <a href="https://api.modryos.com/v1/releases/SHA256SUMS">api.modryos.com/v1/releases/SHA256SUMS</a>. In PowerShell, run <code>Get-FileHash .\Modryos-Install-0.2.0.exe</code> (with your file's name) and compare the long number. If it does not match, do not run the file; tell us at <a href="mailto:support@modryos.com">support@modryos.com</a>. The studio checks its own updates the same way before it installs them.</p>
+        <p><b>Smart App Control.</b> If your Windows has Smart App Control turned on, it blocks apps that are not signed and offers no "Run anyway". Do not turn it off just for Modryos: on many Windows versions it cannot be turned back on without resetting Windows. Wait for the Microsoft Store version instead, which Microsoft signs; we will email you when it is ready.</p>
+      </div>
     </div>
   </section>
 </main>
