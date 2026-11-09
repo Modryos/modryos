@@ -9,6 +9,8 @@ A [loader](glossary.md#loader) is the program that runs mods in Minecraft. Modry
 
 ## What the studio makes mods for
 
+Minecraft numbers its newer versions by year: 26.1, 26.2 and 26.3 are versions from 2026, newer than 1.21.11. One project makes a mod for every version and loader you tick.
+
 | Target | Loader |
 | --- | --- |
 | NeoForge 1.21.1 | NeoForge |
@@ -32,7 +34,7 @@ Minecraft 1.20.1 comes after version 1.0. Packs only 1.21.1.
 
 ## Which jar your friend needs
 
-Ask your friend two things: which loader they use (NeoForge or Fabric) and which Minecraft version. Give them the [jar](glossary.md#jar) made for that pair. A Fabric friend also needs Fabric API in their mods folder. The jars are in your project's release folder, see [Export](export.md).
+Ask your friend two things: which loader they use (NeoForge or Fabric) and which Minecraft version. Give them the [jar](glossary.md#jar) made for that pair. A Fabric friend also needs [Fabric API](https://modrinth.com/mod/fabric-api) in their mods folder. The jars are in your project's release folder, see [Export](export.md).
 
 ## Many versions in one project
 

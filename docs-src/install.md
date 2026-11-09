@@ -30,7 +30,7 @@ If the window shows **Run** at once, press it.
 
 ## Check the file (optional)
 
-The download page shows a SHA256 checksum for each file. To check yours, open PowerShell in the folder with the file and run one command:
+The download page shows a SHA256 checksum for each file. To check yours, open PowerShell (the blue command window that comes with Windows: press Start, type PowerShell, press Enter) in the folder with the file and run one command. A checksum is a long code made from every byte of the file; if one byte changed, the code changes ([what is SHA256?](glossary.md#sha256)):
 
 ```
 Get-FileHash .\Modryos-Install-<version>.exe -Algorithm SHA256

@@ -23,6 +23,6 @@ In your project folder, in `release`, in a folder named for the mod version. You
 
 ## Play one
 
-Put the jar in the `mods` folder of a Minecraft with the same loader and version. Fabric mods also need Fabric API in the same folder.
+Put the jar in the `mods` folder of a Minecraft with the same loader and version. Fabric mods also need [Fabric API](https://modrinth.com/mod/fabric-api) in the same folder.
 
 Next: [Publish your mod](publishing.md).

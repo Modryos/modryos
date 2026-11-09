@@ -4,7 +4,7 @@ You build the whole mod - models, animations, textures, recipes, logic and code 
 
 Modryos is a desktop studio for making Minecraft Java mods. It runs on Windows. It is in closed beta, so these pages grow as the studio does.
 
-> **Note** Pages are added one by one. A section that says "Pages are coming" has no page yet.
+
 
 ## Find your way
 

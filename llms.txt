@@ -29,10 +29,14 @@ Facts, as of 22 October 2026:
 - [Play and Stop](https://modryos.com/docs/play): How Play starts your mod in Minecraft, what the first start downloads and what the Cook window shows.
 - [Export your mod](https://modryos.com/docs/export): Make the mod file (jar) for each Minecraft version and loader, and find where it lands.
 - [Help and community](https://modryos.com/docs/help-and-community): The Help menu, how to report a problem and where to ask other makers.
+- [Make a fire sword](https://modryos.com/docs/make-a-fire-sword): A sword that sets what it hits on fire, in a few steps.
+- [A block with your own picture](https://modryos.com/docs/block-with-your-own-picture): Make a block and give it a picture you draw or bring in.
+- [Make a creature](https://modryos.com/docs/make-a-creature): A simple creature that acts like one from the game, with your own name and health.
+- [Pictures and textures](https://modryos.com/docs/pictures-and-textures): How to draw a picture in the painter or bring in a PNG, which size to pick and what a strip of frames is.
 - [Editors](https://modryos.com/docs/editors): Every editor in the studio, grouped as New thing groups them.
 - [Advancement editor](https://modryos.com/docs/editor-advancement): One of the game's own advancements: a goal with a toast, reached by an item, a kill or a rule.
 - [Animation editor](https://modryos.com/docs/editor-animation): How a model moves over time.
-- [Another mod editor](https://modryos.com/docs/editor-dependency): A mod this one uses or works with, such as a recipe viewer: compiled against, in the test game, and named in both manifests.
+- [Another mod editor](https://modryos.com/docs/editor-dependency): A mod this one uses or works with, such as a recipe viewer: built against, in the test game, and named in both manifests.
 - [Area value editor](https://modryos.com/docs/editor-areaValue): A number the world keeps by place, not by player or item: an aura in each chunk, an oil reservoir under it, radiation, a corruption that spreads, a pollution.
 - [Armor trim editor](https://modryos.com/docs/editor-armourTrim): A trim put on armor at the smithing table, in any of the game's materials.
 - [Attribute editor](https://modryos.com/docs/editor-attribute): A number every living thing has, as luck and armor are.
@@ -77,7 +81,7 @@ Facts, as of 22 October 2026:
 - [Material editor](https://modryos.com/docs/editor-material): What parts are cut from, any item the game's iron ingot among them: its color, and the numbers and abilities it gives a part.
 - [Mob editor](https://modryos.com/docs/editor-creature): A living thing with a model, animations and behavior.
 - [Mob behaviour editor](https://modryos.com/docs/editor-mobBehaviour): A piece of your own code that joins one activity of a mob's brain, the game's or another mod's.
-- [Mod settings editor](https://modryos.com/docs/editor-configValue): A setting players can change after the mod is built, in its config file: a number, on or off, one word out of a list, or a list of entries they edit.
+- [Mod settings editor](https://modryos.com/docs/editor-configValue): A setting players can change after the mod is built, in its settings file: a number, on or off, one word out of a list, or a list of entries they edit.
 - [Model editor](https://modryos.com/docs/editor-model): The shape of a block, item or mob, made from boxes.
 - [Movement editor](https://modryos.com/docs/editor-movement): How a living thing moves, the player or a mob: its speed and its jump, and a class of yours run as it moves.
 - [Other mod's recipe editor](https://modryos.com/docs/editor-modRecipe): A recipe for a machine from a mod yours builds on, filled in by clicks.
@@ -123,7 +127,7 @@ Facts, as of 22 October 2026:
 - [Aiming block](https://modryos.com/docs/thing-aimingBlock): A block that keeps a target place: a launcher's, a gate's other end.
 - [Altar](https://modryos.com/docs/thing-altar): A block that performs rituals with offerings on pedestals around it, formed while a ring of gold blocks lies around it; say in its rules what forming does: summon, teleport, give, open a portal.
 - [Animation](https://modryos.com/docs/thing-animation): How a model moves over time.
-- [Another mod](https://modryos.com/docs/thing-dependency): A mod this one uses or works with, such as a recipe viewer: compiled against, in the test game, and named in both manifests.
+- [Another mod](https://modryos.com/docs/thing-dependency): A mod this one uses or works with, such as a recipe viewer: built against, in the test game, and named in both manifests.
 - [Area value](https://modryos.com/docs/thing-areaValue): A number the world keeps by place, not by player or item: an aura in each chunk, an oil reservoir under it, radiation, a corruption that spreads, a pollution.
 - [Armor](https://modryos.com/docs/thing-armour): Something worn that protects.
 - [Armor trim](https://modryos.com/docs/thing-armourTrim): A trim put on armor at the smithing table, in any of the game's materials.
@@ -226,7 +230,7 @@ Facts, as of 22 October 2026:
 - [Mob](https://modryos.com/docs/thing-creature): A living thing with a model, animations and behavior.
 - [Mob behaviour](https://modryos.com/docs/thing-mobBehaviour): A piece of your own code that joins one activity of a mob's brain, the game's or another mod's.
 - [Mob catcher](https://modryos.com/docs/thing-mobCatcher): An item that catches a creature with its name, health and everything it is, and lets it out again where it is used.
-- [Mod settings](https://modryos.com/docs/thing-configValue): A setting players can change after the mod is built, in its config file: a number, on or off, one word out of a list, or a list of entries they edit.
+- [Mod settings](https://modryos.com/docs/thing-configValue): A setting players can change after the mod is built, in its settings file: a number, on or off, one word out of a list, or a list of entries they edit.
 - [Model](https://modryos.com/docs/thing-model): The shape of a block, item or mob, made from boxes.
 - [Module](https://modryos.com/docs/thing-module): Something installed into a tool or armour that takes modules, switching an ability on and spending its energy.
 - [Mount](https://modryos.com/docs/thing-mount): A mob tamed by riding it until it calms, then saddled, ridden and given bags and armour.

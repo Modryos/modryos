@@ -6,7 +6,7 @@ You build the whole mod - models, animations, textures, recipes, logic and code 
 
 Modryos is a desktop studio for making Minecraft Java mods. It runs on Windows. It is in closed beta, so these pages grow as the studio does.
 
-> **Note** Pages are added one by one. A section that says "Pages are coming" has no page yet.
+
 
 ## Find your way
 
@@ -46,7 +46,7 @@ You do not need to know how to code. If you know Minecraft, you can start.
 
 - Windows 10 or Windows 11.
 - An internet connection for the first start.
-- About 1.7 GB of free disk space for the game tools. The studio downloads them the first time you press Play.
+- About 1.7 GB of free disk space for the game tools. The studio downloads them the first time you press [Play](glossary.md#play).
 - A Minecraft Java Edition account to play your mod in the real game.
 
 ## Download
@@ -67,7 +67,7 @@ If the window shows **Run** at once, press it.
 
 ## Check the file (optional)
 
-The download page shows a SHA256 checksum for each file. To check yours, open PowerShell in the folder with the file and run one command:
+The download page shows a SHA256 checksum for each file. To check yours, open PowerShell (the blue command window that comes with Windows: press Start, type PowerShell, press Enter) in the folder with the file and run one command. A checksum is a long code made from every byte of the file; if one byte changed, the code changes ([what is SHA256?](glossary.md#sha256)):
 
 ```
 Get-FileHash .\Modryos-Install-<version>.exe -Algorithm SHA256
@@ -93,7 +93,7 @@ No invite yet? Press **Join the waiting list** on that screen.
 
 ## First start
 
-1. Accept the terms and the Minecraft EULA once. Pick how much you have made mods before. None is fine, and you can change it in Settings.
+1. Accept the terms and the Minecraft [EULA](glossary.md#eula) once. Pick how much you have made mods before. None is fine, and you can change it in Settings.
 2. The studio then gets Java and the game files it needs, by itself. You install nothing else. It takes several minutes, and a bar shows how far it is. You can look around while it works.
 
 Next: [your first mod](first-mod.md).
@@ -108,7 +108,7 @@ Keep this page open beside Modryos.
 
 ## 1. Start a mod
 
-On the start screen, **What are you making today?**, start a new mod. Pick a template or a sample so there is already something in it. Give it a name and keep both loaders ticked.
+On the start screen, **What are you making today?**, start a new mod. Pick **From a sample** and then **Ruby Gear**, the first one in the list, so there is already something in it (see [Templates and samples](templates-and-samples.md)). Press **Make my copy**. When you start a new mod yourself, keep both [loaders](glossary.md#loader) ticked under **Works with**.
 
 ![The start screen](/media/start-welcome.webp)
 
@@ -121,11 +121,15 @@ Modryos shows a small **First steps** card with four steps: **Look**, **Change**
 - **Play.** Press **Play** at the top. Modryos builds your mod and opens Minecraft with it. The first time takes a few minutes. Keep the window open.
 - **In the game.** Find your thing in the creative inventory, in your mod's own tab. The card says "Your mod is in the game. Well done!" when it sees it.
 
-## 3. Change it again
+## 3. Add something of your own
+
+Press **New thing**, pick a category such as **Blocks and items** and then **Block**. Give it a name and press **Play** again. More: [A block with your own picture](block-with-your-own-picture.md) and [Make a fire sword](make-a-fire-sword.md).
+
+## 4. Change it again
 
 Change a colour or a name, then press **Reload in the game**. The change shows up without restarting. Press **Stop** when you are done.
 
-## 4. Make the mod file
+## 5. Make the mod file
 
 Use **File > Export > Make the mod file (.jar)**. See [Export](export.md).
 
@@ -141,11 +145,11 @@ Next: read more about [Play](play.md).
 
 ## Which version and loader
 
-Play starts the version and loader you pick in **Play on**. A project can have more than one. Pick another one there and press Play again. See [Versions and loaders](versions-and-loaders.md).
+[Play](glossary.md#play) starts the version and [loader](glossary.md#loader) you pick in **Play on**. A project can have more than one. Pick another one there and press Play again. See [Versions and loaders](versions-and-loaders.md).
 
 ## The first start
 
-The first time, Modryos downloads the game and its tools (about 1.7 GB) and builds your mod. That takes a few minutes. Later starts are much faster. You are asked to accept the Minecraft EULA once, with **Accept and Play**.
+The first time, Modryos downloads the game and its tools (about 1.7 GB) and builds your mod. That takes a few minutes. Later starts are much faster. You are asked to accept the Minecraft [EULA](glossary.md#eula) once, with **Accept and Play**.
 
 ## In the game
 
@@ -157,7 +161,7 @@ Change something in Modryos and press **Reload in the game**. Most changes show 
 
 ## The Cook window
 
-Cooking is how Modryos makes the mod file. Play does it for you. You can also open it with **File > Export > Make the mod file (.jar)**. It shows four steps:
+[Cooking](glossary.md#cook) is how Modryos makes the mod file. Play does it for you. You can also open it with **File > Export > Make the mod file (.jar)**. It shows four steps:
 
 1. **Write the project**
 2. **Resolve what the game needs**
@@ -180,13 +184,13 @@ The mod file is a `.jar`. It is what people put in their Minecraft `mods` folder
 
 ## Make it
 
-1. Choose **File > Export > Make the mod file (.jar)**. The Cook window opens.
+1. Choose **File > Export > Make the mod file (.jar)**. The [Cook](glossary.md#cook) window opens.
 2. Press **Cook**.
 3. When it is done, each file shows its full path. **Show the file** opens its folder, and **Open the folder** opens the folder with all of them.
 
 ## One jar for each version and loader
 
-Modryos makes one jar for every version and loader your project targets. A project for NeoForge and Fabric on two versions makes four jars. Each one only works on its own version and loader, so check the name before you share it.
+Modryos makes one [jar](glossary.md#jar) for every version and [loader](glossary.md#loader) your project [targets](glossary.md#target). A project for NeoForge and Fabric on two versions makes four jars. Each one only works on its own version and loader, so check the name before you share it. Ask your friend which loader (NeoForge or Fabric) and which Minecraft version they use, and send the jar for that pair. See [Versions and loaders](versions-and-loaders.md).
 
 ## Where they land
 
@@ -194,7 +198,7 @@ In your project folder, in `release`, in a folder named for the mod version. You
 
 ## Play one
 
-Put the jar in the `mods` folder of a Minecraft with the same loader and version. Fabric mods also need Fabric API in the same folder.
+Put the jar in the `mods` folder of a Minecraft with the same loader and version. Fabric mods also need [Fabric API](https://modrinth.com/mod/fabric-api) in the same folder.
 
 Next: [Publish your mod](publishing.md).
 
@@ -228,6 +232,99 @@ Write to support@modryos.com. A person reads it.
 Join other makers on Discord: https://discord.com/invite/ccWxeu8BVh
 
 Also see [Troubleshooting](troubleshooting.md) and the [FAQ](faq.md).
+
+---
+
+# https://modryos.com/docs/make-a-fire-sword
+
+# Make a fire sword
+
+Two ways. The first is the quickest.
+
+## Way 1: the setting
+
+1. Press **New thing**.
+2. Open **Blocks and items** and pick **Weapon**.
+3. Give it a **Name**, for example Flame Blade.
+4. Find **Sets alight for** and type a number of seconds, for example 5. Nought sets nothing alight.
+5. Press **Play**. In the game, find the sword in your mod's creative tab and hit a cow.
+
+## Way 2: a rule
+
+Use this when you want more than fire, such as a sound too.
+
+1. Open your sword in the Project list on the left and click its **Behavior** tab.
+2. Under **Or start with an example**, press **Set on fire** ("Whatever it hits catches fire.").
+3. Or build it yourself: press **Add a moment** and pick **When (this) hits something**. Then press **Add a line** and pick **Set (who) on fire for (seconds) seconds**.
+4. Change the seconds, then press **Play**.
+
+More: [Weapon](thing-weapon.md), [Behavior](thing-behaviour.md).
+
+---
+
+# https://modryos.com/docs/block-with-your-own-picture
+
+# A block with your own picture
+
+1. Press **New thing**, open **Blocks and items** and pick **Block**. Give it a **Name**.
+2. Press **New thing** again, open **Mobs and models** and pick **Texture**. This is the picture, and its page is the painter: it opens by itself when you make it, and again when you click the texture in the project list. Give it a name.
+3. Pick the size under **How big to start**: **16 by 16**, **32 by 32** or **64 by 64**. Minecraft's own blocks are 16 by 16, so choose that to match the game. Bigger sizes show finer detail.
+4. Either draw it, or bring one in:
+   - **Draw:** pick a colour, press **Fill**, then paint pixel by pixel with the painter's tools.
+   - **Bring one in:** press **Import a PNG** and choose the file.
+5. Press **Apply** to keep the picture.
+6. Open your block. In **Texture**, choose your picture.
+7. Press **Play** and place the block.
+
+More on pictures: [Pictures and textures](pictures-and-textures.md). A texture is just a PNG.
+
+---
+
+# https://modryos.com/docs/make-a-creature
+
+# Make a creature
+
+1. Press **New thing**, open **Mobs and models** and pick **Mob**.
+2. Give it a **Name**.
+3. In **Made from the game's**, write the game's creature it behaves like, for example zombie or cow. Empty makes a creature of your own.
+4. Set **Health** (a player has 20) and **Temperament**: Passive, Neutral or Hostile.
+5. Optional: choose **Its own picture** so it wears a new look. Make the picture as in [Pictures and textures](pictures-and-textures.md).
+6. Press **Play**. A spawn egg for it is in your mod's creative tab.
+
+More: [Mob editor](editor-creature.md).
+
+---
+
+# https://modryos.com/docs/pictures-and-textures
+
+# Pictures and textures
+
+A texture is the picture a block, item or creature wears. It is a PNG file.
+
+## Draw one
+
+1. **New thing > Mobs and models > Texture**.
+2. Under **How big to start**, pick **16 by 16**, **32 by 32** or **64 by 64**.
+3. Pick a colour and press **Fill**, then paint with the tools.
+4. Press **Apply**.
+
+## Bring one in
+
+In the Texture editor press **Import a PNG** and choose the file. To bring in many, use **Import pictures** or **Import a folder**. To use a picture you already have, press **Choose a texture**.
+
+## Sizes
+
+16 by 16 matches Minecraft's blocks and items. 32 by 32 and 64 by 64 give finer detail. You can change it later with **Resize the picture**.
+
+## A strip of frames
+
+A picture made of squares one above the other, like a film strip. The game shows the squares one after another, so the picture moves, like water. Turn it on with the **Plays as frames** setting of the block or item.
+
+## Replaces
+
+The **Replaces** setting is only for taking the place of a picture the game already has, for example `minecraft:block/stone`. Leave it empty for your own.
+
+See the [Texture editor](editor-texture.md).
 
 ---
 
@@ -304,7 +401,7 @@ Each editor is where you set one kind of thing. Pick one to see its settings.
 
 ## Logic and code
 
-- [Another mod](editor-dependency.md): A mod this one uses or works with, such as a recipe viewer: compiled against, in the test game, and named in both manifests.
+- [Another mod](editor-dependency.md): A mod this one uses or works with, such as a recipe viewer: built against, in the test game, and named in both manifests.
 - [Behavior](editor-behaviour.md): What happens when something happens: when this sword hits, set the target on fire.
 - [Code](editor-code.md): A Java class of your own, kept safe when the mod is rebuilt.
 - [Command](editor-command.md): A command typed in chat with a slash, whose rules run when a player types it.
@@ -313,7 +410,7 @@ Each editor is where you set one kind of thing. Pick one to see its settings.
 - [File of your own](editor-ownFile.md): Any file the mod ships as it is, under resources/: data, assets, anything the game reads.
 - [Game rule](editor-gameRule.md): A rule of the world, set with the gamerule command.
 - [Locks](editor-locks.md): What a player may not use, wear, break, place, hit, enter or ride until they reach a skill level, a value or an advancement.
-- [Mod settings](editor-configValue.md): A setting players can change after the mod is built, in its config file: a number, on or off, one word out of a list, or a list of entries they edit.
+- [Mod settings](editor-configValue.md): A setting players can change after the mod is built, in its settings file: a number, on or off, one word out of a list, or a list of entries they edit.
 - [Tag](editor-tag.md): A named group of blocks or items other rules can point at.
 - [Translation](editor-translation.md): The names of your things in another language.
 - [Word of your own](editor-ownWord.md): A few lines you name once and use in any rule as one line: it is given as many things as it needs, and it can give back an answer.
@@ -415,7 +512,7 @@ How a model moves over time.
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -439,7 +536,7 @@ These point at it: [Projectile](editor-projectile.md), [Thing](editor-thing.md),
 
 # Another mod editor
 
-A mod this one uses or works with, such as a recipe viewer: compiled against, in the test game, and named in both manifests.
+A mod this one uses or works with, such as a recipe viewer: built against, in the test game, and named in both manifests.
 
 ## How to add it
 
@@ -504,7 +601,7 @@ A number the world keeps by place, not by player or item: an aura in each chunk,
 | Setting | What it does |
 | --- | --- |
 | Name | What the value is called in the game, such as Aura or Oil. |
-| Game name | The value's id in the game; the world saves it by this, and rules of another mod read it by it. |
+| Game name | The value's game name in the game; the world saves it by this, and rules of another mod read it by it. |
 | Kept by another mod | Another mod's area value this one stands for, such as its aura. Your rules read and change that mod's amount, hear when it rises or falls, and your HUD shows it. |
 | Kept for each | The area that holds one number: each chunk (16 by 16 blocks, all the way down), each square of chunks, each biome, or each dimension. Choose one of: Chunk, Square of chunks, Biome, Dimension, Block, Sealed room. |
 | Square size | How many chunks across one square is. From 2 to 64 chunks. |
@@ -710,11 +807,15 @@ What happens when something happens: when this sword hits, set the target on fir
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
 It points at: [Block](editor-block.md), [Item](editor-item.md), [Mob](editor-creature.md), [Projectile](editor-projectile.md), [Thing](editor-thing.md), [Vehicle](editor-vehicle.md), [Spell](editor-spell.md), [Area value](editor-areaValue.md), [World event](editor-worldEvent.md), [Satellite](editor-satellite.md), [Space station](editor-spaceStation.md), [When fluids meet](editor-fluidReactions.md), [The player](editor-player.md), [Screen](editor-screen.md), [Command](editor-command.md), [Key binding](editor-keyBinding.md), [Skill tree](editor-skillTree.md), [Quests](editor-questBook.md), [Guide book](editor-guideBook.md), [Word of your own](editor-ownWord.md), [Chest menu](editor-chestMenu.md).
+
+## An example
+
+To make a sword set things on fire, see [Make a fire sword](make-a-fire-sword.md). It uses one rule, step by step.
 
 ## Picture
 
@@ -849,8 +950,8 @@ Something placed in the world: ore, stone, a crate.
 
 | Setting | What it does |
 | --- | --- |
-| Name | What players read in the game, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short id the game uses instead. You can change it any time. |
-| Game name | The id the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's id and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
+| Name | What players read in the game, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short name the game uses instead. You can change it any time. |
+| Game name | The short name the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's short name and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
 | Texture | The picture on every face of the block. |
 | Shape | A shape of your own for this block to wear instead of a plain cube. Leave it empty and the block stays a cube. |
 | Light (0 to 15) | How much light the block gives off, from 0 to 15. A torch is 14. From 0 to 15. |
@@ -939,6 +1040,10 @@ It is added to the game, so a player needs your mod to see it.
 It points at: [Model](editor-model.md), [Sound](editor-sound.md), [Particle](editor-particle.md), [Item](editor-item.md), [Code](editor-code.md).
 
 These point at it: [Recipe](editor-recipe.md), [Drop](editor-drop.md), [Behavior](editor-behaviour.md), [Machine recipe](editor-machineRecipe.md), [Station recipe](editor-stationRecipe.md), [Ritual](editor-ritual.md), [Vehicle](editor-vehicle.md), [Villager job](editor-villagerProfession.md), [Feature](editor-feature.md), [Caves](editor-carver.md), [Biome](editor-biome.md), [Structure](editor-structure.md), [Dimension](editor-dimension.md), [Creative tab](editor-creativeTab.md), [Game thing changed](editor-gameChange.md), [Gene](editor-gene.md), [Species](editor-species.md).
+
+## A recipe
+
+[A block with your own picture](block-with-your-own-picture.md) shows how to draw or import the picture for the **Texture** setting.
 
 ## Picture
 
@@ -1145,7 +1250,7 @@ A Java class of your own, kept safe when the mod is rebuilt.
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -1182,7 +1287,7 @@ A command typed in chat with a slash, whose rules run when a player types it.
 | Typed as | What a player types after the slash. Add a second word for a sub-command: goatapples reload becomes /goatapples reload. Lowercase letters, numbers and underscores. |
 | Who may run it | Every player, or only operators. Choose one of: Everyone, Operators. |
 | How trusted they must be | As the game counts it: 1 may pass spawn protection, 2 may use cheats and command blocks, 3 may kick and ban, 4 may stop the server. The server console is 4. From 1 to 4. |
-| Short name is fine | Turn on to stop the warning that another mod may use the same first word. Players can always type /<your mod id> <command> instead. |
+| Short name is fine | Turn on to stop the warning that another mod may use the same first word. Players can always type /<your mod's game name> <command> instead. |
 | May be run from the console | Typed in the server's own window, where nobody ran it: lines that need the player who ran it are left out then, and say so. |
 | Typed after it | What a player types after the command, in order, each with a name the game shows and suggests it by. A rule of the command uses each by its name. Each row has: Called, Which is, Its choices. |
 
@@ -1305,7 +1410,7 @@ A tab of the creative inventory with the things you put in it, or your things ad
 | Setting | What it does |
 | --- | --- |
 | Name | What the tab is called in the creative inventory. |
-| Game name | The tab's id inside the game, in small letters. The Name is what players read on the tab. |
+| Game name | The tab's game name inside the game, in small letters. The Name is what players read on the tab. |
 | Is | A tab of its own beside the game's, or the things added to the end of one of the game's own tabs. Choose one of: A tab of its own, Added to Building Blocks, Added to Colored Blocks, Added to Natural Blocks, Added to Functional Blocks, Added to Redstone Blocks, Added to Tools & Utilities, Added to Combat, Added to Food & Drinks, Added to Ingredients, Added to Spawn Eggs. |
 | Holds | The things in it, in this order: yours and the game's. Yours in a tab of its own leave the mod's main tab. |
 | Icon | What the tab shows on itself; with none, the first thing it holds. |
@@ -1345,7 +1450,7 @@ A matter of your own beside energy and fluid: a chemical, mana, heat, whatever y
 | Setting | What it does |
 | --- | --- |
 | Name | What players call it, as it is shown. |
-| Key | The name blocks keep it under, as the game keeps it with your mod's id in front. |
+| Key | The name blocks keep it under, as the game keeps it with your mod's game name in front. |
 | Counted in | The word for one of it, shown after its amount: mana, units, degrees. |
 | Colour | The colour it is drawn in where it shows. |
 | Types | The types of it, each with a name and a colour: oxygen and hydrogen of a gas, fire and water of a magic essence. A tank of it takes any one type at a time, unless it names one. Each row has: Name, Key, Colour, Made of. |
@@ -1364,7 +1469,7 @@ A matter of your own beside energy and fluid: a chemical, mana, heat, whatever y
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -1408,7 +1513,7 @@ A hurt a living thing takes, changed or cancelled by who takes it, who deals it 
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -1641,7 +1746,7 @@ What falls out when a block breaks or a mob dies.
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -2411,8 +2516,8 @@ Something held in the hand or kept in a chest.
 
 | Setting | What it does |
 | --- | --- |
-| Name | What players read when they hold it, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short id the game uses instead. |
-| Game name | The id the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's id and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
+| Name | What players read when they hold it, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short name the game uses instead. |
+| Game name | The short name the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's short name and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
 | Texture | The flat picture of the item in hand and in the inventory. A 16 by 16 PNG. A Model, if you give one, is a 3D shape that replaces it. |
 | Tooltip lines | Extra lines under its Name when a player points at it, such as "Tastes like thunder.". The Name itself is set above. Each row has: Words, Color. |
 | Plays as frames | Whether the item's picture plays as a strip of frames, and how fast. It is set on the picture itself. |
@@ -2587,9 +2692,9 @@ What a player may not use, wear, break, place, hit, enter or ride until they rea
 | Setting | What it does |
 | --- | --- |
 | Name | The list's name. |
-| Game name | Its name in the game; the config file is named after it. |
+| Game name | Its name in the game; the settings file is named after it. |
 | Locks | One lock a row: the act, what it is about (an item, a block, a mob, a dimension, or #a tag), and what opens it. Each row has: Stops, What, Opens with, Which, At least. |
-| Kept in a config file | The list is written to the game's config folder at the first start and read from there after, so a pack maker can change it. |
+| Kept in a settings file | The list is written to the game's config folder at the first start and read from there after, so a pack maker can change it. |
 | Message | What the player is told when a lock stops them; (needs) and (level) say what it takes. |
 
 ## What it becomes in the game
@@ -2751,7 +2856,7 @@ What one machine of yours turns into something else, and what it costs.
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -2836,8 +2941,8 @@ A living thing with a model, animations and behavior.
 
 | Setting | What it does |
 | --- | --- |
-| Name | What players read above it and on its spawn egg, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short id the game uses instead. |
-| Game name | The id the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's id and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. /summon uses it. Change it later and it is renamed everywhere. |
+| Name | What players read above it and on its spawn egg, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short name the game uses instead. |
+| Game name | The short name the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's short name and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. /summon uses it. Change it later and it is renamed everywhere. |
 | Body | The model it wears: one made for a mob, with its feet on the ground and its front facing away from you. |
 | Health | How much damage it takes to kill it. A player has 20, which is ten hearts. |
 | Temperament | Passive runs when hurt. Neutral fights back when hurt. Hostile goes after the nearest player. Choose one of: Passive, Neutral, Hostile. |
@@ -2928,7 +3033,7 @@ A piece of your own code that joins one activity of a mob's brain, the game's or
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -2949,7 +3054,7 @@ It does not point at other things.
 
 # Mod settings editor
 
-A setting players can change after the mod is built, in its config file: a number, on or off, one word out of a list, or a list of entries they edit.
+A setting players can change after the mod is built, in its settings file: a number, on or off, one word out of a list, or a list of entries they edit.
 
 ## How to add it
 
@@ -2960,24 +3065,24 @@ A setting players can change after the mod is built, in its config file: a numbe
 | Setting | What it does |
 | --- | --- |
 | Name | What the setting is called in the config screen. |
-| Key in the file | The name of the setting in the config file: letters, digits and underscores. |
+| Key in the file | The name of the setting in the settings file: letters, digits and underscores. |
 | Type | What the setting holds: a whole number, a decimal such as a chance, on or off, one word out of a list you make, or a list of entries each with a few fields. Choose one of: Whole number, Decimal, On or off, A choice of words, A list of entries, Text. |
 | Text | The words it holds until a player changes it. |
-| Longest allowed | The most letters the config file accepts. 0 means any length. |
+| Longest allowed | The most letters the settings file accepts. 0 means any length. |
 | Value | What it is until a player changes it. |
-| Lowest allowed | The config file refuses anything below this. |
-| Highest allowed | The config file refuses anything above this. |
+| Lowest allowed | The settings file refuses anything below this. |
+| Highest allowed | The settings file refuses anything above this. |
 | On | Whether it is on until a player changes it. |
 | Words | The words a player may choose from: small letters, digits and _. |
 | Chosen | The word it is until a player changes it. |
 | Which file | Common is one file for everyone; client is each player's own; server lives with the world. Choose one of: Common, Client, Server. |
 | Each entry has | The fields every entry of the list has, each with its name in the file and what it holds. Each row has: Field, Holds. |
 | Entries | The entries the file starts with, one a line, each field as name=value with ; between them. The player adds, changes and takes away entries in the file. |
-| Comment | A line written above the setting in the config file. |
+| Comment | A line written above the setting in the settings file. |
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -3019,7 +3124,7 @@ The shape of a block, item or mob, made from boxes.
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -3266,7 +3371,7 @@ A thing that flies, drawn by a model: a spell, a dart, a boomerang, a homing mis
 | Setting | What it does |
 | --- | --- |
 | Name | What players see it called. |
-| Game name | Its id in the game, small letters and underscores; the shoot words fire it by this. |
+| Game name | Its game name in the game, small letters and underscores; the shoot words fire it by this. |
 | Model | The model it is drawn by, made in the model editor. Its front faces where it flies. |
 | Speed | How fast it leaves, in blocks a second; a snowball flies 30, an arrow from a full bow 60. It flies at this speed whatever fires it; 0 is set down where it is made, as a lit charge. From 0 to 200 blocksPerSecond. |
 | Gravity | How fast it falls: 1 falls as a snowball does, 0 flies straight as a fireball, below 0 floats up as a balloon. From -10 to 10 normal. |
@@ -3418,7 +3523,7 @@ Make something in a crafting table, furnace, stonecutter or smithing table.
 | Setting | What it does |
 | --- | --- |
 | Name | A name for you. Players never see it. |
-| Recipe id | The file name inside the mod. Lowercase letters, digits and underscores. |
+| Game name | The file name inside the mod. Lowercase letters, digits and underscores. |
 | Shape | Shaped keeps the things where you put them in the grid. Shapeless only cares which things are used. Smelting puts one thing in a furnace. Choose one of: Shaped, Shapeless, Smelting, Blasting, Smoking, Campfire, Stonecutting, Smithing, Trim, Transmute, Dye, Imbue, Brewing, Raw recipe. |
 | Makes | What comes out of the crafting table. |
 | How many | How many come out each time. From 1 to 64. |
@@ -3463,7 +3568,7 @@ Make something in a crafting table, furnace, stonecutter or smithing table.
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -3499,7 +3604,7 @@ Change a recipe the game or another mod already has. Swap an input or the result
 | Recipes | The recipes this changes: the game's, or those of a mod you build on. Find them by what they make or use, then read them. |
 | Rule | The tests that pick recipes, kept as text. Change them in the editor. |
 | Folder of the pack's mods | The folder with the mod files of your pack. Every recipe in them counts too. Leave it empty to use the game and the mods this project is built on. |
-| Recipes the rule picked | The ids the rule picked when you last pressed Use these recipes. The build writes these. |
+| Recipes the rule picked | The game names the rule picked when you last pressed Use these recipes. The build writes these. |
 | What changes | A thing put in place of another wherever the recipe names it. Each row has: Swap, for, in. |
 | Also needs | Things the recipe needs as well: in a shapeless recipe's list, or in the first free cell of a shaped grid. Each row has: Slot. |
 | Also gives | More things a crafting grid gives with the result, each by its own chance. They come back as leftovers do: into the grid, else into the inventory; a crafter puts them out. On a furnace, blast furnace or smoker recipe they are given when you take the result out. Each row has: Thing, How many, Chance. |
@@ -3557,7 +3662,7 @@ Take recipes the game has out of the game.
 | Map cloning | On keeps the game's special recipe. Off takes it away. |
 | Rule | The tests that pick recipes, kept as text. Change them in the editor. |
 | Folder of the pack's mods | The folder with the mod files of your pack. Every recipe in them counts too. Leave it empty to use the game and the mods this project is built on. |
-| Recipes the rule picked | The ids the rule picked when you last pressed Use these recipes. The build writes these. |
+| Recipes the rule picked | The game names the rule picked when you last pressed Use these recipes. The build writes these. |
 
 ## What it becomes in the game
 
@@ -3609,7 +3714,7 @@ Offerings on pedestals around an altar, a catalyst on the altar, the conditions 
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -3953,7 +4058,7 @@ A spell of its own: what it does as rules (when it is cast, when it reaches a mo
 | Setting | What it does |
 | --- | --- |
 | Name | What the spell is called in the game. |
-| Game name | The spell's id in the game; another mod casts it by this. |
+| Game name | The spell's game name in the game; another mod casts it by this. |
 | What it is | A whole spell, or a part a spell is put together from: a medium says how a made spell reaches, a modifier changes it. A whole spell is also the part that says what a made spell does. Choose one of: A whole spell (or an effect), A medium (how it reaches), A modifier (what changes it). |
 | Made of parts | Put this spell together from parts: a medium, effects (whole spells, this mod's or another mod's) and modifiers. Their costs add up and every part's moments run. Empty: it is a spell of its own. Each row has: Part. |
 | Reaches | How it reaches what it does: the caster alone, what the caster touches, along where the caster looks, as a projectile, every mob around, or as a construct left where its ray ends. Choose one of: On the caster, By touch, Along a ray, As a missile, All around, Left in the world. |
@@ -4053,7 +4158,7 @@ A recipe done on a station's own screen, with cells, tanks and energy.
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -4159,7 +4264,7 @@ A named group of blocks or items other rules can point at.
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -4196,11 +4301,15 @@ The pixels a block, item or mob wears.
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
 It does not point at other things.
+
+## In plain words
+
+A texture is a picture. **Replaces** is for when your picture takes the place of one the game already has. Leave it empty for a picture of your own. For example, `minecraft:block/stone` is the game's name for the picture on stone, so a texture that replaces it makes every stone block in the game wear your picture. To make or import one, see [Pictures and textures](pictures-and-textures.md). To put your own picture on a new block, see [A block with your own picture](block-with-your-own-picture.md).
 
 ## Picture
 
@@ -4275,8 +4384,8 @@ Something in the world that is not a mob and does not fly: a spell's ward, a fra
 
 | Setting | What it does |
 | --- | --- |
-| Name | What players read above it, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short id the game uses instead. |
-| Game name | The id the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's id and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
+| Name | What players read above it, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short name the game uses instead. |
+| Game name | The short name the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's short name and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
 | Model | The model it is drawn by, made in the model editor. Its front faces out of a wall it hangs on. |
 | Animation | A clip it plays over and over as it stands. |
 | Picture | A picture it wears in place of its model's own. |
@@ -4307,7 +4416,7 @@ Something in the world that is not a mob and does not fly: a spell's ward, a fra
 | Slows it by | How much it slows what it sticks to, in percent. From 0 to 100 percent. |
 | Lets go after | Seconds before it lets go. 0 never lets go (until what it sticks to dies). From 0 to 600 seconds. |
 | Joins others of its kind | Two of the same kind that touch become one. The new one is as big as both added, up to what it grows to. |
-| Hurt only by | anything, nothing, or a list split by commas of damage kinds (magic, fire, explosion, projectile, player) or damage type ids. |
+| Hurt only by | anything, nothing, or a list split by commas of damage kinds (magic, fire, explosion, projectile, player) or damage type game names. |
 | Health | How much damage it takes before it breaks, when only some things hurt it. Its Breaks after number wins when that is set. From 0.5 to 1000 hearts. |
 | Fire-proof | Fire and lava do not hurt or burn it. |
 | Glows | Drawn at full light, even in the dark. |
@@ -4394,7 +4503,7 @@ The names of your things in another language.
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -4672,7 +4781,7 @@ What happens where a fluid meets another fluid or a block: lava meeting water ma
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -4891,7 +5000,7 @@ Press New thing, pick a category, then the thing. Each page says what it is and 
 - [Crate](thing-lootCrate.md): An item that opens into a loot table when used, made with its table.
 - [Crop](thing-crop.md): A plant that grows stage by stage on farmland from its own seeds, as wheat, and gives what it grows when it is ripe.
 - [Crossbow](thing-crossbow.md): The game's own crossbow, loaded and then fired, to change.
-- [Designator](thing-designator.md): An item the player uses on a block to remember a place, then on an aiming block to give it that place as its target.
+- [Designator](thing-designator.md): An item the player uses on a block to remember a place, then on an aiming block to give it that place as its [target](glossary.md#target).
 - [Fishing rod](thing-fishingRod.md): The game's own fishing rod: cast into water and reeled in with a catch.
 - [Food](thing-food.md): Something eaten.
 - [Forms for every material](thing-formSet.md): Makes a dust, a plate, a gear or any other form for every metal and gem the game has when it starts, other mods too.
@@ -5043,7 +5152,7 @@ Press New thing, pick a category, then the thing. Each page says what it is and 
 
 - [Access transformer (NeoForge)](thing-accessTransformer.md): Opens members the game keeps private, on NeoForge.
 - [Access widener (Fabric)](thing-accessWidener.md): Opens members the game keeps private, on Fabric, in the game's own names.
-- [Another mod](thing-dependency.md): A mod this one uses or works with, such as a recipe viewer: compiled against, in the test game, and named in both manifests.
+- [Another mod](thing-dependency.md): A mod this one uses or works with, such as a recipe viewer: built against, in the test game, and named in both manifests.
 - [Behavior](thing-behaviour.md): What happens when something happens: when this sword hits, set the target on fire.
 - [Code](thing-code.md): A Java class of your own, kept safe when the mod is rebuilt.
 - [Command](thing-command.md): A command typed in chat with a slash, whose rules run when a player types it.
@@ -5056,7 +5165,7 @@ Press New thing, pick a category, then the thing. Each page says what it is and 
 - [Look of a block made in code](thing-blockLook.md): The blockstate, models, loot table and name a block registered in your own code needs.
 - [Mixin](thing-mixin.md): A piece of your own code that changes one of the game's classes, listed in your mixin config for you.
 - [Mixin config](thing-mixinConfig.md): Your own mixins: notes placed inside the game's code.
-- [Mod settings](thing-configValue.md): A setting players can change after the mod is built, in its config file: a number, on or off, one word out of a list, or a list of entries they edit.
+- [Mod settings](thing-configValue.md): A setting players can change after the mod is built, in its settings file: a number, on or off, one word out of a list, or a list of entries they edit.
 - [Pack file](thing-packFile.md): One file of a data pack or a resource pack, in any folder the game reads, yours or the game's changed.
 - [Tag](thing-tag.md): A named group of blocks or items other rules can point at.
 - [Translation](thing-translation.md): The names of your things in another language.
@@ -5292,7 +5401,7 @@ It points at: [Condition](editor-condition.md).
 
 # Aiming block
 
-A block that keeps a target place: a launcher's, a gate's other end. Where it comes from is your choice, and rules change it any time.
+A block that keeps a [target](glossary.md#target) place: a launcher's, a gate's other end. Where it comes from is your choice, and rules change it any time.
 
 ## How to add it
 
@@ -5369,7 +5478,7 @@ A block that performs rituals with offerings on pedestals around it, formed whil
 | Made of | The block every place of the pattern must hold. |
 | Drawn pattern | The pattern drawn on the Pattern tab, layer by layer: each cell a test a block must pass (a block, a tag, any of several, a fluid, air, anything), and one cell the machine itself. |
 | Stands | As it faces: the pattern turns with the machine's front. Any way round: it forms whichever of the four ways it was built. Choose one of: as it faces, any way. |
-| Mirrored too | Its mirror image forms as well, left and right swapped. |
+| Mirrored too | Its mirror copy forms as well, left and right swapped. |
 | Several sizes | A band of the drawing that may repeat, so a taller or a longer build forms as well. It forms the largest size that stands. Choose one of: one size, taller, longer. |
 | Band from | The first layer (or row, from the front) of the band that repeats, counted from 1. From 1 to 48. |
 | Band to | The last layer (or row) of the band that repeats. From 1 to 48. |
@@ -5441,7 +5550,7 @@ The main settings are below. The [Animation](editor-animation.md) editor lists e
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -5465,7 +5574,7 @@ Other things that open the same editor: [Player animation](thing-playerAnimation
 
 # Another mod
 
-A mod this one uses or works with, such as a recipe viewer: compiled against, in the test game, and named in both manifests.
+A mod this one uses or works with, such as a recipe viewer: built against, in the test game, and named in both manifests.
 
 ## How to add it
 
@@ -5528,7 +5637,7 @@ The main settings are below. The [Area value](editor-areaValue.md) editor lists 
 | Setting | What it does |
 | --- | --- |
 | Name | What the value is called in the game, such as Aura or Oil. |
-| Game name | The value's id in the game; the world saves it by this, and rules of another mod read it by it. |
+| Game name | The value's game name in the game; the world saves it by this, and rules of another mod read it by it. |
 | Kept for each | The area that holds one number: each chunk (16 by 16 blocks, all the way down), each square of chunks, each biome, or each dimension. Choose one of: Chunk, Square of chunks, Biome, Dimension, Block, Sealed room. |
 | Square size | How many chunks across one square is. From 2 to 64 chunks. |
 | Starts as | What a place has the first time it is asked of: the number below, a random number between the two (the same in the same world), or a smooth noise between them so nearby places are alike. Choose one of: The number, Random in a range, Smooth noise. |
@@ -5768,8 +5877,8 @@ The main settings are below. The [Block](editor-block.md) editor lists every set
 
 | Setting | What it does |
 | --- | --- |
-| Name | What players read in the game, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short id the game uses instead. You can change it any time. |
-| Game name | The id the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's id and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
+| Name | What players read in the game, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short name the game uses instead. You can change it any time. |
+| Game name | The short name the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's short name and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
 | Texture | The picture on every face of the block. |
 | Time to break | How hard the block is; stone is 1.5, dirt 0.5. Higher is slower; obsidian is 50. The overview shows the seconds by hand. From 0 to 3600. |
 | Form | The game's own shapes, each drawn from this block's picture and working as the game's own does: stairs you walk up, a slab that doubles, a fence and a wall that join their neighbours, a door and a trapdoor that open, a button and a pressure plate that give a redstone signal, a pane, a carpet, leaves that fall away when no log is near, a pillar that lies the way it is placed, and a rail the game's carts ride. Choose one of: A full block, Stairs, A slab, A wall, A fence, A fence gate, A door, A trapdoor, A pressure plate, A button, A pane, as glass and bars, A carpet, Leaves, A pillar, as a log, A rail, A slope, A slope, outer corner, A slope, inner corner, A ridge, as a roof top, A quarter round, as an arch, A round pillar, A window frame. |
@@ -6079,11 +6188,15 @@ The main settings are below. The [Behavior](editor-behaviour.md) editor lists ev
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
 It points at: [Block](editor-block.md), [Item](editor-item.md), [Mob](editor-creature.md), [Projectile](editor-projectile.md), [Thing](editor-thing.md), [Vehicle](editor-vehicle.md), [Spell](editor-spell.md), [Area value](editor-areaValue.md), [World event](editor-worldEvent.md), [Satellite](editor-satellite.md), [Space station](editor-spaceStation.md), [When fluids meet](editor-fluidReactions.md), [The player](editor-player.md), [Screen](editor-screen.md), [Command](editor-command.md), [Key binding](editor-keyBinding.md), [Skill tree](editor-skillTree.md), [Quests](editor-questBook.md), [Guide book](editor-guideBook.md), [Word of your own](editor-ownWord.md), [Chest menu](editor-chestMenu.md).
+
+## An example
+
+To make a sword set things on fire, see [Make a fire sword](make-a-fire-sword.md). It uses one rule, step by step.
 
 ## Picture
 
@@ -6222,8 +6335,8 @@ The main settings are below. The [Block](editor-block.md) editor lists every set
 
 | Setting | What it does |
 | --- | --- |
-| Name | What players read in the game, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short id the game uses instead. You can change it any time. |
-| Game name | The id the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's id and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
+| Name | What players read in the game, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short name the game uses instead. You can change it any time. |
+| Game name | The short name the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's short name and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
 | Texture | The picture on every face of the block. |
 | Time to break | How hard the block is; stone is 1.5, dirt 0.5. Higher is slower; obsidian is 50. The overview shows the seconds by hand. From 0 to 3600. |
 | Form | The game's own shapes, each drawn from this block's picture and working as the game's own does: stairs you walk up, a slab that doubles, a fence and a wall that join their neighbours, a door and a trapdoor that open, a button and a pressure plate that give a redstone signal, a pane, a carpet, leaves that fall away when no log is near, a pillar that lies the way it is placed, and a rail the game's carts ride. Choose one of: A full block, Stairs, A slab, A wall, A fence, A fence gate, A door, A trapdoor, A pressure plate, A button, A pane, as glass and bars, A carpet, Leaves, A pillar, as a log, A rail, A slope, A slope, outer corner, A slope, inner corner, A ridge, as a roof top, A quarter round, as an arch, A round pillar, A window frame. |
@@ -6245,6 +6358,10 @@ It is added to the game, so a player needs your mod to see it.
 It points at: [Model](editor-model.md), [Sound](editor-sound.md), [Particle](editor-particle.md), [Item](editor-item.md), [Code](editor-code.md).
 
 Other things that open the same editor: [Machine](thing-machine.md), [Generator](thing-generator.md), [Cable](thing-cable.md), [Pipe](thing-pipe.md), [Item pipe](thing-itemPipe.md), [Tank](thing-tank.md), [Transmitter](thing-wirelessTransmitter.md), [Receiver](thing-wirelessReceiver.md), [Wireless energy node](thing-wirelessNode.md), [Shared chest](thing-sharedChest.md), [Shared tank](thing-sharedTank.md), [Chest](thing-chest.md), [Drawer](thing-drawer.md), [Storage crate](thing-crate.md), [Mailbox](thing-mailbox.md), [Trade station](thing-tradeStation.md), [Asking chest](thing-askingChest.md), [Terminal](thing-terminal.md), [Storage cell](thing-storageCell.md), [Storage cable](thing-storageCable.md), [Drive](thing-drive.md), [Network heart](thing-networkHeart.md), [Dense cable](thing-denseCable.md), [Link](thing-storeLink.md), [Access point](thing-accessPoint.md), [Crafter](thing-crafter.md), [Pattern table](thing-patternTable.md), [Matter tank](thing-matterTank.md), [Altar](thing-altar.md), [Pedestal](thing-pedestal.md), [Formed machine](thing-formedMachine.md), [Machine casing](thing-machineCasing.md), [Waypoint](thing-waypointBlock.md), [Aiming block](thing-aimingBlock.md), [Berry bush](thing-berryBush.md), [Matter pipe](thing-matterPipe.md), [Assembly station](thing-assemblyStation.md), [Carved block](thing-carvedBlock.md), [Ore](thing-ore.md), [Crop](thing-crop.md), [Plant](thing-plant.md).
+
+## A recipe
+
+[A block with your own picture](block-with-your-own-picture.md) shows how to draw or import the picture for the **Texture** setting.
 
 ## Picture
 
@@ -6940,14 +7057,14 @@ The main settings are below. The [Custom kind](editor-matter.md) editor lists ev
 | Setting | What it does |
 | --- | --- |
 | Name | What players call it, as it is shown. |
-| Key | The name blocks keep it under, as the game keeps it with your mod's id in front. |
+| Key | The name blocks keep it under, as the game keeps it with your mod's game name in front. |
 | Counted in | The word for one of it, shown after its amount: mana, units, degrees. |
 | Colour | The colour it is drawn in where it shows. |
 | Types | The types of it, each with a name and a colour: oxygen and hydrogen of a gas, fire and water of a magic essence. A tank of it takes any one type at a time, unless it names one. Each row has: Name, Key, Colour, Made of. |
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -7089,7 +7206,7 @@ The main settings are below. The [Code](editor-code.md) editor lists every setti
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -7128,7 +7245,7 @@ The main settings are below. The [Command](editor-command.md) editor lists every
 | Typed as | What a player types after the slash. Add a second word for a sub-command: goatapples reload becomes /goatapples reload. Lowercase letters, numbers and underscores. |
 | Who may run it | Every player, or only operators. Choose one of: Everyone, Operators. |
 | How trusted they must be | As the game counts it: 1 may pass spawn protection, 2 may use cheats and command blocks, 3 may kick and ban, 4 may stop the server. The server console is 4. From 1 to 4. |
-| Short name is fine | Turn on to stop the warning that another mod may use the same first word. Players can always type /<your mod id> <command> instead. |
+| Short name is fine | Turn on to stop the warning that another mod may use the same first word. Players can always type /<your mod's game name> <command> instead. |
 | May be run from the console | Typed in the server's own window, where nobody ran it: lines that need the player who ran it are left out then, and say so. |
 | Typed after it | What a player types after the command, in order, each with a name the game shows and suggests it by. A rule of the command uses each by its name. Each row has: Called, Which is, Its choices. |
 
@@ -7302,7 +7419,7 @@ A tool that sets the faces of a placed block: right-click a face to step its mod
 
 | Setting | What it does |
 | --- | --- |
-| Sets | Which payload a click steps: all the block carries, or one. Choose one of: Everything the block carries, Items, Fluid, Energy. |
+| Sets | Which thing it carries a click steps: all the block carries, or one. Choose one of: Everything the block carries, Items, Fluid, Energy. |
 | Works on | The blocks it sets. None listed: every block whose faces a player sets. |
 | Sneaking goes back | Sneak and click to step to the mode before. Off, sneaking steps forward too. |
 
@@ -7556,7 +7673,7 @@ The main settings are below. The [Creative tab](editor-creativeTab.md) editor li
 | Setting | What it does |
 | --- | --- |
 | Name | What the tab is called in the creative inventory. |
-| Game name | The tab's id inside the game, in small letters. The Name is what players read on the tab. |
+| Game name | The tab's game name inside the game, in small letters. The Name is what players read on the tab. |
 | Is | A tab of its own beside the game's, or the things added to the end of one of the game's own tabs. Choose one of: A tab of its own, Added to Building Blocks, Added to Colored Blocks, Added to Natural Blocks, Added to Functional Blocks, Added to Redstone Blocks, Added to Tools & Utilities, Added to Combat, Added to Food & Drinks, Added to Ingredients, Added to Spawn Eggs. |
 | Holds | The things in it, in this order: yours and the game's. Yours in a tab of its own leave the mod's main tab. |
 | Icon | What the tab shows on itself; with none, the first thing it holds. |
@@ -7730,14 +7847,14 @@ The main settings are below. The [Custom kind](editor-matter.md) editor lists ev
 | Setting | What it does |
 | --- | --- |
 | Name | What players call it, as it is shown. |
-| Key | The name blocks keep it under, as the game keeps it with your mod's id in front. |
+| Key | The name blocks keep it under, as the game keeps it with your mod's game name in front. |
 | Counted in | The word for one of it, shown after its amount: mana, units, degrees. |
 | Colour | The colour it is drawn in where it shows. |
 | Types | The types of it, each with a name and a colour: oxygen and hydrogen of a gas, fire and water of a magic essence. A tank of it takes any one type at a time, unless it names one. Each row has: Name, Key, Colour, Made of. |
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -7784,7 +7901,7 @@ The main settings are below. The [Damage change](editor-damageChange.md) editor 
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -7945,7 +8062,7 @@ Other things that open the same editor: [Block](thing-block.md), [Machine](thing
 
 # Designator
 
-An item the player uses on a block to remember a place, then on an aiming block to give it that place as its target.
+An item the player uses on a block to remember a place, then on an aiming block to give it that place as its [target](glossary.md#target).
 
 ## How to add it
 
@@ -8335,7 +8452,7 @@ The main settings are below. The [Drop](editor-drop.md) editor lists every setti
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -9136,7 +9253,7 @@ A machine built of many blocks: it works only while the blocks around it stand a
 | Made of | The block every place of the pattern must hold. |
 | Drawn pattern | The pattern drawn on the Pattern tab, layer by layer: each cell a test a block must pass (a block, a tag, any of several, a fluid, air, anything), and one cell the machine itself. |
 | Stands | As it faces: the pattern turns with the machine's front. Any way round: it forms whichever of the four ways it was built. Choose one of: as it faces, any way. |
-| Mirrored too | Its mirror image forms as well, left and right swapped. |
+| Mirrored too | Its mirror copy forms as well, left and right swapped. |
 | Several sizes | A band of the drawing that may repeat, so a taller or a longer build forms as well. It forms the largest size that stands. Choose one of: one size, taller, longer. |
 | Band from | The first layer (or row, from the front) of the band that repeats, counted from 1. From 1 to 48. |
 | Band to | The last layer (or row) of the band that repeats. From 1 to 48. |
@@ -9876,8 +9993,8 @@ The main settings are below. The [Item](editor-item.md) editor lists every setti
 
 | Setting | What it does |
 | --- | --- |
-| Name | What players read when they hold it, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short id the game uses instead. |
-| Game name | The id the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's id and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
+| Name | What players read when they hold it, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short name the game uses instead. |
+| Game name | The short name the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's short name and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
 | Texture | The flat picture of the item in hand and in the inventory. A 16 by 16 PNG. A Model, if you give one, is a 3D shape that replaces it. |
 | Tooltip lines | Extra lines under its Name when a player points at it, such as "Tastes like thunder.". The Name itself is set above. Each row has: Words, Color. |
 
@@ -9962,7 +10079,7 @@ A filter as an item: marked in the filter of a pipe's face, that face lets throu
 | Setting | What it does |
 | --- | --- |
 | Items and tags | The items it names, or every item of a tag. Names nothing and no mods: every item. |
-| Mods | Every item of these mods, by the mod's id (minecraft for the game's own). |
+| Mods | Every item of these mods, by the mod's game name (minecraft for the game's own). |
 | Wear | Which items pass by their wear: any, unworn (and things that never wear), worn, or a quarter of their uses or less left. Choose one of: Any, Unworn, Worn, Nearly broken. |
 | Enchanted | Whether items must be enchanted, must not be, or either. Choose one of: Either, Only enchanted, Only plain. |
 | Genes | Genes an item must show to pass, every line at once, such as species Goldbloom or Growth at least 5. An item with no genes does not pass. Each row has: Gene, Is, Value. |
@@ -10258,9 +10375,9 @@ The main settings are below. The [Locks](editor-locks.md) editor lists every set
 | Setting | What it does |
 | --- | --- |
 | Name | The list's name. |
-| Game name | Its name in the game; the config file is named after it. |
+| Game name | Its name in the game; the settings file is named after it. |
 | Locks | One lock a row: the act, what it is about (an item, a block, a mob, a dimension, or #a tag), and what opens it. Each row has: Stops, What, Opens with, Which, At least. |
-| Kept in a config file | The list is written to the game's config folder at the first start and read from there after, so a pack maker can change it. |
+| Kept in a settings file | The list is written to the game's config folder at the first start and read from there after, so a pack maker can change it. |
 
 ## What it becomes in the game
 
@@ -10538,8 +10655,8 @@ The main settings are below. The [Block](editor-block.md) editor lists every set
 
 | Setting | What it does |
 | --- | --- |
-| Name | What players read in the game, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short id the game uses instead. You can change it any time. |
-| Game name | The id the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's id and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
+| Name | What players read in the game, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short name the game uses instead. You can change it any time. |
+| Game name | The short name the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's short name and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
 | Texture | The picture on every face of the block. |
 | Time to break | How hard the block is; stone is 1.5, dirt 0.5. Higher is slower; obsidian is 50. The overview shows the seconds by hand. From 0 to 3600. |
 | Form | The game's own shapes, each drawn from this block's picture and working as the game's own does: stairs you walk up, a slab that doubles, a fence and a wall that join their neighbours, a door and a trapdoor that open, a button and a pressure plate that give a redstone signal, a pane, a carpet, leaves that fall away when no log is near, a pillar that lies the way it is placed, and a rail the game's carts ride. Choose one of: A full block, Stairs, A slab, A wall, A fence, A fence gate, A door, A trapdoor, A pressure plate, A button, A pane, as glass and bars, A carpet, Leaves, A pillar, as a log, A rail, A slope, A slope, outer corner, A slope, inner corner, A ridge, as a roof top, A quarter round, as an arch, A round pillar, A window frame. |
@@ -10610,7 +10727,7 @@ The main settings are below. The [Machine recipe](editor-machineRecipe.md) edito
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -11013,6 +11130,10 @@ It points at: [Model](editor-model.md), [Sound](editor-sound.md), [Damage type](
 
 Other things that open the same editor: [Pet](thing-pet.md), [Mount](thing-mount.md), [Flying mount](thing-flyingMount.md), [Sea mount](thing-seaMount.md), [Boss](thing-boss.md).
 
+## A recipe
+
+[Make a creature](make-a-creature.md) shows a creature made in a few steps.
+
 ## Picture
 
 ![Mob](/media/docs/editor-creature.webp)
@@ -11051,7 +11172,7 @@ The main settings are below. The [Mob behaviour](editor-mobBehaviour.md) editor 
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -11135,7 +11256,7 @@ Other things that open the same editor: [Item](thing-item.md), [Crate](thing-loo
 
 # Mod settings
 
-A setting players can change after the mod is built, in its config file: a number, on or off, one word out of a list, or a list of entries they edit.
+A setting players can change after the mod is built, in its settings file: a number, on or off, one word out of a list, or a list of entries they edit.
 
 ## How to add it
 
@@ -11149,13 +11270,13 @@ The main settings are below. The [Mod settings](editor-configValue.md) editor li
 | Setting | What it does |
 | --- | --- |
 | Name | What the setting is called in the config screen. |
-| Key in the file | The name of the setting in the config file: letters, digits and underscores. |
+| Key in the file | The name of the setting in the settings file: letters, digits and underscores. |
 | Type | What the setting holds: a whole number, a decimal such as a chance, on or off, one word out of a list you make, or a list of entries each with a few fields. Choose one of: Whole number, Decimal, On or off, A choice of words, A list of entries, Text. |
 | Text | The words it holds until a player changes it. |
-| Longest allowed | The most letters the config file accepts. 0 means any length. |
+| Longest allowed | The most letters the settings file accepts. 0 means any length. |
 | Value | What it is until a player changes it. |
-| Lowest allowed | The config file refuses anything below this. |
-| Highest allowed | The config file refuses anything above this. |
+| Lowest allowed | The settings file refuses anything below this. |
+| Highest allowed | The settings file refuses anything above this. |
 | On | Whether it is on until a player changes it. |
 | Words | The words a player may choose from: small letters, digits and _. |
 | Chosen | The word it is until a player changes it. |
@@ -11165,7 +11286,7 @@ The main settings are below. The [Mod settings](editor-configValue.md) editor li
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -11207,7 +11328,7 @@ The main settings are below. The [Model](editor-model.md) editor lists every set
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -11910,7 +12031,7 @@ Turns a blank pattern into a recipe for the crafter.
 | Setting | What it does |
 | --- | --- |
 | Pattern item | The blank it turns into a pattern. None: paper. |
-| Writes the pattern onto | Another item (one of another mod's too, typed as its id) that the table fills in with the recipe, instead of making its own pattern. Empty: the table makes its own pattern. Its blank goes in the blank slot. |
+| Writes the pattern onto | Another item (one of another mod's too, typed as its game name) that the table fills in with the recipe, instead of making its own pattern. Empty: the table makes its own pattern. Its blank goes in the blank slot. |
 | What is written | The data to put on that item, as JSON with the item's data pieces by name. Blanks are filled from the grid: (input1) to (input9), (output) and (outputCount). |
 | Screen | Its screen, laid out on the Screen tab: the grid, the blank, the pattern. |
 
@@ -12228,7 +12349,7 @@ The main settings are below. The [Animation](editor-animation.md) editor lists e
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -12614,7 +12735,7 @@ The main settings are below. The [Projectile](editor-projectile.md) editor lists
 | Setting | What it does |
 | --- | --- |
 | Name | What players see it called. |
-| Game name | Its id in the game, small letters and underscores; the shoot words fire it by this. |
+| Game name | Its game name in the game, small letters and underscores; the shoot words fire it by this. |
 | Model | The model it is drawn by, made in the model editor. Its front faces where it flies. |
 | Speed | How fast it leaves, in blocks a second; a snowball flies 30, an arrow from a full bow 60. It flies at this speed whatever fires it; 0 is set down where it is made, as a lit charge. From 0 to 200 blocksPerSecond. |
 | Gravity | How fast it falls: 1 falls as a snowball does, 0 flies straight as a fireball, below 0 floats up as a balloon. From -10 to 10 normal. |
@@ -12766,7 +12887,7 @@ The main settings are below. The [Recipe](editor-recipe.md) editor lists every s
 | Setting | What it does |
 | --- | --- |
 | Name | A name for you. Players never see it. |
-| Recipe id | The file name inside the mod. Lowercase letters, digits and underscores. |
+| Game name | The file name inside the mod. Lowercase letters, digits and underscores. |
 | Shape | Shaped keeps the things where you put them in the grid. Shapeless only cares which things are used. Smelting puts one thing in a furnace. Choose one of: Shaped, Shapeless, Smelting, Blasting, Smoking, Campfire, Stonecutting, Smithing, Trim, Transmute, Dye, Imbue, Brewing, Raw recipe. |
 | Makes | What comes out of the crafting table. |
 | How many | How many come out each time. From 1 to 64. |
@@ -12774,7 +12895,7 @@ The main settings are below. The [Recipe](editor-recipe.md) editor lists every s
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -12969,7 +13090,7 @@ The main settings are below. The [Ritual](editor-ritual.md) editor lists every s
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -13733,7 +13854,7 @@ The main settings are below. The [Model](editor-model.md) editor lists every set
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -13907,7 +14028,7 @@ The main settings are below. The [Spell](editor-spell.md) editor lists every set
 | Setting | What it does |
 | --- | --- |
 | Name | What the spell is called in the game. |
-| Game name | The spell's id in the game; another mod casts it by this. |
+| Game name | The spell's game name in the game; another mod casts it by this. |
 | What it is | A whole spell, or a part a spell is put together from: a medium says how a made spell reaches, a modifier changes it. A whole spell is also the part that says what a made spell does. Choose one of: A whole spell (or an effect), A medium (how it reaches), A modifier (what changes it). |
 | Made of parts | Put this spell together from parts: a medium, effects (whole spells, this mod's or another mod's) and modifiers. Their costs add up and every part's moments run. Empty: it is a spell of its own. Each row has: Part. |
 | Reaches | How it reaches what it does: the caster alone, what the caster touches, along where the caster looks, as a projectile, every mob around, or as a construct left where its ray ends. Choose one of: On the caster, By touch, Along a ray, As a missile, All around, Left in the world. |
@@ -14147,7 +14268,7 @@ The main settings are below. The [Station recipe](editor-stationRecipe.md) edito
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -14548,7 +14669,7 @@ The main settings are below. The [Tag](editor-tag.md) editor lists every setting
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -14720,11 +14841,15 @@ The main settings are below. The [Texture](editor-texture.md) editor lists every
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
 It does not point at other things.
+
+## In plain words
+
+A texture is a picture. **Replaces** is for when your picture takes the place of one the game already has. Leave it empty for a picture of your own. For example, `minecraft:block/stone` is the game's name for the picture on stone, so a texture that replaces it makes every stone block in the game wear your picture. To make or import one, see [Pictures and textures](pictures-and-textures.md). To put your own picture on a new block, see [A block with your own picture](block-with-your-own-picture.md).
 
 ## Picture
 
@@ -14800,8 +14925,8 @@ The main settings are below. The [Thing](editor-thing.md) editor lists every set
 
 | Setting | What it does |
 | --- | --- |
-| Name | What players read above it, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short id the game uses instead. |
-| Game name | The id the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's id and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
+| Name | What players read above it, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short name the game uses instead. |
+| Game name | The short name the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's short name and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
 | Model | The model it is drawn by, made in the model editor. Its front faces out of a wall it hangs on. |
 | Animation | A clip it plays over and over as it stands. |
 | Drawn size | How big its model is drawn: 1 is the model's own size. From 0.0625 to 16. |
@@ -15258,7 +15383,7 @@ The main settings are below. The [Translation](editor-translation.md) editor lis
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -15935,6 +16060,10 @@ It points at: [Model](editor-model.md).
 
 Other things that open the same editor: [Item](thing-item.md), [Crate](thing-lootCrate.md), [Backpack](thing-backpack.md), [Settings copier](thing-settingsCopier.md), [Letter](thing-letter.md), [Pocket](thing-pocket.md), [Storage disk](thing-storageDisk.md), [Disk for fluids](thing-fluidDisk.md), [Wireless terminal](thing-wirelessTerminal.md), [Upgrade](thing-upgrade.md), [Structure finder](thing-structureFinder.md), [Pointer](thing-pointer.md), [Designator](thing-designator.md), [Item filter](thing-itemFilter.md), [Configurator](thing-configurator.md), [Face part](thing-facePart.md), [Waypoint compass](thing-waypointCompass.md), [Spell wand](thing-spellWand.md), [Spell book](thing-spellBook.md), [Spell scroll](thing-spellScroll.md), [Tool](thing-tool.md), [Armor](thing-armour.md), [Food](thing-food.md), [Fuel](thing-fuel.md), [Bow](thing-bow.md), [Crossbow](thing-crossbow.md), [Shield](thing-shield.md), [Part](thing-part.md), [Tool of parts](thing-partsTool.md), [Golem-style creature](thing-partsCreature.md), [Battery](thing-battery.md), [Powered tool](thing-poweredTool.md), [Powered armour](thing-poweredArmour.md), [Building wand](thing-buildingWand.md), [Copy wand](thing-copyWand.md), [Capsule](thing-capsule.md), [Building plan](thing-buildingPlan.md), [Mob catcher](thing-mobCatcher.md), [Carving tool](thing-carvingTool.md), [Bag of pieces](thing-bitBag.md), [Shape pattern](thing-shapePattern.md), [Tree axe](thing-treeAxe.md), [Vein pickaxe](thing-veinPickaxe.md), [Module](thing-module.md), [Building tool](thing-builder.md), [Thrown weapon](thing-thrown.md), [Music disc](thing-musicDisc.md), [Shears](thing-shears.md), [Fishing rod](thing-fishingRod.md), [Tool for everything](thing-multiTool.md), [Hat](thing-hat.md), [Vehicle part](thing-vehiclePart.md).
 
+## A recipe
+
+[Make a fire sword](make-a-fire-sword.md) shows the **Sets alight for** setting in use.
+
 ## Picture
 
 ![Item](/media/docs/editor-item.webp)
@@ -15970,7 +16099,7 @@ The main settings are below. The [When fluids meet](editor-fluidReactions.md) ed
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
@@ -16323,7 +16452,7 @@ A mod can hold every kind of thing in the New thing dialog.
 
 ## What it becomes in the game
 
-A jar for each loader and game version you pick, made by Cook.
+A [jar](glossary.md#jar) for each [loader](glossary.md#loader) and game version you pick, made by [Cook](glossary.md#cook).
 
 ## What it works with
 
@@ -16619,9 +16748,11 @@ Brass dust, ingots, rods, plates and gears, each made from the last.
 
 # Versions and loaders
 
-A loader is the program that runs mods in Minecraft. Modryos makes mods for NeoForge and Fabric.
+A [loader](glossary.md#loader) is the program that runs mods in Minecraft. Modryos makes mods for NeoForge and Fabric.
 
 ## What the studio makes mods for
+
+Minecraft numbers its newer versions by year: 26.1, 26.2 and 26.3 are versions from 2026, newer than 1.21.11. One project makes a mod for every version and loader you tick.
 
 | Target | Loader |
 | --- | --- |
@@ -16638,9 +16769,19 @@ A loader is the program that runs mods in Minecraft. Modryos makes mods for NeoF
 
 Minecraft 1.20.1 comes after version 1.0. Packs only 1.21.1.
 
+## Where you pick them
+
+- **New project:** the **Works with** line lists the loaders. At least one stays ticked.
+- **Later, any time:** open **Mod details** and use **Made for** to add or remove a loader and version.
+- **Which one Play opens:** the toolbar's **Play on** picker. It only lists what **Made for** has.
+
+## Which jar your friend needs
+
+Ask your friend two things: which loader they use (NeoForge or Fabric) and which Minecraft version. Give them the [jar](glossary.md#jar) made for that pair. A Fabric friend also needs [Fabric API](https://modrinth.com/mod/fabric-api) in their mods folder. The jars are in your project's release folder, see [Export](export.md).
+
 ## Many versions in one project
 
-One project can list many targets. You build the thing once; Cook makes one jar for each target you pick and puts them side by side in the project's release folder. Before it makes anything, Cook shows what will not carry over to each version. Play opens the target you choose under "Play on".
+One project can list many [targets](glossary.md#target). You build the thing once; [Cook](glossary.md#cook) makes one jar for each target you pick and puts them side by side in the project's release folder. Before it makes anything, Cook shows what will not carry over to each version. [Play](glossary.md#play) opens the target you choose under "Play on".
 
 ## Related pages
 
@@ -16659,7 +16800,7 @@ Modryos does not upload anything for you. It writes the texts and files each sit
 
 When you [make the mod file](export.md), Modryos also writes a `stores` folder inside `release/<version>/`:
 
-- `stores/modrinth/` and `stores/curseforge/` hold one file per jar and one page file for the project.
+- `stores/modrinth/` and `stores/curseforge/` hold one file per [jar](glossary.md#jar) and one page file for the project.
 - `stores/README.txt` says what to paste where, and what to check by hand.
 - `MADE_WITH_AI.md` is the note about AI help, with a ready text for each site.
 
@@ -16671,9 +16812,15 @@ Make your mod's page on the store first. Then open **Mod details** and fill in *
 
 ## The AI note
 
-Each site has its own rule about AI-made content, so read the rule on the site you use.
+Each site has its own rule about AI-made content. The short version: say so if an AI made part of your mod.
+
+A sentence to copy when nothing was AI-made (the beta): "No AI was used to make this mod." Only write it if it is true, also for pictures and code made outside the studio.
+
+A sentence to copy when an AI helped: "Part of this mod was made with help from an AI tool."
 
 Modryos records what an AI agent made in the studio. `MADE_WITH_AI.md` turns that into a short text. While Modryos AI is closed in the beta, the record says no AI help was recorded in the studio. If you used an outside tool, the studio cannot see it, so tell the site yourself.
+
+`MADE_WITH_AI.md` starts with a summary such as "No AI help was recorded in the studio for this project". Then it has one text for Modrinth, one for CurseForge and one for Nexus Mods. When an agent helped, it says how much of your project the agent changed.
 
 On Modrinth the file also says whether to switch on **Contains AI-generated content**.
 
@@ -16687,7 +16834,33 @@ Each site has its own upload page. Use the files above for the descriptions and 
 
 # Troubleshooting
 
-Each heading is a message the studio can show. A word in brackets, like (name), is filled in by the studio with your own thing's name.
+## Quick fixes
+
+### Cook failed: do this
+
+1. Open the [Cook](glossary.md#cook) window (File > Export > Make the mod file (.[jar](glossary.md#jar))) and find the first red line. It says why.
+2. Fix what it names. The message is usually below on this page: press Ctrl+F and type a few of its words.
+3. Press **Make again**.
+4. Still red? Press F6 to report it. Say what you changed last.
+
+### Play does not start: do this
+
+1. Wait if it is the first time. The studio downloads about 1.7 GB once, so it can take a few minutes.
+2. Look at the Cook window and the notices for a red line, and fix that first.
+3. Check that you are signed in to Minecraft with an account that owns the game, and that you pressed **Accept and Play** once.
+4. Open **Play on** and make sure the version and [loader](glossary.md#loader) are ones your project is made for (see [Versions and loaders](versions-and-loaders.md)).
+5. Press Stop, then [Play](glossary.md#play) again. Still stuck? Press F6 to report it.
+
+### Sign-in problems: do this
+
+1. Check your internet connection.
+2. Check the email for typing slips, and ask for a new code (a code runs out after a while).
+3. Too many tries? Wait a few minutes.
+4. Signed out while working? Sign in again from Settings > Account. Your projects stay on your computer.
+
+## All messages
+
+Each heading below is a message the studio can show. A word in brackets, like (name), is filled in by the studio with your own thing's name.
 
 ## Account and sign-in
 
@@ -16695,71 +16868,115 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown when you sign in.
 
+**How to fix:** Connect to the internet, then try again.
+
 ### The code ran out before it was approved. A code works for 15 minutes.
 
 **What it means:** Shown when you sign in.
+
+**How to fix:** Start the sign-in again and approve the new code within 15 minutes.
 
 ### The code host did not finish the sign-in. Nothing was changed.
 
 **What it means:** Shown when you sign in.
 
+**How to fix:** Start the sign-in again.
+
 ### Please tick that you are 15 or older.
 
-**What it means:** Shown when you use your account.
+**What it means:** On the create-account form, when the age box is not ticked.
+
+**How to fix:** Tick the box that says you are 15 or older, then press the button again.
 
 ### Please agree to the Terms of Use and the Privacy Policy.
 
-**What it means:** Shown when you use your account.
+**What it means:** On the create-account form, when the Terms box is not ticked.
+
+**How to fix:** Tick the box for the Terms of Use and the Privacy Policy, then press the button again.
 
 ### That email does not look right.
 
-**What it means:** Shown when you use your account.
+**What it means:** When you type an email on the sign-in or account form.
 
 **How to fix:** Check it and try again.
 
 ### Too many tries. Please wait a few minutes and try again.
 
-**What it means:** Shown when you use your account.
+**What it means:** When you asked for a code or tried to sign in too many times in a row.
+
+**How to fix:** Wait a few minutes, then try once more.
 
 ### Confirm you are a person to get your code.
 
-**What it means:** Shown when you use your account.
+**What it means:** When you ask for a sign-in code and the check that you are a person has not run.
 
 **How to fix:** Press the button again to try.
 
 ### We could not confirm you are a person. Please try again.
 
-**What it means:** Shown when you use your account.
+**What it means:** When the check that you are a person did not pass.
+
+**How to fix:** Press the button again. If it keeps failing, check that your internet works.
 
 ### That code is not right, or it ran out.
 
-**What it means:** Shown when you use your account.
+**What it means:** When you type the code that was sent to your email.
 
 **How to fix:** Try again or ask for a new code.
 
 ### That invite code is not right.
 
-**What it means:** Shown when you use your account.
+**What it means:** When you type an invite code.
 
 **How to fix:** Check it and try again.
 
 ### That invite code was already used.
 
-**What it means:** Shown when you use your account.
+**What it means:** When you type an invite code that someone has already used.
+
+**How to fix:** Ask for a new invite code. Each one works once.
 
 ### Modryos could not reach the internet.
 
-**What it means:** Shown when you use your account.
+**What it means:** When the studio cannot reach the internet.
 
 **How to fix:** Check your connection and try again.
 
 ### You were signed out. Please sign in again.
 
-**What it means:** Shown when you use your account.
+**What it means:** When your sign-in ran out while you were working.
+
+**How to fix:** Sign in again from Settings > Account. Your projects stay on your computer.
 
 ### Something went wrong on our side. Please try again in a bit.
 
-**What it means:** Shown when you use your account.
+**What it means:** When the account server has a problem that is not yours.
+
+**How to fix:** Wait a little and try again. If it stays, press F6 to report it.
+
+### Sign-ups are paused for a short while. Try again later.
+
+**What it means:** When you try to create an account while new accounts are switched off.
+
+**How to fix:** Sign-ups are paused for a short while. Try again later.
+
+### Another account already uses that email.
+
+**What it means:** When you create an account or change your email to one that is already in use.
+
+**How to fix:** Use a different one.
+
+### That is already your email.
+
+**What it means:** When you change your email to the one you already have.
+
+**How to fix:** Type a new one.
+
+### The file could not be saved there.
+
+**What it means:** When you save a file, such as your data download.
+
+**How to fix:** Pick another folder and try again.
 
 ## Animation checks
 
@@ -16767,13 +16984,19 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Animation editor and in the Problems list while one is open.
 
+**How to fix:** Fix the expression, or type a plain number.
+
 ### (text) on (bone) is drawn at random, so the preview and the game never show the same frame...
 
 **What it means:** Shown in the Animation editor and in the Problems list while one is open.
 
+**How to fix:** Use a plain number if the preview must match the game.
+
 ### The curve into the key of (bone) at (time) s has an expression at one end, so it plays as ...
 
 **What it means:** Shown in the Animation editor and in the Problems list while one is open.
+
+**How to fix:** Use plain numbers at both ends of the key to get a curve.
 
 ### Some keys move a part its model no longer has, so they move nothing.
 
@@ -16785,19 +17008,27 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Animation editor and in the Problems list while one is open.
 
+**How to fix:** Move the key earlier, or make the animation longer.
+
 ### A sound or particle key at (time) s is after the animation ends at (length) s, so it never...
 
 **What it means:** Shown in the Animation editor and in the Problems list while one is open.
 
+**How to fix:** Move the key earlier, or make the animation longer.
+
 ### A (particle) key comes from a part its model no longer has, so it comes from the mob's fee...
 
 **What it means:** Shown in the Animation editor and in the Problems list while one is open.
+
+**How to fix:** Pick a part the model has for that key.
 
 ## Attribute checks
 
 ### An item cannot give this attribute in (targets): the game there has no default item values...
 
 **What it means:** Shown in the Attribute editor and in the Problems list while one is open.
+
+**How to fix:** Nothing to do. Build for another [target](glossary.md#target) to use it.
 
 ## Biome checks
 
@@ -16831,6 +17062,8 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Block editor and in the Problems list while one is open.
 
+**How to fix:** To get a big block, remove the inventory or the sentences from it. Otherwise it stays one block.
+
 ### The code this block is drawn by does not draw every frame.
 
 **What it means:** Shown in the Block editor and in the Problems list while one is open.
@@ -16849,29 +17082,43 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown when you debug the running game.
 
+**How to fix:** Press Play to start the game again, then try the debugger once more.
+
 ### (name) did not reload: (reason). Your edit is kept; press Play to start again and see it e...
 
 **What it means:** Shown when you press Play and the game or its build stops.
+
+**How to fix:** Press Play to start the game again.
 
 ### The build in (dir) failed. The lines above say why.
 
 **What it means:** Shown when you press Play and the game or its build stops.
 
+**How to fix:** Read the lines above, fix the first problem they name, then press Play again.
+
 ### Your code could not be checked on this target: (reason).
 
 **What it means:** Shown when Cook makes the mod file.
+
+**How to fix:** Open the code and look for a red line, fix it, then Cook again.
 
 ### The game did not reload: (reason). Your edit is kept; press Play to start the game again a...
 
 **What it means:** Shown when you press Play and the game or its build stops.
 
+**How to fix:** Press Play to start the game again.
+
 ### Could not get ready. Play will do the whole build
 
 **What it means:** Shown when you press Play and the game or its build stops.
 
+**How to fix:** Nothing to do. Press Play and it does the whole build.
+
 ### Could not get ready ahead of time: (reason) Play will do the whole build, as before.
 
 **What it means:** Shown when you press Play and the game or its build stops.
+
+**How to fix:** Nothing to do. Press Play and it does the whole build.
 
 ### The game did not reload.
 
@@ -16883,9 +17130,13 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown when you pick a game to play.
 
+**How to fix:** Connect to the internet once, then press the play button on the sound again.
+
 ### It did not finish: (reason)
 
 **What it means:** Shown when the studio fetches a game version.
+
+**How to fix:** Check your internet, then try again.
 
 ### Check the connection and that Java 21 or newer is installed, then try again.
 
@@ -16903,29 +17154,43 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown when you press Play and the game or its build stops.
 
+**How to fix:** Press Play to start the game again.
+
 ### (name) could not rejoin: (reason)
 
 **What it means:** Shown when you press Play and the game or its build stops.
+
+**How to fix:** Open the world again from the game's menu.
 
 ### Could not carry the mod's code over to Minecraft (version): (reason)
 
 **What it means:** Shown while the studio builds your mod.
 
+**How to fix:** Read the reason, fix that code, then Cook again.
+
 ### (name): could not come to the front: (reason).
 
 **What it means:** Shown when you press Play and the game or its build stops.
+
+**How to fix:** Click the game's window yourself.
 
 ### A Cook did not finish. A report helps us fix it. You see what is in it before it goes.
 
 **What it means:** Shown as a notice while the studio builds your mod.
 
+**How to fix:** Press Send a report to share it, or Cook again.
+
 ### The build stopped. Its lines are in the Output.
 
 **What it means:** Shown when Cook makes the mod file.
 
+**How to fix:** Open the Output tab, find the first red line, fix it, then Cook again.
+
 ### The game reported a problem. The lines that matter: (lines)
 
 **What it means:** Shown when you press Play and the game or its build stops.
+
+**How to fix:** Read the lines, fix the first problem they name, then press Play again.
 
 ### The sample could not be copied: (why).
 
@@ -16937,761 +17202,781 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 ### (field): nothing chosen yet.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Choose one.
 
-### Give it an id, or a name to make one from. Until then it is left out of the mod.
+### Give it a game name, or a name to make one from. Until then it is left out of the mod.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
-**How to fix:** Give it an id, or a name to make one from. Until then it is left out of the mod.
+**How to fix:** Give it a game name, or a name to make one from. Until then it is left out of the mod.
 
 ### (value) is not an id the game reads.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Use letters, digits, underscores and one colon, like minecraft:stone.
 
 ### The file (path) is not in the project any more.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Choose or paint the picture again.
 
 ### The game has no biome group called (id).
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Pick a biome from the list, or a group the game has.
 
 ### Minecraft (version) has no picture called (path), so the game draws a pink and black squar...
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Pick one from the game's pictures.
 
 ### Minecraft (version) has no (id).
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Choose an item or block the game has.
 
 ### A mod setting cannot stand in here: the game reads this setting once, when it starts.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Type a plain value here, or pick a setting that is read while the game runs.
 
 ### A formula cannot stand in here: the game reads this setting once, when it starts.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Type a plain value here, or use a setting that is read while the game runs.
 
 ### This formula does not work out a number.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Change the formula so it ends in a number, like 2 + 3.
 
 ### Only a number setting can stand in for a number here.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Pick a setting whose Type is Whole number or Decimal, or type the number yourself.
 
 ### Minecraft (version) has no data-made enchantments, so this one is left out of the (version...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Nothing to do. To keep it, build for a newer Minecraft version.
 
 ### Minecraft (version) has no data-made banner patterns, so this one is left out of the (vers...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Nothing to do. To keep it, build for a newer Minecraft version.
 
 ### Minecraft (version) does not read paintings from data files, so this one is left out of th...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Nothing to do. To keep it, build for a newer Minecraft version.
 
 ### Minecraft (version) does not read songs from data files, so this disc is in the game but p...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Nothing to do. To hear the song, build for a newer Minecraft version.
 
 ### (name): '(what)' is not in (version), so it is left out.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Nothing to do. To keep it, build for a newer Minecraft version, or take that step out of the drops.
 
 ### This kind of feature does not exist in Minecraft (version), so it is left out of the (vers...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Nothing to do. To keep it, build for a newer Minecraft version.
 
 ### Row (n): what (column) names is no longer in the project.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Pick something that is in the project, or add it again.
 
 ### The shape (shape) is made for a mob, so a block or an item cannot wear it.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Choose a shape made for a block, or set this one's Made for to A block.
 
 ### (trait) is attached but this build does not know it.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Take that part off, or update Modryos to a newer version.
 
 ### This project has a kind of thing this build does not know ((kind)). It is kept as it is an...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Update Modryos to a newer version to edit it. Until then leave it as it is.
 
 ### This has no name yet.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Give it one so players can see it.
 
 ### (recipe) makes energy and burns nothing, so (machine) gives endless free power.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Give it something to burn.
 
 ### (recipe) costs no energy, so (machine) makes its result for free.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Give it an energy cost.
 
 ### (recipe) needs (cost) energy at once, but (machine) only holds (capacity), so it can never...
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Make the machine hold more, or the recipe cost less.
 
 ### These recipes ((recipes)) make a loop that gives more than it takes ((path)), so a player ...
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Make one of them give less.
 
 ### These recipes ((recipes)) make a loop that gives more than it takes ((path)), and each tim...
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Make one of them give less.
 
 ### (block) drops (drop) (item) when broken, but crafting it only costs (cost). Players can br...
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Make it drop no more than it costs (add up all the drops of (item) on this block), or craft it with more.
 
 ### (recipe) gives a result and takes nothing in, so players get it for free.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Put an ingredient in.
 
 ### A rule here repeats with no test and no wait, so it never stops and can freeze the game.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Add a test that ends it, or a wait.
 
 ### (block) holds 0 fluid, so it takes fluid and keeps none.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Give it room.
 
 ### The mod runs on the server alone, and this is registered in the game, which a player's pla...
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Remove it, or let players install the mod.
 
 ### The mod runs on the server alone, and this runs on the player's side, which a player's pla...
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Remove it, or let players install the mod.
 
 ### The mod runs on the server alone, and a rule here waits for the player to right click into...
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Let players install the mod if it must be.
 
 ### The mod runs on the server alone, and its jar would register a network channel ((file)), w...
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Remove what brings it, or let players install the mod.
 
 ### The mod runs on the server alone, and its jar would register things in the game ((file)), ...
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Remove what brings it, or let players install the mod.
 
 ### This has no game name, so the game leaves it out.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Make one from its name
 
 ### (value) is not an id the game reads: a namespace and a name in lowercase, such as minecraf...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Type the name in small letters as minecraft:zombie, with no spaces. For a whole group, put # first, like #minecraft:skeletons.
 
 ### The game name (value) has characters the game does not allow.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Use lowercase letters, digits and underscores, and not a name Windows keeps (like con or nul).
 
 ### Two things share the game name (value).
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Give one of them another.
 
 ### Another one is also called (value).
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Give this one its own name.
 
 ### The highest height is below the lowest, so the ore will use the lowest for both.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Make the highest height bigger than the lowest.
 
 ### This value is outside what the game allows ((min) to (max)).
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Type a number from (min) to (max).
 
 ### (id) belongs to the mod (mod), which this mod does not name among the mods it uses.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Add (mod) under Other mods, or pick another.
 
 ### This points at a thing that was deleted from the project.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Pick another one, or undo the delete to bring it back.
 
 ### This has no picture yet. It goes into the game with the plain one New draws until you choo...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Open the picture field and choose a picture, or paint one.
 
 ### Run from the server console nobody ran it: this line is left out then.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Nothing to do. To run it for a player, run the command in the game.
 
 ### This One of these, at random has no choices.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Add a choice to it, or take it out.
 
 ### Choice (n) of One of these, at random has no lines, so when it is chosen nothing happens.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Add a line to that choice, or remove the choice.
 
 ### Choice (n) is less likely than never: how likely is nought or more.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Type 0 or more for how likely it is.
 
 ### This hole needs a look: pick which of its looks it wears.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Open the hole and pick one of the looks.
 
 ### This word comes round to itself through the words it uses, so it would never end.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Use another word here.
 
 ### This word gives back something else: change what it gives back on the word, or use the Giv...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Change what the word gives back, or use a Give back line of the kind the word gives.
 
 ### This moment is not in this version of Modryos.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Pick another moment, or update Modryos.
 
 ### This moment does not fit what this rule belongs to: (kind).
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Pick a moment that fits what the rule belongs to.
 
 ### This line still needs (hole).
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Fill the hole in that line.
 
 ### A hole of this line wants (wanted), and what is in it is (given).
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Put something of the wanted kind into the hole.
 
 ### A hole of this line holds something that is not one of its choices.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Open the hole and pick one of its choices.
 
 ### This line is not in this version of Modryos.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Take that line out, or update Modryos.
 
 ### This Only when has nothing to check.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Pick a check in it, or take it out.
 
 ### This check is not in this version of Modryos.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Pick another check, or update Modryos.
 
 ### The code this line runs was deleted.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Take the line out, or add the code again.
 
 ### (name) runs at a layer of its own, not from a line in a rule.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Take it out of the rule. It runs by itself.
 
 ### The code's first line has not been read yet; open it and compile.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Open the code and compile it.
 
 ### The pin (pin) takes (java), which the lines cannot hand over; use a mob, a player, a place...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Change the pin to a mob, a player, a place, a number, words or a yes or no.
 
 ### A frame is shown for a whole number of ticks, from 1 to (most).
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Type a whole number from 1 to (most).
 
 ### Recipe slot (slot) picks items by name or by mod, and the game's items for Minecraft (vers...
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Check the connection, then build again.
 
 ### Recipe slot (slot) picks items by name or by mod, and the game's items for Minecraft (vers...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Fetch the game data for that version, then build again.
 
 ### Its shape's parts, each drawn by what a side touches, would make (states) block states; th...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Use fewer parts that depend on a side, or draw parts for the same question together.
 
 ### Every face is off, so this block joins no network and nothing can reach it.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Turn a face on in Connections.
 
 ### It keeps what arrives but holds nothing, so what reaches it is lost.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Give it a buffer, or set it to pass it on.
 
 ### No face carries anything. Attach Energy, Fluid or an Inventory, then turn a face on.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Attach Energy, Fluid or Inventory, then turn a face on.
 
 ### The filter class has another shape.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Choose one whose shape is an item in, yes or no out.
 
 ### A player marks filter slots in the game, so they do nothing until a player can set each fa...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Nothing to do. A player sets the filter in the game.
 
 ### A filter sorts items, and this block carries none. Attach an Inventory, or leave the filte...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Attach an Inventory to the block, or turn the filter off.
 
 ### This machine makes something but joins no network, so nothing can bring it what it needs. ...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Attach Connections to the machine.
 
 ### It takes from (inputs) and puts into (outputs), which is more slots than its inventory has...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Give the inventory more slots, or use fewer in the recipe.
 
 ### A machine needs an inventory to take from and to put into. Attach Inventory.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Attach Inventory to the machine.
 
 ### A setting in its screen cannot stand in here: the game reads this setting once, when it st...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Type a plain value here, or use a setting that is read while the game runs.
 
 ### Only a machine with an inventory has a screen to put a setting in.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Attach an Inventory to the machine, then put the setting on its screen.
 
 ### A picture (width) by (height) halves evenly (levels) times, and the game makes (most) smal...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Resize the picture so its sides are multiples of 16, like 16 by 16 or 32 by 32.
 
 ### A picture (width) by (height) takes a large part of the one texture every block picture in...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Make the picture smaller, like 16 by 16 or 32 by 32.
 
 ### This material is spelled a little differently from the first piece's, but the game treats ...
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Write it the same way.
 
 ### This piece has a different number than the first piece of its material. The first piece's ...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Use the same number on every piece of the material.
 
 ### Pick which mod this plugs into first.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Pick which mod this plugs into first.
 
 ### Pick which mod makes this item first.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Pick which mod makes this item first.
 
 ### Pick what the other mod should make from this item.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Pick what the other mod should make from this item.
 
 ### Pick how the other mod makes this item.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Pick how the other mod makes this item.
 
 ### (method) is set to your own Java, but no Java is written.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Write the Java for it, or set it back to the usual way.
 
 ### This hole names something its owner no longer has; pick one it has, or make one from the h...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Open the hole and pick one it has, or make a new one.
 
 ### (owner) keeps no number called (value).
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Add (value) to the numbers (owner) keeps, or pick one it keeps.
 
 ### This hole needs something it remembers: pick one in it, or make one from it.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Open the hole and pick what it remembers, or make a new one.
 
 ### This hole is empty: pick one in it.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Open the hole and pick one.
 
 ### Only an item's rules can say this: it works on the item the rule runs on.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Move the line to an item's rules.
 
 ### The part hole names a part its model does not have; pick one of the parts hit on their own...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Open the hole and pick a part the model has.
 
 ### A mob's parts move by its animations; (part) moves as a block's part does.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Move the part with an animation of the mob.
 
 ### A mob's parts are always drawn; (part) is drawn only when a side is joined.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Take away the side condition from the part.
 
 ### A mob cannot show (part): what a block shows comes from what it holds.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Take that off the mob's model.
 
 ### A mob's picture is never turned on a face, and (face) of (box) is.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Turn that face back to normal.
 
 ### A mob wears one picture, and this model has (count).
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Use one picture for the whole model.
 
 ### Use the model's picture on every face
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Use the model's picture on every face
 
 ### The boxes are laid out past the picture, which is (width) by (height). They need (needWidt...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Make the picture bigger, or move the boxes inside it.
 
 ### This line does nothing under this moment: the game has nothing here for it to change.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Pick another line, or move this one to a moment that has something to change.
 
 ### This line comes after a wait, when the moment is already over, so it can no longer change ...
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Move it above the wait.
 
 ### An overlay on the HUD cannot hold (control): nothing on the HUD is pressed, and no machine...
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Take it off, or show this screen when a rule opens it.
 
 ### A machine's screen cannot hold (control) yet: a press there would need a moment of the mac...
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Take it off.
 
 ### (control) is one of a machine's own parts, and no machine is behind this screen.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Take it off.
 
 ### Slot (slot) is not on the screen yet; it is placed where Modryos would put it.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Drag the slot onto the screen where you want it.
 
 ### Setting (setting) is not on the screen yet; it is placed where Modryos would put it.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Drag the setting onto the screen where you want it.
 
 ### The player's inventory is not on the screen yet; it is placed where Modryos would put it.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Drag the player's inventory onto the screen where you want it.
 
 ### Take the extra off the screen
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Take the extra off the screen
 
 ### (control) shows slot (slot), which the machine no longer has, so it is left out of the mod...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Pick another slot for that control, or delete the control.
 
 ### (control) shows setting (setting), which the machine no longer has, so it is left out of t...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Pick another setting for that control, or delete the control.
 
 ### (control) shows a value that is gone.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Choose another.
 
 ### (control) shows (value), which an item keeps; a screen shows the values the player keeps.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Choose one of those.
 
 ### (control) shows what a machine makes, and that machine is gone.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Choose another.
 
 ### (control) shows a book that is gone.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Choose another.
 
 ### (control) marks its items by (value), which holds a number, not a list.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Choose a value that holds a list of items.
 
 ### (control) shows only the items a list has or has not, and no list is chosen, so it shows e...
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Choose the list in Marked by.
 
 ### Another screen, book or tree is called (value) in the game, which opens each by that name.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Give one of them another game name.
 
 ### (quest) needs (other), and (other) needs it back.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Take one of the two lines away.
 
 ### (quest) needs a quest that is not there any more.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Take that line away.
 
 ### A link in (chapter) shows a quest that is not there any more.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Take the link away.
 
 ### The command in (quest) reaches other players.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Turn on the operator's permission, or write it for the player only.
 
 ### The command in (quest) can change who runs the server.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Tick that you know it is dangerous, or use another command.
 
 ### A hole of this line uses something another line finds, but that line is not above this one...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Move that line above this one, or pick something else.
 
 ### Give what is remembered a name.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Give what is remembered a name.
 
 ### This hole changes something this rule remembered above it; pick one of those.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Open the hole and pick one of the things the rule remembered.
 
 ### (name) already holds (was) here; give this one another name.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Type another name for this one.
 
 ### This moment names a button or a skill that is gone; remove it, or add the button again.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Remove the moment, or add the button or skill again.
 
 ### A hole of this line wants one thing, and this is (given). Only a line that does something ...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Open the hole and pick one of the many.
 
 ### (control) links to a screen that is gone.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Pick another screen for the link, or delete the link.
 
 ### (control) reads a machine, and this screen has no machine behind it, so it shows nothing.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Choose what else it shows, or place it on a machine's screen.
 
 ### (control) shows a component that holds this screen, which would never end.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Choose another component.
 
 ### (control) shows a screen that is gone or is no longer a component.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Choose a component.
 
 ### (control) sets faces, but players cannot set this block's faces yet.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Turn that on in Connections.
 
 ### (control) shows more marks than the block's faces can keep.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Raise the face filter slots.
 
 ### No number setting has the key (key).
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Pick a number setting that exists, or add one with that key.
 
 ### (value) is not a dimension's name in the game.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Pick a dimension from the list instead of typing it.
 
 ### Minecraft (version) has no (name), which the built mod uses ((where)). The mod would not l...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Build for a Minecraft version that has it, or change the code that uses it.
 
 ### Minecraft (version) has no (name), which the built mod uses ((where)). The mod would not l...
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
-### Minecraft (version) has no (name), which the built mod changes ((where)). That change woul...
+**How to fix:** Build for a Minecraft version that has it, or change the code that uses it.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+### Minecraft (version) has no (name), which the built mod changes in the game's code ((where)...
 
-### Minecraft (version) has no (name), which the built mod changes ((where)). That change woul...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+**How to fix:** Build for a Minecraft version that has it, or take that change out.
 
-### Minecraft (version) has no (name), where the built mod hooks in ((where)). That change wou...
+### Minecraft (version) has no (name), which the built mod changes in the game's code ((where)...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Build for a Minecraft version that has it, or take that change out.
+
+### Minecraft (version) has no (name), where the built mod hooks into the game's code ((where)...
+
+
+**How to fix:** Build for a Minecraft version that has it, or take that change out.
 
 ### In Minecraft (version), (name) takes other values than the built mod expects ((where)). Th...
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
-### Minecraft (version) reads no data folder named (name) ((where)). Those files would be igno...
+**How to fix:** Change the code to take the values that version gives, or build for another version.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+### Minecraft (version) reads no folder of files named (name) ((where)). Those files would be ...
+
+
+**How to fix:** Rename the folder to the name that version reads, or build for another version.
 
 ### Minecraft (version) has nothing called (name), which the built mod names ((where)).
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Use a name that version has, or build for another version.
 
 ### Minecraft (version) has no kind called (name), which the built mod uses ((where)). That fi...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Use a kind that version has, or build for another version.
 
 ### Minecraft (version) names a block in its saved states another way than the built mod does ...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Change how the block's states are named to match that version.
 
 ### Every (name) in Minecraft (version) sets this value, and the built mod leaves it out ((whe...
 
-**What it means:** Shown in the Problems list while you work on a thing.
+
+**How to fix:** Add that value to the file.
 
 ### (name) could not be checked, because something inside it is not what the studio expects.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Open it and look at its settings, or bring an earlier copy back from Versions.
 
 ### This file could not be read and is kept as it is: (file).
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Open it in a text editor, or bring an earlier copy back from Versions.
 
-### This file is not valid JSON, so it is kept as it is: (file).
+### This file is not written the way the game reads it, so it is kept as it is: (file).
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
-### (file) was damaged. The damaged copy is saved in .modryos/quarantine, and the last good co...
+**How to fix:** Open the file and fix the typing mistake, or delete the file.
 
-**What it means:** Shown in the Problems list while you work on a thing.
+### (file) was damaged. A copy of the damaged file is kept in the project's recovery folder, a...
+
+
+**How to fix:** Nothing to do. Open the file and check that it looks right.
 
 ### Nothing is chosen in this yet.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Delete empty things
 
 ### This word is for aiming blocks, and you have none. To use where a player looks, change it.
 
-**What it means:** Shown in the Problems list while you work on a thing.
 
 **How to fix:** Use the block the player looks at
 
@@ -17715,11 +18000,15 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Code editor and in the Problems list while one is open.
 
+**How to fix:** Rename it with one word that starts with a capital letter and has no spaces.
+
 ## Command checks
 
 ### Another mod of yours, (other), also has the command /(word). In one game only one of them ...
 
 **What it means:** Shown in the Command editor and in the Problems list while one is open.
+
+**How to fix:** Change the command's word in one of the two mods.
 
 ### /(word) is a short common word: the game or another mod may use it too, and then one of th...
 
@@ -17731,17 +18020,25 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Command editor and in the Problems list while one is open.
 
+**How to fix:** Give that value a name, like amount.
+
 ### Typed after it number (n) has the same name as one before it.
 
 **What it means:** Shown in the Command editor and in the Problems list while one is open.
+
+**How to fix:** Give that value a different name from the one before.
 
 ### (name) is one of the choices, and it has none to offer.
 
 **What it means:** Shown in the Command editor and in the Problems list while one is open.
 
+**How to fix:** Add at least one choice to it, or change its kind.
+
 ### (name) takes the words to the end of the command, so nothing can be typed after it: move i...
 
 **What it means:** Shown in the Command editor and in the Problems list while one is open.
+
+**How to fix:** Drag it to the end of the command's list.
 
 ## Dimension checks
 
@@ -17819,9 +18116,13 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Feature editor and in the Problems list while one is open.
 
+**How to fix:** Pick a block for the trunk.
+
 ### A tree needs a block for its leaves.
 
 **What it means:** Shown in the Feature editor and in the Problems list while one is open.
+
+**How to fix:** Pick a block for the leaves.
 
 ### Choose the block it is made of.
 
@@ -17833,13 +18134,19 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Feature editor and in the Problems list while one is open.
 
+**How to fix:** Pick a block for the rim.
+
 ### A huge mushroom needs a block for its cap.
 
 **What it means:** Shown in the Feature editor and in the Problems list while one is open.
 
+**How to fix:** Pick a block for the cap.
+
 ### A huge mushroom needs a block for its stem.
 
 **What it means:** Shown in the Feature editor and in the Problems list while one is open.
+
+**How to fix:** Pick a block for the stem.
 
 ### Choose the block the pile is made of.
 
@@ -17869,6 +18176,8 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Feature editor and in the Problems list while one is open.
 
+**How to fix:** Pick a block for the rim.
+
 ### Choose the block the blobs replace.
 
 **What it means:** Shown in the Feature editor and in the Problems list while one is open.
@@ -17885,13 +18194,19 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Feature editor and in the Problems list while one is open.
 
+**How to fix:** Pick the block it grows on.
+
 ### A huge fungus needs a block for its stem.
 
 **What it means:** Shown in the Feature editor and in the Problems list while one is open.
 
+**How to fix:** Pick a block for the stem.
+
 ### A huge fungus needs a block for its cap.
 
 **What it means:** Shown in the Feature editor and in the Problems list while one is open.
+
+**How to fix:** Pick a block for the cap.
 
 ### Choose the list the deposits come from: a setting that is a list of entries.
 
@@ -17902,6 +18217,8 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 ### The list has no field called (field).
 
 **What it means:** Shown in the Feature editor and in the Problems list while one is open.
+
+**How to fix:** Pick a field the list has, or add that field to the list.
 
 ## Item checks
 
@@ -17955,29 +18272,43 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Machine recipe editor and in the Problems list while one is open.
 
+**How to fix:** Attach Holds energy and Connections to the machine.
+
 ### Say which machine runs this: until then this recipe never runs.
 
 **What it means:** Shown in the Machine recipe editor and in the Problems list while one is open.
+
+**How to fix:** Pick the machine in the recipe.
 
 ### Say what goes in: until then this recipe never runs.
 
 **What it means:** Shown in the Machine recipe editor and in the Problems list while one is open.
 
+**How to fix:** Pick the item that goes in.
+
 ### Say what it burns: until then this recipe never makes energy.
 
 **What it means:** Shown in the Machine recipe editor and in the Problems list while one is open.
+
+**How to fix:** Pick the item it burns.
 
 ### Say what comes out: until then this recipe gives nothing.
 
 **What it means:** Shown in the Machine recipe editor and in the Problems list while one is open.
 
+**How to fix:** Pick the item that comes out.
+
 ### That block makes nothing, so it cannot run a recipe. Attach What it makes to it.
 
 **What it means:** Shown in the Machine recipe editor and in the Problems list while one is open.
 
+**How to fix:** Attach What it makes to the block, or pick another block.
+
 ### This recipe has a result but the machine has no slots to put it into.
 
 **What it means:** Shown in the Machine recipe editor and in the Problems list while one is open.
+
+**How to fix:** Add an output slot to the machine's inventory.
 
 ### This recipe takes two things but the machine has one slot to take from.
 
@@ -18003,21 +18334,31 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Mob editor and in the Problems list while one is open.
 
+**How to fix:** Type a weight of 1 or more.
+
 ### The variant (name) has a tint that is not a colour like aabbcc.
 
 **What it means:** Shown in the Mob editor and in the Problems list while one is open.
+
+**How to fix:** Type the tint as a colour, like #aabbcc.
 
 ### The variant (name) needs a size above 0.
 
 **What it means:** Shown in the Mob editor and in the Problems list while one is open.
 
+**How to fix:** Type a size above 0, like 1.
+
 ### The variant (name) hides (part), and its body has no part of that name.
 
 **What it means:** Shown in the Mob editor and in the Problems list while one is open.
 
+**How to fix:** Pick a part the body has, or stop hiding that one.
+
 ### Its body is a model made for a block. A mob wears one made for a mob.
 
 **What it means:** Shown in the Mob editor and in the Problems list while one is open.
+
+**How to fix:** Pick a mob model for its body.
 
 ### It has no body to wear.
 
@@ -18034,6 +18375,8 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 ### (clip) moves another model than this mob's body, so (layer) cannot play it.
 
 **What it means:** Shown in the Mob editor and in the Problems list while one is open.
+
+**How to fix:** Pick a clip made for this mob's body, or change the body.
 
 ### A line of (layer) asks about a state of its own it no longer has.
 
@@ -18063,19 +18406,27 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Mob editor and in the Problems list while one is open.
 
+**How to fix:** Type 0 or more seconds for the fade.
+
 ### Two of its own states are called (name). A line of behaviour could not tell them apart.
 
 **What it means:** Shown in the Mob editor and in the Problems list while one is open.
 
+**How to fix:** Rename one of the two states.
+
 ### At least (min) spawn together and at most (max). At least cannot be more than at most.
 
 **What it means:** Shown in the Mob editor and in the Problems list while one is open.
+
+**How to fix:** Make the least number the same as or smaller than the most.
 
 ## Mod settings checks
 
 ### The lowest allowed is above the highest allowed.
 
 **What it means:** Shown in the Mod settings editor and in the Problems list while one is open.
+
+**How to fix:** Make the lowest value smaller than the highest, or swap the two.
 
 ### Give the setting a key in the file.
 
@@ -18093,9 +18444,13 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Mod settings editor and in the Problems list while one is open.
 
-### Each word is small letters, digits and _, and no two are the same.
+**How to fix:** Add a second word to the list, or use a different kind of setting.
+
+### Each word is small letters, digits and underscores (_), and no two are the same.
 
 **What it means:** Shown in the Mod settings editor and in the Problems list while one is open.
+
+**How to fix:** Write each word in small letters, digits and _, and remove a word that is written twice.
 
 ### Choose which word it is until a player changes it.
 
@@ -18113,13 +18468,19 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Mod settings editor and in the Problems list while one is open.
 
+**How to fix:** Open that entry and fix the field, or type a real number.
+
 ### The longest allowed must be a whole number, 0 or more.
 
 **What it means:** Shown in the Mod settings editor and in the Problems list while one is open.
 
+**How to fix:** Type a whole number, 0 or more.
+
 ### The text is longer than (max) letters.
 
 **What it means:** Shown in the Mod settings editor and in the Problems list while one is open.
+
+**How to fix:** Make the text shorter than (max) letters.
 
 ## Model checks
 
@@ -18127,25 +18488,37 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
 
+**How to fix:** Pick a shape made for a block, or draw a new one.
+
 ### This shape has no boxes in it yet, so nothing will be drawn.
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
+
+**How to fix:** Add a box to the shape, or pick another shape.
 
 ### (box) has no (faces) face and nothing covers it, so from that side it is see-through while...
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
 
+**How to fix:** Turn that face on for the box, or put another box against it.
+
 ### (box) has no (faces) faces and nothing covers them, so from those sides it is see-through ...
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
+
+**How to fix:** Turn those faces on for the box, or put other boxes against them.
 
 ### (box) reaches outside the room a block model has. Every corner has to be between (min) and...
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
 
+**How to fix:** Move the box inside the block, or make it smaller.
+
 ### (box) reaches outside the room its block has, which takes (across) across, (up) up and (ba...
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
+
+**How to fix:** Move the box inside the room, or make it smaller.
 
 ### (box) turns, and a box that turns is not cut between the blocks of a machine: it goes whol...
 
@@ -18157,37 +18530,55 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
 
+**How to fix:** Turn the box on one axis only, and turn the other way with a group of boxes.
+
 ### (box) turns (angle) degrees. A block model allows 0, 22.5 and 45 either way; (nearest) is ...
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
+
+**How to fix:** Change the turn to 0, 22.5 or 45 degrees, either way.
 
 ### The (face) face of (box) is mapped outside its texture, which is (width) by (height).
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
 
+**How to fix:** Move the face's picture area inside the texture, or make the texture bigger.
+
 ### The (face) face of (box) uses the texture (slot), and this shape has no texture by that na...
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
+
+**How to fix:** Pick a texture the shape has for that face, or add a texture with that name to the shape.
 
 ### (group) is turned. A block model has no way to turn a group, so turn its boxes instead.
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
 
+**How to fix:** Take the turn off the group and turn its boxes instead.
+
 ### (group) is set to glow or to be see-through, as a mob's part can be. A block model is not ...
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
+
+**How to fix:** Turn off glow and see-through on that group.
 
 ### The (slot) slot moves the shape further than (limit), which is as far as the game goes.
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
 
+**How to fix:** Move the shape less in that slot, so it stays within the limit.
+
 ### The (slot) slot scales the shape past (limit), which is as big as the game goes.
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
 
+**How to fix:** Make the scale of that slot smaller, so it stays within the limit.
+
 ### This shape is (boxes) boxes. The largest block model counted across five shipped mods is (...
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
+
+**How to fix:** Join boxes together, or delete small ones, to bring the count down.
 
 ### This shape has no picture yet, so its (faces) faces have nothing to show.
 
@@ -18199,39 +18590,51 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
 
+**How to fix:** Attach Energy to the block, or take the movement off the part.
+
 ### (part) follows the number (value), and (block) keeps no number of that name: add (value) t...
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
+
+**How to fix:** Add a number called (value) to the block, or pick another number for the part.
 
 ### (part) follows the fluid held, and (block) holds no fluid: attach Fluid to it.
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
 
+**How to fix:** Attach Fluid to the block, or take the movement off the part.
+
 ### (part) follows the items held, and (block) holds no items: attach Inventory to it.
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
+
+**How to fix:** Attach Inventory to the block, or take the movement off the part.
 
 ### (part) follows how far the job has got, and (block) does no job: attach What it makes to i...
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
 
+**How to fix:** Attach What it makes to the block, or take the movement off the part.
+
 ### (part) moves while the block works, and (block) does no work: attach What it makes or Conn...
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
+
+**How to fix:** Attach What it makes or Connections to the block, or take the movement off the part.
 
 ### This block is bigger than its box ((n) parts reach outside). It still draws, but it will b...
 
 **What it means:** Shown in the Model editor and in the Problems list while one is open.
 
-### Fit inside the box
-
-**What it means:** Shown in the Model editor and in the Problems list while one is open.
+**How to fix:** Press Fit inside the box, or move the parts inside the box.
 
 ## Publishing
 
 ### Not signed in to the code host: (reason)
 
 **What it means:** Shown when you publish your mod.
+
+**How to fix:** Sign in to the code host in Settings, then publish again.
 
 ## Recipe checks
 
@@ -18251,17 +18654,25 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Recipe editor and in the Problems list while one is open.
 
+**How to fix:** Change the grid so it differs from the game's recipe, or keep both.
+
 ### This recipe still needs its (role).
 
 **What it means:** Shown in the Recipe editor and in the Problems list while one is open.
+
+**How to fix:** Pick its (role).
 
 ### (kind) recipes are in the game from (since); it is left out of (targets).
 
 **What it means:** Shown in the Recipe editor and in the Problems list while one is open.
 
+**How to fix:** Nothing to do. To have it there, build for a newer version.
+
 ### Extras and rules are for crafting-grid recipes; a (kind) recipe gives only its result.
 
 **What it means:** Shown in the Recipe editor and in the Problems list while one is open.
+
+**How to fix:** Take the extras off, or make it a crafting-grid recipe.
 
 ### An extra names nothing yet.
 
@@ -18273,6 +18684,8 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Recipe editor and in the Problems list while one is open.
 
+**How to fix:** Nothing to do. Build for 1.21.5 or newer to use your own template.
+
 ### Each extra comes back in a cell of the grid this recipe uses, and it uses (n): when more c...
 
 **What it means:** Shown in the Recipe editor and in the Problems list while one is open.
@@ -18283,9 +18696,13 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Recipe editor and in the Problems list while one is open.
 
-### The raw recipe is not one JSON object.
+**How to fix:** Nothing to do. Build for another target to use it.
+
+### The raw recipe is not one whole recipe in curly brackets.
 
 **What it means:** Shown in the Recipe editor and in the Problems list while one is open.
+
+**How to fix:** Write the whole recipe as one block of text, the way the game's recipe files do.
 
 ## Ritual checks
 
@@ -18293,9 +18710,13 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Ritual editor and in the Problems list while one is open.
 
+**How to fix:** Pick what the ritual leaves on the altar.
+
 ### That block performs no rituals. Attach Performs rituals to it.
 
 **What it means:** Shown in the Ritual editor and in the Problems list while one is open.
+
+**How to fix:** Attach Performs rituals to the block, or pick another block.
 
 ## Settings and details
 
@@ -18303,9 +18724,7 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown when you export or build from the project tree.
 
-### 2 errors in the Problems panel
-
-**What it means:** Shown when you export or build from the project tree.
+**How to fix:** Check that the folder can be written to, then press Export again.
 
 ### Two things are wrong.
 
@@ -18317,49 +18736,73 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown when the studio starts and loads a translator.
 
+**How to fix:** Check that the translator file is there and not broken, or remove it from the list of translators.
+
 ### A Modrinth id is the project's id or its slug, as its page address shows it, with no space...
 
 **What it means:** Shown when you fill in the project details.
+
+**How to fix:** Copy the id from the end of the project's Modrinth page address, with no spaces.
 
 ### A CurseForge project id is a number, shown on the project's page.
 
 **What it means:** Shown when you fill in the project details.
 
+**How to fix:** Type only the number shown on your project's page on that site.
+
 ### A mod id is 2 to 64 small letters, digits and _, starting with a letter.
 
 **What it means:** Shown when you fill in the project details.
+
+**How to fix:** Use 2 to 64 small letters or digits, start with a letter, and join words with an underscore.
 
 ### A package is two or more words of small letters, digits and _, joined by dots, such as com...
 
 **What it means:** Shown when you fill in the project details.
 
+**How to fix:** Write it like com.yourname.yourmod, in small letters.
+
 ### A version is digits, letters and dots, such as 1.0.0.
 
 **What it means:** Shown when you fill in the project details.
+
+**How to fix:** Write it like 1.0.0.
 
 ### (editor) did not open: (reason)
 
 **What it means:** Shown when the studio opens a file or a program outside itself.
 
+**How to fix:** Check that the program is installed, then try again.
+
 ### Could not look for updates
 
-**What it means:** Shown when you change the studio's settings.
+**What it means:** When you press Check for updates and the studio cannot look.
+
+**How to fix:** Check your internet connection and press it again. You can keep working meanwhile.
 
 ### The internet did not answer. Your work is not affected.
 
 **What it means:** Shown when you change the studio's settings.
 
+**How to fix:** Check your internet, then try again.
+
 ### Could not get the models: (why)
 
 **What it means:** Shown when you change the studio's settings.
+
+**How to fix:** Check your internet and your sign-in, then open the list again.
 
 ### Could not load the skills.
 
 **What it means:** Shown when you change the studio's settings.
 
+**How to fix:** Close Settings and open it again.
+
 ### Could not load what the chat remembers.
 
 **What it means:** Shown when you change the studio's settings.
+
+**How to fix:** Close Settings and open it again.
 
 ## Station recipe checks
 
@@ -18367,13 +18810,19 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Station recipe editor and in the Problems list while one is open.
 
+**How to fix:** Pick the station in the recipe's Station field.
+
 ### That block's screen has no Slot group, so it has no cells to fill.
 
 **What it means:** Shown in the Station recipe editor and in the Problems list while one is open.
 
+**How to fix:** Add a Slot group to the block's screen.
+
 ### Cell (cell) is not on the station's screen. Its cells: (known).
 
 **What it means:** Shown in the Station recipe editor and in the Problems list while one is open.
+
+**How to fix:** Pick a cell the screen has, or add that cell to the screen.
 
 ## Structure checks
 
@@ -18405,9 +18854,13 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown in the Translation editor and in the Problems list while one is open.
 
+**How to fix:** Rename the key with small letters, digits, dots and underscores, like item.my_mod.ruby.
+
 ### A language is a code like en_us.
 
 **What it means:** Shown in the Translation editor and in the Problems list while one is open.
+
+**How to fix:** Type the language as a code, like en_us or fr_fr.
 
 ### Give the line its text.
 
@@ -18427,9 +18880,13 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown when the studio reads your list of game versions.
 
+**How to fix:** Check that Git is installed and the project folder is not locked, then try again.
+
 ### Could not look for updates: (reason)
 
 **What it means:** Shown when the studio looks for or installs an update.
+
+**How to fix:** Check your internet, then look again.
 
 ## Your own code
 
@@ -18437,13 +18894,19 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 
 **What it means:** Shown when your own code is checked or built.
 
+**How to fix:** Read the lines above, then press Play again. If it stays, check your internet.
+
 ### The compiler could not run: (reason)
 
 **What it means:** Shown when your own code is checked or built.
 
+**How to fix:** Press Play again. If it stays, check that Java is set up in Settings.
+
 ### The change was not swapped: (n) errors in what the sentences became.
 
 **What it means:** Shown when your own code is checked or built.
+
+**How to fix:** Fix the lines the errors name, then change it again.
 
 ---
 
@@ -18520,11 +18983,11 @@ The beta installer is not signed yet. Check the file as shown in [Install](insta
 
 ## Play takes a long time the first time.
 
-The first Play downloads the game and its tools once, about 1.7 GB. Later starts are fast.
+The first [Play](glossary.md#play) downloads the game and its tools once, about 1.7 GB. Later starts are fast.
 
 ## My mod is not in the game.
 
-Look for its name in the mod list. If it is missing, open the Cook window and read the first red line. See [Troubleshooting](troubleshooting.md).
+Look for its name in the mod list. If it is missing, open the [Cook](glossary.md#cook) window and read the first red line. See [Troubleshooting](troubleshooting.md).
 
 ## How do I put my mod on Modrinth or CurseForge?
 
@@ -18552,32 +19015,94 @@ Write to support@modryos.com, or ask the [community](help-and-community.md).
 
 # Glossary
 
-**New thing**: New thing
+## New thing
 
-**Cook**: Build a jar for each target picked, one after another, and put them side by side in the project's release folder.
+The button that opens the catalogue of everything you can add to a project.
 
-**Play**: Build the mod and start a Minecraft client with it.
+## Cook
 
-**Export**: Writes your project out as files you can share or keep.
+Build a jar for each target picked, one after another, and put them side by side in the project's release folder.
 
-**Build the jar**: Build the mod for every target the project lists, one after another, without starting a game.
+## Play
 
-**Project**: A folder that holds everything for one mod, data pack or resource pack.
+Build the mod and start a Minecraft client with it.
 
-**Thing**: One block, item, creature, recipe or other piece you add to a project.
+## Export
 
-**Kind**: The sort of a thing: a block, an item, a recipe. Each kind has its own editor.
+Writes your project out as files you can share or keep.
 
-**Editor**: The panel where you set one thing: its name, its look and what it does.
+## Build the jar
 
-**Loader**: The program that runs mods in Minecraft. Modryos makes mods for NeoForge and Fabric.
+Build the mod for every target the project lists, one after another, without starting a game.
 
-**Target**: Set the targets the mod is made for: the loaders and game versions Cook makes jars for.
+## Project
 
-**Sample**: Your copy goes in its own folder. The sample stays as it is.
+A folder that holds everything for one mod, data pack or resource pack.
 
-**Template**: A thing that already works, added from New thing, such as a Crusher or a Coal Generator.
+## Thing
 
-**Restore point**: Replay the edits made after the last save.
+One block, item, creature, recipe or other piece you add to a project.
 
-**Trait**: An ability attached to a thing, such as an inventory or an energy store.
+## Kind
+
+The sort of a thing: a block, an item, a recipe. Each kind has its own editor.
+
+## Editor
+
+The panel where you set one thing: its name, its look and what it does.
+
+## Loader
+
+The program that runs mods in Minecraft. Modryos makes mods for NeoForge and Fabric.
+
+## Target
+
+Set the targets the mod is made for: the loaders and game versions Cook makes jars for.
+
+## Sample
+
+Your copy goes in its own folder. The sample stays as it is.
+
+## Template
+
+A thing that already works, added from New thing, such as a Crusher or a Coal Generator.
+
+## Restore point
+
+Replay the edits made after the last save.
+
+## Trait
+
+An ability attached to a thing, such as an inventory or an energy store.
+
+## Jar
+
+The file a mod lives in, ending in .jar. A player puts it in the mods folder of Minecraft. Cook makes one for every version and loader you pick, and each works only on its own.
+
+## EULA
+
+The Minecraft licence from Mojang that you accept once, with Accept and Play, before the studio starts the game for you.
+
+## Release folder
+
+The folder called release inside your project. Cook puts the jars there, in a folder named for the mod version.
+
+## Fabric API
+
+A separate mod that every Fabric mod needs next to it in the mods folder. NeoForge mods do not need it.
+
+## SHA256
+
+A long code worked out from a file. If the code you get matches the one on the download page, the file was not changed on the way.
+
+## Painter
+
+The part of the Texture editor where you draw a picture pixel by pixel.
+
+## Texture
+
+The picture a block, item or creature wears. It is a PNG file, often 16 by 16 pixels.
+
+## Strip of frames
+
+A picture made of squares one above the other, like a film strip. The game shows them one after another, so the picture moves.
