@@ -51,6 +51,7 @@ const FOOTER = `<div class="notice"><div class="wrap">NOT AN OFFICIAL MINECRAFT 
     <span>&copy; 2026 Neryos. Minecraft is a trademark of Mojang Synergies AB.</span>
     <nav>
       <a href="./">Home</a>
+      <a href="docs/">Docs</a>
       <a href="terms.html">Terms</a>
       <a href="privacy.html">Privacy</a>
       <a href="beta-terms.html">Beta terms</a>
@@ -89,6 +90,7 @@ const page = (title, desc, slug, body) => `<!doctype html>
     <a class="wordmark" href="./">Modryos<span>.</span></a>
     <nav>
       <a href="features.html">Features</a>
+      <a href="docs/">Docs</a>
       <a href="faq.html">FAQ</a>
       <a href="download.html">Download</a>
       <a class="hide-sm" href="https://github.com/Modryos/modryos">GitHub</a>

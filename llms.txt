@@ -19,6 +19,14 @@ Facts, as of 22 October 2026:
 - [Features](https://modryos.com/features.html): each capability, how it is made in the studio and how it looks in the game
 - [Questions and answers](https://modryos.com/faq.html): making mods without coding, Java, versions, loaders, Bedrock, price, release
 
+<!-- docs:start -->
+## Docs
+
+- [Modryos documentation](https://modryos.com/docs/): How to use Modryos, the desktop studio for making Minecraft Java mods without writing code.
+
+All docs in one file: https://modryos.com/llms-full.txt
+<!-- docs:end -->
+
 ## Optional
 
 - [Privacy](https://modryos.com/privacy.html): what the website collects (nothing)
