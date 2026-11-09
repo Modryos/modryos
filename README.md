@@ -84,7 +84,7 @@ Modryos is not released yet. When it is, the latest version will be on the
 - **Bug:** [open a bug report](https://github.com/Modryos/modryos/issues/new?template=bug_report.yml).
   The form asks for your version, the steps to reproduce and screenshots.
 - **Idea:** [open a suggestion](https://github.com/Modryos/modryos/issues/new?template=feature_request.yml).
-- **Question:** ask on our [Discord](https://discord.gg/ccWxeu8BVh) (choose Modryos, then Modryos-Help).
+- **Question:** ask on our [Discord](https://discord.gg/ccWxeu8BVh) (choose Modryos, then the Help channel).
 
 Website: [modryos.com](https://modryos.com): [features](https://modryos.com/features.html)
 and [questions and answers](https://modryos.com/faq.html).

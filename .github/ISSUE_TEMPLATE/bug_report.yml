@@ -8,7 +8,7 @@ body:
       value: |
         Thank you for reporting a bug. Please fill in every required field.
         Reports without steps to reproduce or without a version may be closed.
-        Questions are answered on our Discord, in Modryos-Help.
+        Questions are answered on our Discord, in the Modryos Help channel.
   - type: checkboxes
     id: checks
     attributes:
