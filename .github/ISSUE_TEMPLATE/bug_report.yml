@@ -16,15 +16,24 @@ body:
       options:
         - label: I searched the open and closed issues and this bug is not reported yet.
           required: true
-        - label: I am using the latest Modryos version.
-          required: true
-  - type: input
+  - type: dropdown
     id: version
     attributes:
       label: Modryos version
-      description: The version you are using.
+      description: The newest version is first. Please update before you report - the bug may already be fixed.
+      options:
+        # versions-start (filled automatically on every release - do not edit by hand)
+        - Test build (before 1.0.0)
+        # versions-end
+        - Other version
+      default: 0
     validations:
       required: true
+  - type: input
+    id: version_other
+    attributes:
+      label: Other version
+      description: Only if you chose "Other version" above.
   - type: input
     id: system
     attributes:

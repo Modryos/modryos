@@ -1,0 +1,35 @@
+name: Update versions in the bug form
+# On every release, the bug report form lists the newest versions (newest first, marked "latest").
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  versions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Write the newest versions into the form
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          f=.github/ISSUE_TEMPLATE/bug_report.yml
+          tags=$(gh release list --limit 5 --exclude-drafts --json tagName --jq '.[].tagName')
+          [ -z "$tags" ] && { echo "no releases yet"; exit 0; }
+          {
+            first=1
+            for t in $tags; do
+              if [ $first = 1 ]; then echo "        - ${t} (latest)"; first=0; else echo "        - ${t}"; fi
+            done
+          } > /tmp/versions.txt
+          awk 'BEGIN{skip=0} /# versions-start/{print; while((getline l < "/tmp/versions.txt")>0) print l; skip=1; next} /# versions-end/{skip=0} !skip' "$f" > /tmp/form.yml
+          mv /tmp/form.yml "$f"
+          if git diff --quiet; then echo "no change"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Bug form: versions from the latest releases"
+          git push
