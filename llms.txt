@@ -23,6 +23,12 @@ Facts, as of 22 October 2026:
 ## Docs
 
 - [Modryos documentation](https://modryos.com/docs/): How to use Modryos, the desktop studio for making Minecraft Java mods without writing code.
+- [Getting started](https://modryos.com/docs/getting-started): What Modryos is and the five steps from the download to your mod in the game.
+- [Install Modryos](https://modryos.com/docs/install): What your computer needs, how to install Modryos on Windows, how to check the file and what the first start does.
+- [Your first mod in 10 minutes](https://modryos.com/docs/first-mod): Start from a sample, change one thing, play it in Minecraft and make the mod file.
+- [Play and Stop](https://modryos.com/docs/play): How Play starts your mod in Minecraft, what the first start downloads and what the Cook window shows.
+- [Export your mod](https://modryos.com/docs/export): Make the mod file (jar) for each Minecraft version and loader, and find where it lands.
+- [Help and community](https://modryos.com/docs/help-and-community): The Help menu, how to report a problem and where to ask other makers.
 - [Editors](https://modryos.com/docs/editors): Every editor in the studio, grouped as New thing groups them.
 - [Advancement editor](https://modryos.com/docs/editor-advancement): One of the game's own advancements: a goal with a toast, reached by an item, a kill or a rule.
 - [Animation editor](https://modryos.com/docs/editor-animation): How a model moves over time.
@@ -321,7 +327,10 @@ Facts, as of 22 October 2026:
 - [Extension project](https://modryos.com/docs/project-extension): New kinds of things, or a new game version, for Modryos itself.
 - [Templates and samples](https://modryos.com/docs/templates-and-samples): Ready-made starting points: templates add one thing that works, samples are small finished mods.
 - [Versions and loaders](https://modryos.com/docs/versions-and-loaders): The game versions and loaders Modryos makes mods for, and what one project can target at once.
+- [Publish on Modrinth and CurseForge](https://modryos.com/docs/publishing): The store files Modryos writes, the AI note each site asks for, and the store id fields.
 - [Troubleshooting](https://modryos.com/docs/troubleshooting): The plain-English messages Modryos can show, when each one shows and how to fix it.
+- [Account and privacy](https://modryos.com/docs/account-and-privacy): How sign-in works, what Settings > Account lets you do, and what is sent and what never is.
+- [Frequently asked questions](https://modryos.com/docs/faq): Short answers to the questions people ask most.
 - [Glossary](https://modryos.com/docs/glossary): The studio's own words, each in one line.
 
 All docs in one file: https://modryos.com/llms-full.txt

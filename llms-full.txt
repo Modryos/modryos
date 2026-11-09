@@ -14,6 +14,223 @@ Pick a section below, or use the search box at the top of the page.
 
 ---
 
+# https://modryos.com/docs/getting-started
+
+# Getting started
+
+Modryos is a studio for making Minecraft mods. You build the whole mod - models, animations, textures, recipes, logic and code - in one studio. AI is an optional helper.
+
+You do not need to know how to code. If you know Minecraft, you can start.
+
+## The five steps
+
+1. [Install Modryos](install.md): download it, start it, sign in.
+2. [Your first mod in 10 minutes](first-mod.md): pick a sample, change one thing.
+3. [Play](play.md): see your mod in the real game.
+4. [Export](export.md): make the mod file you can share.
+5. [Publish](publishing.md): put it on Modrinth or CurseForge.
+
+## Good to know
+
+- Your projects stay on your computer.
+- One project can make a mod for NeoForge and Fabric. See [Versions and loaders](versions-and-loaders.md).
+- Stuck? Read [Troubleshooting](troubleshooting.md), the [FAQ](faq.md) or [Help and community](help-and-community.md).
+
+---
+
+# https://modryos.com/docs/install
+
+# Install Modryos
+
+## What you need
+
+- Windows 10 or Windows 11.
+- An internet connection for the first start.
+- About 1.7 GB of free disk space for the game tools. The studio downloads them the first time you press Play.
+- A Minecraft Java Edition account to play your mod in the real game.
+
+## Download
+
+Get `Modryos-Install-<version>.exe` from the [download page](/download.html). Save it anywhere, for example in Downloads.
+
+## Windows may warn you
+
+For now the installer is not signed, so Windows does not know who made it yet. That is expected. If Windows stops it:
+
+1. Press **More info** on the "Windows protected your PC" window.
+2. Check that the file name is the one you downloaded.
+3. Press **Run anyway**.
+
+If the window shows **Run** at once, press it.
+
+> **Note** On some new Windows 11 computers, Smart App Control blocks every unsigned app and shows no Run button. Turning it off cannot be undone without reinstalling Windows, so you may prefer to wait for the signed version.
+
+## Check the file (optional)
+
+The download page shows a SHA256 checksum for each file. To check yours, open PowerShell in the folder with the file and run one command:
+
+```
+Get-FileHash .\Modryos-Install-<version>.exe -Algorithm SHA256
+```
+
+Use your file's real name. The long number it prints must be the same as the one on the download page. If it is not, do not run the file. Write to support@modryos.com.
+
+## Install
+
+1. Run the file and press **Install**. **Options** lets you pick the folder and who it is for. The default is only for you and needs no administrator password.
+2. It takes under a minute. Modryos opens when it is done.
+3. Installing over an older Modryos? The button says **Update**. Your projects and sign-in stay.
+
+## Sign in
+
+The beta is open to invited people.
+
+1. Type your email, tick **I am 15 or older** and the terms, and press **Send me a code**.
+2. Type the 6-digit code from the email. There is no password.
+3. Type the invite code from your invite email and press **Redeem**.
+
+No invite yet? Press **Join the waiting list** on that screen.
+
+## First start
+
+1. Accept the terms and the Minecraft EULA once. Pick how much you have made mods before. None is fine, and you can change it in Settings.
+2. The studio then gets Java and the game files it needs, by itself. You install nothing else. It takes several minutes, and a bar shows how far it is. You can look around while it works.
+
+Next: [your first mod](first-mod.md).
+
+---
+
+# https://modryos.com/docs/first-mod
+
+# Your first mod in 10 minutes
+
+Keep this page open beside Modryos.
+
+## 1. Start a mod
+
+On the start screen, **What are you making today?**, start a new mod. Pick a template or a sample so there is already something in it. Give it a name and keep both loaders ticked.
+
+![The start screen](/media/start-welcome.webp)
+
+## 2. Follow First steps
+
+Modryos shows a small **First steps** card with four steps: **Look**, **Change**, **Play** and **In the game**. You can open it again any time with **Help > Getting started**.
+
+- **Look.** Click one of your things in the Project list on the left. Blocks, items and creatures open so you can see how they are made.
+- **Change.** Change its name or any number you see. You can always undo it, so try anything.
+- **Play.** Press **Play** at the top. Modryos builds your mod and opens Minecraft with it. The first time takes a few minutes. Keep the window open.
+- **In the game.** Find your thing in the creative inventory, in your mod's own tab. The card says "Your mod is in the game. Well done!" when it sees it.
+
+## 3. Change it again
+
+Change a colour or a name, then press **Reload in the game**. The change shows up without restarting. Press **Stop** when you are done.
+
+## 4. Make the mod file
+
+Use **File > Export > Make the mod file (.jar)**. See [Export](export.md).
+
+Next: read more about [Play](play.md).
+
+---
+
+# https://modryos.com/docs/play
+
+# Play and Stop
+
+**Play** builds your mod and starts Minecraft with it. **Stop** closes the game again.
+
+## Which version and loader
+
+Play starts the version and loader you pick in **Play on**. A project can have more than one. Pick another one there and press Play again. See [Versions and loaders](versions-and-loaders.md).
+
+## The first start
+
+The first time, Modryos downloads the game and its tools (about 1.7 GB) and builds your mod. That takes a few minutes. Later starts are much faster. You are asked to accept the Minecraft EULA once, with **Accept and Play**.
+
+## In the game
+
+- Open the creative inventory and find your mod's own tab.
+- Place your block and break it to see what drops.
+- Open the mod list and look for your mod's name.
+
+Change something in Modryos and press **Reload in the game**. Most changes show up without a restart. **Leave and rejoin the world** helps when one does not.
+
+## The Cook window
+
+Cooking is how Modryos makes the mod file. Play does it for you. You can also open it with **File > Export > Make the mod file (.jar)**. It shows four steps:
+
+1. **Write the project**
+2. **Resolve what the game needs**
+3. **Compile**
+4. **Pack the file**
+
+When it is done it tells you how many mod files it made. If something fails, the first red line says why. Fix it and press **Make again**.
+
+![The Cook window with its targets](/media/cook-targets.webp)
+
+If Play does not work, see [Troubleshooting](troubleshooting.md).
+
+---
+
+# https://modryos.com/docs/export
+
+# Export your mod
+
+The mod file is a `.jar`. It is what people put in their Minecraft `mods` folder.
+
+## Make it
+
+1. Choose **File > Export > Make the mod file (.jar)**. The Cook window opens.
+2. Press **Cook**.
+3. When it is done, each file shows its full path. **Show the file** opens its folder, and **Open the folder** opens the folder with all of them.
+
+## One jar for each version and loader
+
+Modryos makes one jar for every version and loader your project targets. A project for NeoForge and Fabric on two versions makes four jars. Each one only works on its own version and loader, so check the name before you share it.
+
+## Where they land
+
+In your project folder, in `release`, in a folder named for the mod version. Your project's own files are never changed by this.
+
+## Play one
+
+Put the jar in the `mods` folder of a Minecraft with the same loader and version. Fabric mods also need Fabric API in the same folder.
+
+Next: [Publish your mod](publishing.md).
+
+---
+
+# https://modryos.com/docs/help-and-community
+
+# Help and community
+
+## The Help menu
+
+- **Getting started** walks you through your first mod.
+- **Documentation** opens these guides in your browser.
+- **Keyboard shortcuts** lists every key you can press, and lets you search.
+- **Help for this editor** opens the guide page for the editor you are in.
+- **What's new** shows what changed in this version.
+- **Contact support** writes an email to the Modryos team. It starts with the version you use.
+- **The Modryos community** opens the place where makers help each other.
+- **Report a problem** shows what would go in a report first, and saves nothing until you say yes.
+
+## Report a problem
+
+Press **F6** or choose **Help > Report a problem**. Write one line about what you expected. You see everything that goes in the report before it is saved.
+
+## Contact support
+
+Write to support@modryos.com. A person reads it.
+
+## The Modryos community
+
+Join other makers on Discord: https://discord.com/invite/ccWxeu8BVh
+
+Also see [Troubleshooting](troubleshooting.md) and the [FAQ](faq.md).
+
+---
+
 # https://modryos.com/docs/editors
 
 # Editors
@@ -16432,6 +16649,40 @@ One project can list many targets. You build the thing once; Cook makes one jar 
 
 ---
 
+# https://modryos.com/docs/publishing
+
+# Publish on Modrinth and CurseForge
+
+Modryos does not upload anything for you. It writes the texts and files each site asks for, so you can paste them.
+
+## The store files
+
+When you [make the mod file](export.md), Modryos also writes a `stores` folder inside `release/<version>/`:
+
+- `stores/modrinth/` and `stores/curseforge/` hold one file per jar and one page file for the project.
+- `stores/README.txt` says what to paste where, and what to check by hand.
+- `MADE_WITH_AI.md` is the note about AI help, with a ready text for each site.
+
+Nothing in them is sent anywhere. If something is missing, such as a description, a logo or a licence link, Modryos tells you in the README.
+
+## Your store ids
+
+Make your mod's page on the store first. Then open **Mod details** and fill in **Modrinth project id** and **CurseForge project id**. Every cook then puts them in the store files, ready to paste. A CurseForge id is a number shown on the project's page.
+
+## The AI note
+
+Each site has its own rule about AI-made content, so read the rule on the site you use.
+
+Modryos records what an AI agent made in the studio. `MADE_WITH_AI.md` turns that into a short text. While Modryos AI is closed in the beta, the record says no AI help was recorded in the studio. If you used an outside tool, the studio cannot see it, so tell the site yourself.
+
+On Modrinth the file also says whether to switch on **Contains AI-generated content**.
+
+## Upload
+
+Each site has its own upload page. Use the files above for the descriptions and versions. Then check the site's game version names, because Modryos does not check those.
+
+---
+
 # https://modryos.com/docs/troubleshooting
 
 # Troubleshooting
@@ -18193,6 +18444,107 @@ Each heading is a message the studio can show. A word in brackets, like (name), 
 ### The change was not swapped: (n) errors in what the sentences became.
 
 **What it means:** Shown when your own code is checked or built.
+
+---
+
+# https://modryos.com/docs/account-and-privacy
+
+# Account and privacy
+
+## Sign in
+
+You sign in with your email. Modryos sends you a 6-digit code. There is no password. You have to be 15 or older. During the beta you also need an invite code. See [Install](install.md).
+
+## Settings > Account
+
+Open **Settings > Account** to:
+
+- see the place line for your beta account.
+- change your email.
+- turn Modryos news emails on or off.
+- turn **Send crash reports** on or off.
+- press **Download my data** to get everything we keep about your account in one file.
+- press **Delete account** to remove your account and its data on our server. You type DELETE to confirm.
+
+Your projects stay on your computer.
+
+## What is sent, and what never is
+
+Your mods stay on your computer. We never had them. Modryos sends only what the account and the app need to work, and a report only when you press Send. Crash reports are sent only if you turn them on or press Send for one report. When you press **Report a problem**, you see everything in the report first.
+
+For the full list, read the [Privacy Policy](/privacy.html).
+
+## The legal texts
+
+- [Terms of Use](/terms.html)
+- [Privacy Policy](/privacy.html)
+- [Beta terms](/beta-terms.html)
+
+---
+
+# https://modryos.com/docs/faq
+
+# Frequently asked questions
+
+## Can I make a mod without coding?
+
+Yes. You build blocks, items, creatures and recipes in the studio. If you do want code, it is there too.
+
+## What is Modryos?
+
+A studio where you build the whole mod - models, animations, textures, recipes, logic and code - in one place. AI is an optional helper.
+
+## Which versions and loaders?
+
+Minecraft Java Edition 1.21.1, 1.21.11, 26.1.2, 26.2 and 26.3, on NeoForge and Fabric, from the same project. See [Versions and loaders](versions-and-loaders.md).
+
+## Which computers does it run on?
+
+Windows 10 and 11.
+
+## Is it free?
+
+Yes, during the beta. Modryos AI is not open in the beta, and the studio works fully without it.
+
+## I have no invite. What now?
+
+Press **Join the waiting list** on the sign-in screen. Invites go out in small waves. Confirm your address from the email we send, because only confirmed places get invites.
+
+## My invite code does not work.
+
+Each code is used once and belongs to the address it was sent to. Sign in with that exact address, then paste the code. Still not working? Write to support@modryos.com.
+
+## Windows says the installer is not safe.
+
+The beta installer is not signed yet. Check the file as shown in [Install](install.md), then press **More info** and **Run anyway**.
+
+## Play takes a long time the first time.
+
+The first Play downloads the game and its tools once, about 1.7 GB. Later starts are fast.
+
+## My mod is not in the game.
+
+Look for its name in the mod list. If it is missing, open the Cook window and read the first red line. See [Troubleshooting](troubleshooting.md).
+
+## How do I put my mod on Modrinth or CurseForge?
+
+Make the mod file, then use the files Modryos writes for the stores. See [Publishing](publishing.md).
+
+## I lost my work.
+
+Your project keeps restore points. Open **File > Versions** and open an older one. Please do not delete the project folder. Press F6 and send us a report.
+
+## Do I need to know Java?
+
+No.
+
+## What do you keep about me?
+
+Only your account. Press **Download my data** in Settings > Account to see it, or **Delete account** to remove it. Your mods never leave your computer. See the [Privacy Policy](/privacy.html).
+
+## Who do I ask for help?
+
+Write to support@modryos.com, or ask the [community](help-and-community.md).
 
 ---
 
