@@ -18,9 +18,6 @@ It is planned and cannot be made yet.
 
 See [Versions and loaders](versions-and-loaders.md).
 
-## Picture
-
-![Extension project](/media/docs/project-extension.webp)
 
 ## Related pages
 

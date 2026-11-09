@@ -18,9 +18,6 @@ A [jar](glossary.md#jar) for each [loader](glossary.md#loader) and game version 
 
 See [Versions and loaders](versions-and-loaders.md).
 
-## Picture
-
-![Mod project](/media/docs/project-mod.webp)
 
 ## Related pages
 

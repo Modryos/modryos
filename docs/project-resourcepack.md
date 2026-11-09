@@ -18,9 +18,6 @@ A pack you copy into a world's datapacks or resourcepacks folder.
 
 See [Versions and loaders](versions-and-loaders.md).
 
-## Picture
-
-![Resource pack project](/media/docs/project-resourcepack.webp)
 
 ## Related pages
 

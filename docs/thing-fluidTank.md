@@ -20,9 +20,6 @@ Each part becomes what its own page says.
 
 It does not point at other things.
 
-## Picture
-
-![Fluid tank](/media/docs/thing-fluidTank.webp)
 
 ## Related pages
 

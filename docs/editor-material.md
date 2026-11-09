@@ -34,9 +34,6 @@ It is added to the game, so a player needs your mod to see it.
 
 It points at: [Effect](editor-effect.md), [Item](editor-item.md).
 
-## Picture
-
-![Material editor](/media/docs/editor-material.webp)
 
 ## Related pages
 

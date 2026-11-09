@@ -32,9 +32,6 @@ It does not point at other things.
 
 These point at it: [Behavior](editor-behaviour.md).
 
-## Picture
-
-![Space station editor](/media/docs/editor-spaceStation.webp)
 
 ## Related pages
 

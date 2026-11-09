@@ -24,9 +24,6 @@ It does not point at other things.
 
 These point at it: [Behavior](editor-behaviour.md), [Drawing in the world](editor-worldDraw.md).
 
-## Picture
-
-![Key binding editor](/media/docs/editor-keyBinding.webp)
 
 ## Related pages
 

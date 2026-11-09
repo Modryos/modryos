@@ -31,9 +31,6 @@ It points at: [Block](editor-block.md).
 
 These point at it: [Biome](editor-biome.md).
 
-## Picture
-
-![Caves editor](/media/docs/editor-carver.webp)
 
 ## Related pages
 

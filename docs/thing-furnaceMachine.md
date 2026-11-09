@@ -20,9 +20,6 @@ Each part becomes what its own page says.
 
 It does not point at other things.
 
-## Picture
-
-![Electric furnace](/media/docs/thing-furnaceMachine.webp)
 
 ## Related pages
 

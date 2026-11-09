@@ -31,9 +31,6 @@ It runs on the player's side of the game.
 
 It does not point at other things.
 
-## Picture
-
-![Space station](/media/docs/editor-spaceStation.webp)
 
 ## Related pages
 

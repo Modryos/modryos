@@ -26,9 +26,6 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It does not point at other things.
 
-## Picture
-
-![Forms for every material editor](/media/docs/editor-formSet.webp)
 
 ## Related pages
 

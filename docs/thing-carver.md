@@ -30,9 +30,6 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It points at: [Block](editor-block.md).
 
-## Picture
-
-![Caves](/media/docs/editor-carver.webp)
 
 ## Related pages
 

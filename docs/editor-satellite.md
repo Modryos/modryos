@@ -27,9 +27,6 @@ It does not point at other things.
 
 These point at it: [Behavior](editor-behaviour.md).
 
-## Picture
-
-![Satellite editor](/media/docs/editor-satellite.webp)
 
 ## Related pages
 

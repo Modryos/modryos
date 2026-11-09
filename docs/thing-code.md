@@ -25,9 +25,6 @@ It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glo
 
 It does not point at other things.
 
-## Picture
-
-![Code](/media/docs/editor-code.webp)
 
 ## Related pages
 

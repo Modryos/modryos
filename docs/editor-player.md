@@ -33,9 +33,6 @@ It does not point at other things.
 
 These point at it: [Behavior](editor-behaviour.md), [Value](editor-value.md).
 
-## Picture
-
-![The player editor](/media/docs/editor-player.webp)
 
 ## Related pages
 

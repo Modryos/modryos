@@ -27,9 +27,6 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It points at: [Effect](editor-effect.md).
 
-## Picture
-
-![Potion](/media/docs/editor-potion.webp)
 
 ## Related pages
 

@@ -26,9 +26,6 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It does not point at other things.
 
-## Picture
-
-![Game rule editor](/media/docs/editor-gameRule.webp)
 
 ## Related pages
 

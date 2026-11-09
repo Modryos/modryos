@@ -1,6 +1,6 @@
 // Builds the docs wiki: docs-src/*.md -> docs/*.html + docs/*.md, llms.txt docs list, llms-full.txt. Usage: node tools/docs.mjs
 // Adding a page = adding one .md file with front matter (title, description, section, order).
-import { readFileSync, writeFileSync, readdirSync, mkdirSync, rmSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync, mkdirSync, rmSync, existsSync } from "node:fs";
 import assert from "node:assert";
 
 const BASE = "https://modryos.com";
@@ -73,7 +73,9 @@ function convert(md) {
 }
 
 function load(file) {
-  const raw = readFileSync(`docs-src/${file}`, "utf8").replace(/\r/g, "");
+  // A picture not taken yet is left out with its heading, never a broken image.
+  const raw = readFileSync(`docs-src/${file}`, "utf8").replace(/\r/g, "")
+    .replace(/(?:## Picture\n\n)?!\[[^\]]*\]\((\/media\/[^)\s]+)\)\n?/g, (m, src) => (existsSync(src.slice(1)) ? m : ""));
   const m = raw.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
   assert(m, `${file}: front matter missing`);
   const fm = Object.fromEntries(m[1].split("\n").map((l) => [l.slice(0, l.indexOf(":")).trim(), l.slice(l.indexOf(":") + 1).trim()]));

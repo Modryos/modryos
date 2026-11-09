@@ -817,9 +817,6 @@ It points at: [Block](editor-block.md), [Item](editor-item.md), [Mob](editor-cre
 
 To make a sword set things on fire, see [Make a fire sword](make-a-fire-sword.md). It uses one rule, step by step.
 
-## Picture
-
-![Behavior editor](/media/docs/editor-behaviour.webp)
 
 ## Related pages
 
@@ -1174,9 +1171,6 @@ It points at: [Block](editor-block.md).
 
 These point at it: [Biome](editor-biome.md).
 
-## Picture
-
-![Caves editor](/media/docs/editor-carver.webp)
 
 ## Related pages
 
@@ -1258,9 +1252,6 @@ It does not point at other things.
 
 These point at it: [Block](editor-block.md), [Mob](editor-creature.md).
 
-## Picture
-
-![Code editor](/media/docs/editor-code.webp)
 
 ## Related pages
 
@@ -1704,9 +1695,6 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It points at: [Key binding](editor-keyBinding.md), [Item](editor-item.md).
 
-## Picture
-
-![Drawing in the world editor](/media/docs/editor-worldDraw.webp)
 
 ## Related pages
 
@@ -2051,9 +2039,6 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It does not point at other things.
 
-## Picture
-
-![File of your own editor](/media/docs/editor-ownFile.webp)
 
 ## Related pages
 
@@ -2147,9 +2132,6 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It does not point at other things.
 
-## Picture
-
-![Forms for every material editor](/media/docs/editor-formSet.webp)
 
 ## Related pages
 
@@ -2188,9 +2170,6 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It does not point at other things.
 
-## Picture
-
-![Game rule editor](/media/docs/editor-gameRule.webp)
 
 ## Related pages
 
@@ -2337,9 +2316,6 @@ It does not point at other things.
 
 These point at it: [Behavior](editor-behaviour.md).
 
-## Picture
-
-![Guide book editor](/media/docs/editor-guideBook.webp)
 
 ## Related pages
 
@@ -2666,9 +2642,6 @@ It does not point at other things.
 
 These point at it: [Behavior](editor-behaviour.md), [Drawing in the world](editor-worldDraw.md).
 
-## Picture
-
-![Key binding editor](/media/docs/editor-keyBinding.webp)
 
 ## Related pages
 
@@ -2911,9 +2884,6 @@ It is added to the game, so a player needs your mod to see it.
 
 It points at: [Effect](editor-effect.md), [Item](editor-item.md).
 
-## Picture
-
-![Material editor](/media/docs/editor-material.webp)
 
 ## Related pages
 
@@ -3345,9 +3315,6 @@ It points at: [Effect](editor-effect.md).
 
 These point at it: [Recipe](editor-recipe.md).
 
-## Picture
-
-![Potion editor](/media/docs/editor-potion.webp)
 
 ## Related pages
 
@@ -3497,9 +3464,6 @@ It points at: [Screen](editor-screen.md).
 
 These point at it: [Behavior](editor-behaviour.md).
 
-## Picture
-
-![Quests editor](/media/docs/editor-questBook.webp)
 
 ## Related pages
 
@@ -3762,9 +3726,6 @@ It does not point at other things.
 
 These point at it: [Behavior](editor-behaviour.md).
 
-## Picture
-
-![Satellite editor](/media/docs/editor-satellite.webp)
 
 ## Related pages
 
@@ -3900,9 +3861,6 @@ It points at: [Value](editor-value.md).
 
 These point at it: [Behavior](editor-behaviour.md).
 
-## Picture
-
-![Skill tree editor](/media/docs/editor-skillTree.webp)
 
 ## Related pages
 
@@ -3989,9 +3947,6 @@ It does not point at other things.
 
 These point at it: [Behavior](editor-behaviour.md).
 
-## Picture
-
-![Space station editor](/media/docs/editor-spaceStation.webp)
 
 ## Related pages
 
@@ -4270,9 +4225,6 @@ It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glo
 
 It does not point at other things.
 
-## Picture
-
-![Tag editor](/media/docs/editor-tag.webp)
 
 ## Related pages
 
@@ -4311,9 +4263,6 @@ It does not point at other things.
 
 A texture is a picture. **Replaces** is for when your picture takes the place of one the game already has. Leave it empty for a picture of your own. For example, `minecraft:block/stone` is the game's name for the picture on stone, so a texture that replaces it makes every stone block in the game wear your picture. To make or import one, see [Pictures and textures](pictures-and-textures.md). To put your own picture on a new block, see [A block with your own picture](block-with-your-own-picture.md).
 
-## Picture
-
-![Texture editor](/media/docs/editor-texture.webp)
 
 ## Related pages
 
@@ -4359,9 +4308,6 @@ It does not point at other things.
 
 These point at it: [Behavior](editor-behaviour.md), [Value](editor-value.md).
 
-## Picture
-
-![The player editor](/media/docs/editor-player.webp)
 
 ## Related pages
 
@@ -5297,9 +5243,6 @@ It does not point at other things.
 
 Other things that open the same editor: [File of your own](thing-ownFile.md), [Pack file](thing-packFile.md), [Dimension file of your own](thing-dimensionFile.md), [Look of a block made in code](thing-blockLook.md), [Mixin config](thing-mixinConfig.md), [Mixin](thing-mixin.md), [Access widener (Fabric)](thing-accessWidener.md).
 
-## Picture
-
-![File of your own](/media/docs/editor-ownFile.webp)
 
 ## Related pages
 
@@ -5339,9 +5282,6 @@ It does not point at other things.
 
 Other things that open the same editor: [File of your own](thing-ownFile.md), [Pack file](thing-packFile.md), [Dimension file of your own](thing-dimensionFile.md), [Look of a block made in code](thing-blockLook.md), [Mixin config](thing-mixinConfig.md), [Mixin](thing-mixin.md), [Access transformer (NeoForge)](thing-accessTransformer.md).
 
-## Picture
-
-![File of your own](/media/docs/editor-ownFile.webp)
 
 ## Related pages
 
@@ -6198,9 +6138,6 @@ It points at: [Block](editor-block.md), [Item](editor-item.md), [Mob](editor-cre
 
 To make a sword set things on fire, see [Make a fire sword](make-a-fire-sword.md). It uses one rule, step by step.
 
-## Picture
-
-![Behavior](/media/docs/editor-behaviour.webp)
 
 ## Related pages
 
@@ -7027,9 +6964,6 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It points at: [Block](editor-block.md).
 
-## Picture
-
-![Caves](/media/docs/editor-carver.webp)
 
 ## Related pages
 
@@ -7212,9 +7146,6 @@ It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glo
 
 It does not point at other things.
 
-## Picture
-
-![Code](/media/docs/editor-code.webp)
 
 ## Related pages
 
@@ -7595,9 +7526,6 @@ Each part becomes what its own page says.
 
 It does not point at other things.
 
-## Picture
-
-![Crafting station](/media/docs/thing-craftingStation.webp)
 
 ## Related pages
 
@@ -8191,9 +8119,6 @@ It does not point at other things.
 
 Other things that open the same editor: [File of your own](thing-ownFile.md), [Pack file](thing-packFile.md), [Look of a block made in code](thing-blockLook.md), [Mixin config](thing-mixinConfig.md), [Mixin](thing-mixin.md), [Access widener (Fabric)](thing-accessWidener.md), [Access transformer (NeoForge)](thing-accessTransformer.md).
 
-## Picture
-
-![File of your own](/media/docs/editor-ownFile.webp)
 
 ## Related pages
 
@@ -8348,9 +8273,6 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It points at: [Key binding](editor-keyBinding.md), [Item](editor-item.md).
 
-## Picture
-
-![Drawing in the world](/media/docs/editor-worldDraw.webp)
 
 ## Related pages
 
@@ -8541,9 +8463,6 @@ Each part becomes what its own page says.
 
 It does not point at other things.
 
-## Picture
-
-![Electric furnace](/media/docs/thing-furnaceMachine.webp)
 
 ## Related pages
 
@@ -8864,9 +8783,6 @@ It does not point at other things.
 
 Other things that open the same editor: [Pack file](thing-packFile.md), [Dimension file of your own](thing-dimensionFile.md), [Look of a block made in code](thing-blockLook.md), [Mixin config](thing-mixinConfig.md), [Mixin](thing-mixin.md), [Access widener (Fabric)](thing-accessWidener.md), [Access transformer (NeoForge)](thing-accessTransformer.md).
 
-## Picture
-
-![File of your own](/media/docs/editor-ownFile.webp)
 
 ## Related pages
 
@@ -8994,9 +8910,6 @@ Each part becomes what its own page says.
 
 It does not point at other things.
 
-## Picture
-
-![Fluid tank](/media/docs/thing-fluidTank.webp)
 
 ## Related pages
 
@@ -9326,9 +9239,6 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It does not point at other things.
 
-## Picture
-
-![Forms for every material](/media/docs/editor-formSet.webp)
 
 ## Related pages
 
@@ -9414,9 +9324,6 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It does not point at other things.
 
-## Picture
-
-![Game rule](/media/docs/editor-gameRule.webp)
 
 ## Related pages
 
@@ -9661,9 +9568,6 @@ Each part becomes what its own page says.
 
 It does not point at other things.
 
-## Picture
-
-![Generator with fuel](/media/docs/thing-fuelGenerator.webp)
 
 ## Related pages
 
@@ -9752,9 +9656,6 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It does not point at other things.
 
-## Picture
-
-![Guide book](/media/docs/editor-guideBook.webp)
 
 ## Related pages
 
@@ -10232,9 +10133,6 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It does not point at other things.
 
-## Picture
-
-![Key binding](/media/docs/editor-keyBinding.webp)
 
 ## Related pages
 
@@ -10429,9 +10327,6 @@ It does not point at other things.
 
 Other things that open the same editor: [File of your own](thing-ownFile.md), [Pack file](thing-packFile.md), [Dimension file of your own](thing-dimensionFile.md), [Mixin config](thing-mixinConfig.md), [Mixin](thing-mixin.md), [Access widener (Fabric)](thing-accessWidener.md), [Access transformer (NeoForge)](thing-accessTransformer.md).
 
-## Picture
-
-![File of your own](/media/docs/editor-ownFile.webp)
 
 ## Related pages
 
@@ -10824,9 +10719,6 @@ It is added to the game, so a player needs your mod to see it.
 
 It points at: [Effect](editor-effect.md), [Item](editor-item.md).
 
-## Picture
-
-![Material](/media/docs/editor-material.webp)
 
 ## Related pages
 
@@ -11042,9 +10934,6 @@ It does not point at other things.
 
 Other things that open the same editor: [File of your own](thing-ownFile.md), [Pack file](thing-packFile.md), [Dimension file of your own](thing-dimensionFile.md), [Look of a block made in code](thing-blockLook.md), [Mixin config](thing-mixinConfig.md), [Access widener (Fabric)](thing-accessWidener.md), [Access transformer (NeoForge)](thing-accessTransformer.md).
 
-## Picture
-
-![File of your own](/media/docs/editor-ownFile.webp)
 
 ## Related pages
 
@@ -11084,9 +10973,6 @@ It does not point at other things.
 
 Other things that open the same editor: [File of your own](thing-ownFile.md), [Pack file](thing-packFile.md), [Dimension file of your own](thing-dimensionFile.md), [Look of a block made in code](thing-blockLook.md), [Mixin](thing-mixin.md), [Access widener (Fabric)](thing-accessWidener.md), [Access transformer (NeoForge)](thing-accessTransformer.md).
 
-## Picture
-
-![File of your own](/media/docs/editor-ownFile.webp)
 
 ## Related pages
 
@@ -11779,9 +11665,6 @@ Each part becomes what its own page says.
 
 It does not point at other things.
 
-## Picture
-
-![Ore with a pickaxe](/media/docs/thing-oreWithTier.webp)
 
 ## Related pages
 
@@ -11861,9 +11744,6 @@ It does not point at other things.
 
 Other things that open the same editor: [File of your own](thing-ownFile.md), [Dimension file of your own](thing-dimensionFile.md), [Look of a block made in code](thing-blockLook.md), [Mixin config](thing-mixinConfig.md), [Mixin](thing-mixin.md), [Access widener (Fabric)](thing-accessWidener.md), [Access transformer (NeoForge)](thing-accessTransformer.md).
 
-## Picture
-
-![File of your own](/media/docs/editor-ownFile.webp)
 
 ## Related pages
 
@@ -12505,9 +12385,6 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It points at: [Effect](editor-effect.md).
 
-## Picture
-
-![Potion](/media/docs/editor-potion.webp)
 
 ## Related pages
 
@@ -12625,9 +12502,6 @@ Each part becomes what its own page says.
 
 It does not point at other things.
 
-## Picture
-
-![Powered machine](/media/docs/thing-poweredMachine.webp)
 
 ## Related pages
 
@@ -12808,9 +12682,6 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It points at: [Screen](editor-screen.md).
 
-## Picture
-
-![Quests](/media/docs/editor-questBook.webp)
 
 ## Related pages
 
@@ -13045,9 +12916,6 @@ It points at: [Value](editor-value.md).
 
 Other things that open the same editor: [Skill tree](thing-skillTree.md).
 
-## Picture
-
-![Skill tree](/media/docs/editor-skillTree.webp)
 
 ## Related pages
 
@@ -13139,9 +13007,6 @@ It runs on the player's side of the game.
 
 It does not point at other things.
 
-## Picture
-
-![Satellite](/media/docs/editor-satellite.webp)
 
 ## Related pages
 
@@ -13174,9 +13039,6 @@ It is planned and cannot be made yet.
 
 It does not point at other things.
 
-## Picture
-
-![Scene](/media/docs/thing-scene.webp)
 
 ## Related pages
 
@@ -13344,9 +13206,6 @@ Each part becomes what its own page says.
 
 It does not point at other things.
 
-## Picture
-
-![Set](/media/docs/thing-set.webp)
 
 ## Related pages
 
@@ -13818,9 +13677,6 @@ It points at: [Value](editor-value.md).
 
 Other things that open the same editor: [Research](thing-research.md).
 
-## Picture
-
-![Skill tree](/media/docs/editor-skillTree.webp)
 
 ## Related pages
 
@@ -13952,9 +13808,6 @@ It runs on the player's side of the game.
 
 It does not point at other things.
 
-## Picture
-
-![Space station](/media/docs/editor-spaceStation.webp)
 
 ## Related pages
 
@@ -14675,9 +14528,6 @@ It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glo
 
 It does not point at other things.
 
-## Picture
-
-![Tag](/media/docs/editor-tag.webp)
 
 ## Related pages
 
@@ -14851,9 +14701,6 @@ It does not point at other things.
 
 A texture is a picture. **Replaces** is for when your picture takes the place of one the game already has. Leave it empty for a picture of your own. For example, `minecraft:block/stone` is the game's name for the picture on stone, so a texture that replaces it makes every stone block in the game wear your picture. To make or import one, see [Pictures and textures](pictures-and-textures.md). To put your own picture on a new block, see [A block with your own picture](block-with-your-own-picture.md).
 
-## Picture
-
-![Texture](/media/docs/editor-texture.webp)
 
 ## Related pages
 
@@ -14896,9 +14743,6 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It does not point at other things.
 
-## Picture
-
-![The player](/media/docs/editor-player.webp)
 
 ## Related pages
 
@@ -16458,9 +16302,6 @@ A [jar](glossary.md#jar) for each [loader](glossary.md#loader) and game version 
 
 See [Versions and loaders](versions-and-loaders.md).
 
-## Picture
-
-![Mod project](/media/docs/project-mod.webp)
 
 ## Related pages
 
@@ -16490,9 +16331,6 @@ A pack you copy into a world's datapacks or resourcepacks folder.
 
 See [Versions and loaders](versions-and-loaders.md).
 
-## Picture
-
-![Data pack project](/media/docs/project-datapack.webp)
 
 ## Related pages
 
@@ -16522,9 +16360,6 @@ A pack you copy into a world's datapacks or resourcepacks folder.
 
 See [Versions and loaders](versions-and-loaders.md).
 
-## Picture
-
-![Resource pack project](/media/docs/project-resourcepack.webp)
 
 ## Related pages
 
@@ -16554,9 +16389,6 @@ It is planned and cannot be made yet.
 
 See [Versions and loaders](versions-and-loaders.md).
 
-## Picture
-
-![Modpack project](/media/docs/project-modpack.webp)
 
 ## Related pages
 
@@ -16586,9 +16418,6 @@ It is planned and cannot be made yet.
 
 See [Versions and loaders](versions-and-loaders.md).
 
-## Picture
-
-![Extension project](/media/docs/project-extension.webp)
 
 ## Related pages
 

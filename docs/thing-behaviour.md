@@ -29,9 +29,6 @@ It points at: [Block](editor-block.md), [Item](editor-item.md), [Mob](editor-cre
 
 To make a sword set things on fire, see [Make a fire sword](make-a-fire-sword.md). It uses one rule, step by step.
 
-## Picture
-
-![Behavior](/media/docs/editor-behaviour.webp)
 
 ## Related pages
 

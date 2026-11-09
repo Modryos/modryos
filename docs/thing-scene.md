@@ -19,9 +19,6 @@ It is planned and cannot be made yet.
 
 It does not point at other things.
 
-## Picture
-
-![Scene](/media/docs/thing-scene.webp)
 
 ## Related pages
 

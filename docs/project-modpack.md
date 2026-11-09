@@ -18,9 +18,6 @@ It is planned and cannot be made yet.
 
 See [Versions and loaders](versions-and-loaders.md).
 
-## Picture
-
-![Modpack project](/media/docs/project-modpack.webp)
 
 ## Related pages
 

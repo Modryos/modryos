@@ -26,9 +26,6 @@ It does not point at other things.
 
 Other things that open the same editor: [File of your own](thing-ownFile.md), [Pack file](thing-packFile.md), [Dimension file of your own](thing-dimensionFile.md), [Look of a block made in code](thing-blockLook.md), [Mixin](thing-mixin.md), [Access widener (Fabric)](thing-accessWidener.md), [Access transformer (NeoForge)](thing-accessTransformer.md).
 
-## Picture
-
-![File of your own](/media/docs/editor-ownFile.webp)
 
 ## Related pages
 

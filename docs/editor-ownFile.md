@@ -28,9 +28,6 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It does not point at other things.
 
-## Picture
-
-![File of your own editor](/media/docs/editor-ownFile.webp)
 
 ## Related pages
 

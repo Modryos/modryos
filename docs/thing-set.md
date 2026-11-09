@@ -20,9 +20,6 @@ Each part becomes what its own page says.
 
 It does not point at other things.
 
-## Picture
-
-![Set](/media/docs/thing-set.webp)
 
 ## Related pages
 
