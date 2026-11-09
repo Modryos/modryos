@@ -1,5 +1,5 @@
 name: Update versions in the bug form
-# On every release, the bug report form lists the newest versions (newest first, marked "latest").
+# On every release, put the last 5 versions in the bug report form (newest first).
 on:
   release:
     types: [published]
@@ -31,5 +31,5 @@ jobs:
           if git diff --quiet; then echo "no change"; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -am "Bug form: versions from the latest releases"
+          git commit -am "Bug report form: update version list"
           git push

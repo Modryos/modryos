@@ -76,15 +76,13 @@ Save a version, compare any two, and see what changed, element by element.
 
 ## Download
 
-Modryos is not released yet. When it is, the latest version will be on the
-[Releases](https://github.com/Modryos/modryos/releases) page and on [modryos.com](https://modryos.com).
+Modryos is not released yet. New versions will be published on the [Releases](https://github.com/Modryos/modryos/releases) page.
 
-## Report a bug or suggest an idea
+## Bugs and suggestions
 
-- **Bug:** [open a bug report](https://github.com/Modryos/modryos/issues/new?template=bug_report.yml).
-  The form asks for your version, the steps to reproduce and screenshots.
-- **Idea:** [open a suggestion](https://github.com/Modryos/modryos/issues/new?template=feature_request.yml).
-- **Question:** ask on our [Discord](https://discord.gg/ccWxeu8BVh) (choose Modryos, then the Help channel).
+- [Report a bug](https://github.com/Modryos/modryos/issues/new?template=bug_report.yml)
+- [Suggest a feature](https://github.com/Modryos/modryos/issues/new?template=feature_request.yml)
+- Questions: [Discord](https://discord.gg/ccWxeu8BVh)
 
 Website: [modryos.com](https://modryos.com): [features](https://modryos.com/features.html)
 and [questions and answers](https://modryos.com/faq.html).
