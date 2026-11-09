@@ -64,7 +64,8 @@ nav a[aria-current="page"] { color: var(--text); }
   .docs { grid-template-columns: minmax(0, 1fr); gap: 0; }
   .docs-menu-btn { display: block; }
   .docs-nav { position: static; max-height: none; padding: 12px 0; border-bottom: 1px solid var(--line); }
-  .docs-nav.closed { display: none; }
+  .docs-nav { display: none; }
+  .docs-nav.open { display: block; }
   .docs-sections { grid-template-columns: 1fr; }
   .ask form { flex-direction: column; }
 }

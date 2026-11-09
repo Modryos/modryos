@@ -6,6 +6,14 @@
 <title>Request access - Modryos</title>
 <meta name="description" content="Ask for a place in the Modryos closed beta.">
 <link rel="canonical" href="https://modryos.com/request-access.html">
+<meta name="theme-color" content="#0d0f12">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Modryos">
+<meta property="og:url" content="https://modryos.com/request-access.html">
+<meta property="og:title" content="Request access - Modryos">
+<meta property="og:description" content="Ask for a place in the Modryos closed beta.">
+<meta property="og:image" content="https://modryos.com/media/og-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="site.css">
@@ -42,6 +50,7 @@
           <label class="check"><input type="checkbox" name="terms" required> <span>I agree to the <a href="terms.html">Terms of Use</a>, the <a href="privacy.html">Privacy Policy</a> and the <a href="beta-terms.html">Closed Beta Addendum</a></span></label>
           <label class="check"><input type="checkbox" name="news"> Send me launch news (you can unsubscribe any time)</label>
           <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAAFkTmCbzcu5c-932" data-theme="dark"></div>
           <button class="btn primary" type="submit">Request access</button>
           <p class="status-msg" role="status" aria-live="polite"></p>
         </form>
@@ -68,6 +77,8 @@
     </nav>
   </div>
 </footer>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <script src="forms.js" defer></script>
+<script src="site.js" defer></script>
 </body>
 </html>

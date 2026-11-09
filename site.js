@@ -1,4 +1,6 @@
 (() => {
+  // The community link lives here once, so every page's footer gets it.
+  document.querySelectorAll("footer nav").forEach(n => n.append(Object.assign(document.createElement("a"), { href: "https://discord.com/invite/ccWxeu8BVh", target: "_blank", rel: "noopener", textContent: "The Modryos community" })));
   const head = document.querySelector("header.top");
   if (head) {
     const onScroll = () => head.classList.toggle("scrolled", scrollY > 8);

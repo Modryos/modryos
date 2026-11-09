@@ -205,6 +205,7 @@ dialog.lb button:hover { border-color: #3a404b; }
 @media (max-width: 520px) {
   .wrap { padding: 0 16px; }
   nav .hide-sm { display: none; }
+  header.top nav a { margin-left: 10px; font-size: 14px; }
   .wrap.card { max-width: calc(100% - 32px); padding: 24px 20px; }
   .pair { grid-template-columns: 1fr; }
   footer .wrap { flex-direction: column; align-items: flex-start; }
@@ -408,3 +409,9 @@ footer nav a, footer nav a:first-child { margin: 0; }
   .news-band .form { gap: 8px; }
   .news-band .eyebrow { display: none; }
 }
+
+/* Checksum block: scrolls inside itself on a narrow screen */
+.sums { margin: 0 0 16px; padding: 12px 14px; background: var(--bg); border: 1px solid var(--line); border-radius: 10px; overflow-x: auto; font-size: 13px; color: var(--text); }
+
+/* Links inside running text are underlined so they do not rely on colour alone */
+p a:not(.btn), li a:not(.btn), td a { text-decoration: underline; text-underline-offset: 2px; }

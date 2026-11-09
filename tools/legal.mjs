@@ -104,6 +104,7 @@ const page = (title, desc, slug, body) => `<!doctype html>
 
 ${FOOTER}
 
+<script src="site.js" defer></script>
 </body>
 </html>
 `;

@@ -5,7 +5,7 @@
   // Phone: the left menu folds away behind a button.
   const btn = document.querySelector(".docs-menu-btn"), nav = document.getElementById("docs-nav");
   if (btn && nav) {
-    const set = (open) => { nav.classList.toggle("closed", !open); btn.setAttribute("aria-expanded", String(open)); };
+    const set = (open) => { nav.classList.toggle("open", open); btn.setAttribute("aria-expanded", String(open)); };
     const mq = matchMedia("(max-width: 860px)");
     set(!mq.matches);
     mq.addEventListener("change", () => set(!mq.matches));
