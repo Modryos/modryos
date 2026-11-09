@@ -32,6 +32,6 @@ Change a colour or a name, then press **Reload in the game**. The change shows u
 
 ## 5. Make the mod file
 
-Use **File > Export > Make the mod file (.jar)**. See [Export](export.md).
+Press **Stop** (the square next to Play) if the game is still open, then use **File > Export > Make the mod file (.jar)**. See [Export](export.md).
 
 Next: read more about [Play](play.md).

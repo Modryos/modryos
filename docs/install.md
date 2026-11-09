@@ -51,7 +51,7 @@ No invite yet? Press **Join the waiting list** on that screen.
 
 ## First start
 
-1. Accept the terms and the Minecraft [EULA](glossary.md#eula) once. Pick how much you have made mods before. None is fine, and you can change it in Settings.
+1. Read the terms to the end, tick the Minecraft [EULA](glossary.md#eula) box and press **I agree** once. Pick how much you have made mods before. None is fine, and you can change it in Settings.
 2. The studio then gets Java and the game files it needs, by itself. You install nothing else. It takes several minutes, and a bar shows how far it is. You can look around while it works.
 
 Next: [your first mod](first-mod.md).

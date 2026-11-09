@@ -9,7 +9,7 @@ The mod file is a `.jar`. It is what people put in their Minecraft `mods` folder
 
 ## Make it
 
-1. Choose **File > Export > Make the mod file (.jar)**. The [Cook](glossary.md#cook) window opens.
+1. If the game is open, press **Stop** first: the file is made while the game is closed. Then choose **File > Export > Make the mod file (.jar)**. The [Cook](glossary.md#cook) window opens.
 2. Press **Cook**.
 3. When it is done, each file shows its full path. **Show the file** opens its folder, and **Open the folder** opens the folder with all of them.
 

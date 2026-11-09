@@ -93,7 +93,7 @@ No invite yet? Press **Join the waiting list** on that screen.
 
 ## First start
 
-1. Accept the terms and the Minecraft [EULA](glossary.md#eula) once. Pick how much you have made mods before. None is fine, and you can change it in Settings.
+1. Read the terms to the end, tick the Minecraft [EULA](glossary.md#eula) box and press **I agree** once. Pick how much you have made mods before. None is fine, and you can change it in Settings.
 2. The studio then gets Java and the game files it needs, by itself. You install nothing else. It takes several minutes, and a bar shows how far it is. You can look around while it works.
 
 Next: [your first mod](first-mod.md).
@@ -131,7 +131,7 @@ Change a colour or a name, then press **Reload in the game**. The change shows u
 
 ## 5. Make the mod file
 
-Use **File > Export > Make the mod file (.jar)**. See [Export](export.md).
+Press **Stop** (the square next to Play) if the game is still open, then use **File > Export > Make the mod file (.jar)**. See [Export](export.md).
 
 Next: read more about [Play](play.md).
 
@@ -184,7 +184,7 @@ The mod file is a `.jar`. It is what people put in their Minecraft `mods` folder
 
 ## Make it
 
-1. Choose **File > Export > Make the mod file (.jar)**. The [Cook](glossary.md#cook) window opens.
+1. If the game is open, press **Stop** first: the file is made while the game is closed. Then choose **File > Export > Make the mod file (.jar)**. The [Cook](glossary.md#cook) window opens.
 2. Press **Cook**.
 3. When it is done, each file shows its full path. **Show the file** opens its folder, and **Open the folder** opens the folder with all of them.
 
