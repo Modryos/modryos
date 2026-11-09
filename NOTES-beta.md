@@ -2,8 +2,7 @@
 
 Branch beta-closed, not published, not pushed.
 
-- Legal pages hold the texts from modcraft-app/docs/legal. Re-run a conversion if the Markdown changes.
-- data-deletion.html leaves out the "For the operator: the internal procedure" part of the Markdown; it is a private checklist.
+- Legal pages (terms, privacy, beta-terms) come from the approved files in modcraft-app/docs/legal/approved-2026-11-09 via tools/legal.mjs; re-run it if they change. Never edit those html files by hand. tools/links.mjs checks local links.
 - No CSP meta exists on any page, so connect-src was not added. If one is added, allow https://api.modryos.com.
 - Forms follow the API: 200 sent, 400 invalid_email / age_required / terms_required, 429 rate_limited. Not run against the live API.
 - Pages were not opened in a browser: look at request-access.html and download.html once on desktop and phone.

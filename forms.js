@@ -18,7 +18,7 @@ document.querySelectorAll("form[data-api]").forEach(form => {
     const bad = [];
     if (!f.email.value.trim() || !f.email.validity.valid) bad.push([f.email, "Please type a real email, like you@example.com."]);
     if (!f.age15.checked) bad.push([f.age15, "You need to be 15 or older to join."]);
-    if (f.terms && !f.terms.checked) bad.push([f.terms, "Please agree to the Terms of Use and Privacy Policy."]);
+    if (f.terms && !f.terms.checked) bad.push([f.terms, "Please agree to the Terms of Use, the Privacy Policy and the Closed Beta Addendum."]);
     if (bad.length) { bad.forEach(([el, t]) => flag(el, t)); bad[0][0].focus(); return; }
     const body = { email: f.email.value.trim(), age15: true };
     if (f.terms) body.terms = true;
@@ -33,7 +33,7 @@ document.querySelectorAll("form[data-api]").forEach(form => {
       else if (r.status === 429) say("Too many tries, please wait a few minutes.", "err");
       else if (data.error === "invalid_email") { msg.textContent = ""; msg.className = "status-msg"; flag(f.email, "That email does not look right. Please check it."); f.email.focus(); }
       else if (data.error === "age_required") { msg.textContent = ""; msg.className = "status-msg"; flag(f.age15, "You need to be 15 or older to join."); }
-      else if (data.error === "terms_required") { msg.textContent = ""; msg.className = "status-msg"; flag(f.terms, "Please agree to the Terms of Use and Privacy Policy."); }
+      else if (data.error === "terms_required") { msg.textContent = ""; msg.className = "status-msg"; flag(f.terms, "Please agree to the Terms of Use, the Privacy Policy and the Closed Beta Addendum."); }
       else say("Something went wrong on our side. Please try again later.", "err");
     } catch { say("We could not reach the server. Please try again later.", "err"); }
     btn.disabled = false;
