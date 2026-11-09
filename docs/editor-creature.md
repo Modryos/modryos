@@ -15,8 +15,8 @@ A living thing with a model, animations and behavior.
 
 | Setting | What it does |
 | --- | --- |
-| Name | What players read above it and on its spawn egg, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short id the game uses instead. |
-| Game name | The id the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's id and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. /summon uses it. Change it later and it is renamed everywhere. |
+| Name | What players read above it and on its spawn egg, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short name the game uses instead. |
+| Game name | The short name the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's short name and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. /summon uses it. Change it later and it is renamed everywhere. |
 | Body | The model it wears: one made for a mob, with its feet on the ground and its front facing away from you. |
 | Health | How much damage it takes to kill it. A player has 20, which is ten hearts. |
 | Temperament | Passive runs when hurt. Neutral fights back when hurt. Hostile goes after the nearest player. Choose one of: Passive, Neutral, Hostile. |

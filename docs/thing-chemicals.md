@@ -14,14 +14,14 @@ The main settings are below. The [Custom kind](editor-matter.md) editor lists ev
 | Setting | What it does |
 | --- | --- |
 | Name | What players call it, as it is shown. |
-| Key | The name blocks keep it under, as the game keeps it with your mod's id in front. |
+| Key | The name blocks keep it under, as the game keeps it with your mod's game name in front. |
 | Counted in | The word for one of it, shown after its amount: mana, units, degrees. |
 | Colour | The colour it is drawn in where it shows. |
 | Types | The types of it, each with a name and a colour: oxygen and hydrogen of a gas, fire and water of a magic essence. A tank of it takes any one type at a time, unless it names one. Each row has: Name, Key, Colour, Made of. |
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 

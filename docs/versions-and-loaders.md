@@ -1,6 +1,6 @@
 # Versions and loaders
 
-A loader is the program that runs mods in Minecraft. Modryos makes mods for NeoForge and Fabric.
+A [loader](glossary.md#loader) is the program that runs mods in Minecraft. Modryos makes mods for NeoForge and Fabric.
 
 ## What the studio makes mods for
 
@@ -19,9 +19,19 @@ A loader is the program that runs mods in Minecraft. Modryos makes mods for NeoF
 
 Minecraft 1.20.1 comes after version 1.0. Packs only 1.21.1.
 
+## Where you pick them
+
+- **New project:** the **Works with** line lists the loaders. At least one stays ticked.
+- **Later, any time:** open **Mod details** and use **Made for** to add or remove a loader and version.
+- **Which one Play opens:** the toolbar's **Play on** picker. It only lists what **Made for** has.
+
+## Which jar your friend needs
+
+Ask your friend two things: which loader they use (NeoForge or Fabric) and which Minecraft version. Give them the [jar](glossary.md#jar) made for that pair. A Fabric friend also needs Fabric API in their mods folder. The jars are in your project's release folder, see [Export](export.md).
+
 ## Many versions in one project
 
-One project can list many targets. You build the thing once; Cook makes one jar for each target you pick and puts them side by side in the project's release folder. Before it makes anything, Cook shows what will not carry over to each version. Play opens the target you choose under "Play on".
+One project can list many [targets](glossary.md#target). You build the thing once; [Cook](glossary.md#cook) makes one jar for each target you pick and puts them side by side in the project's release folder. Before it makes anything, Cook shows what will not carry over to each version. [Play](glossary.md#play) opens the target you choose under "Play on".
 
 ## Related pages
 

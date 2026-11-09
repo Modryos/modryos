@@ -1,6 +1,6 @@
 # Another mod editor
 
-A mod this one uses or works with, such as a recipe viewer: compiled against, in the test game, and named in both manifests.
+A mod this one uses or works with, such as a recipe viewer: built against, in the test game, and named in both manifests.
 
 ## How to add it
 

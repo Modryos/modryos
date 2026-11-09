@@ -56,8 +56,8 @@ Something placed in the world: ore, stone, a crate.
 
 | Setting | What it does |
 | --- | --- |
-| Name | What players read in the game, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short id the game uses instead. You can change it any time. |
-| Game name | The id the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's id and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
+| Name | What players read in the game, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short name the game uses instead. You can change it any time. |
+| Game name | The short name the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's short name and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
 | Texture | The picture on every face of the block. |
 | Shape | A shape of your own for this block to wear instead of a plain cube. Leave it empty and the block stays a cube. |
 | Light (0 to 15) | How much light the block gives off, from 0 to 15. A torch is 14. From 0 to 15. |
@@ -146,6 +146,10 @@ It is added to the game, so a player needs your mod to see it.
 It points at: [Model](editor-model.md), [Sound](editor-sound.md), [Particle](editor-particle.md), [Item](editor-item.md), [Code](editor-code.md).
 
 These point at it: [Recipe](editor-recipe.md), [Drop](editor-drop.md), [Behavior](editor-behaviour.md), [Machine recipe](editor-machineRecipe.md), [Station recipe](editor-stationRecipe.md), [Ritual](editor-ritual.md), [Vehicle](editor-vehicle.md), [Villager job](editor-villagerProfession.md), [Feature](editor-feature.md), [Caves](editor-carver.md), [Biome](editor-biome.md), [Structure](editor-structure.md), [Dimension](editor-dimension.md), [Creative tab](editor-creativeTab.md), [Game thing changed](editor-gameChange.md), [Gene](editor-gene.md), [Species](editor-species.md).
+
+## A recipe
+
+[A block with your own picture](block-with-your-own-picture.md) shows how to draw or import the picture for the **Texture** setting.
 
 ## Picture
 

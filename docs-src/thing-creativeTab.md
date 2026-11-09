@@ -19,7 +19,7 @@ The main settings are below. The [Creative tab](editor-creativeTab.md) editor li
 | Setting | What it does |
 | --- | --- |
 | Name | What the tab is called in the creative inventory. |
-| Game name | The tab's id inside the game, in small letters. The Name is what players read on the tab. |
+| Game name | The tab's game name inside the game, in small letters. The Name is what players read on the tab. |
 | Is | A tab of its own beside the game's, or the things added to the end of one of the game's own tabs. Choose one of: A tab of its own, Added to Building Blocks, Added to Colored Blocks, Added to Natural Blocks, Added to Functional Blocks, Added to Redstone Blocks, Added to Tools & Utilities, Added to Combat, Added to Food & Drinks, Added to Ingredients, Added to Spawn Eggs. |
 | Holds | The things in it, in this order: yours and the game's. Yours in a tab of its own leave the mod's main tab. |
 | Icon | What the tab shows on itself; with none, the first thing it holds. |

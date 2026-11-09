@@ -1,11 +1,11 @@
 ---
 title: Mod settings
-description: A setting players can change after the mod is built, in its config file: a number, on or off, one word out of a list, or a list of entries they edit.
+description: A setting players can change after the mod is built, in its settings file: a number, on or off, one word out of a list, or a list of entries they edit.
 section: Things you can make
 order: 120
 ---
 
-A setting players can change after the mod is built, in its config file: a number, on or off, one word out of a list, or a list of entries they edit.
+A setting players can change after the mod is built, in its settings file: a number, on or off, one word out of a list, or a list of entries they edit.
 
 ## How to add it
 
@@ -19,13 +19,13 @@ The main settings are below. The [Mod settings](editor-configValue.md) editor li
 | Setting | What it does |
 | --- | --- |
 | Name | What the setting is called in the config screen. |
-| Key in the file | The name of the setting in the config file: letters, digits and underscores. |
+| Key in the file | The name of the setting in the settings file: letters, digits and underscores. |
 | Type | What the setting holds: a whole number, a decimal such as a chance, on or off, one word out of a list you make, or a list of entries each with a few fields. Choose one of: Whole number, Decimal, On or off, A choice of words, A list of entries, Text. |
 | Text | The words it holds until a player changes it. |
-| Longest allowed | The most letters the config file accepts. 0 means any length. |
+| Longest allowed | The most letters the settings file accepts. 0 means any length. |
 | Value | What it is until a player changes it. |
-| Lowest allowed | The config file refuses anything below this. |
-| Highest allowed | The config file refuses anything above this. |
+| Lowest allowed | The settings file refuses anything below this. |
+| Highest allowed | The settings file refuses anything above this. |
 | On | Whether it is on until a player changes it. |
 | Words | The words a player may choose from: small letters, digits and _. |
 | Chosen | The word it is until a player changes it. |
@@ -35,7 +35,7 @@ The main settings are below. The [Mod settings](editor-configValue.md) editor li
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 

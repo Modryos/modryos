@@ -62,8 +62,8 @@ Something held in the hand or kept in a chest.
 
 | Setting | What it does |
 | --- | --- |
-| Name | What players read when they hold it, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short id the game uses instead. |
-| Game name | The id the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's id and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
+| Name | What players read when they hold it, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short name the game uses instead. |
+| Game name | The short name the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's short name and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
 | Texture | The flat picture of the item in hand and in the inventory. A 16 by 16 PNG. A Model, if you give one, is a 3D shape that replaces it. |
 | Tooltip lines | Extra lines under its Name when a player points at it, such as "Tastes like thunder.". The Name itself is set above. Each row has: Words, Color. |
 | Plays as frames | Whether the item's picture plays as a strip of frames, and how fast. It is set on the picture itself. |

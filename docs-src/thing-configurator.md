@@ -18,7 +18,7 @@ A tool that sets the faces of a placed block: right-click a face to step its mod
 
 | Setting | What it does |
 | --- | --- |
-| Sets | Which payload a click steps: all the block carries, or one. Choose one of: Everything the block carries, Items, Fluid, Energy. |
+| Sets | Which thing it carries a click steps: all the block carries, or one. Choose one of: Everything the block carries, Items, Fluid, Energy. |
 | Works on | The blocks it sets. None listed: every block whose faces a player sets. |
 | Sneaking goes back | Sneak and click to step to the mode before. Off, sneaking steps forward too. |
 

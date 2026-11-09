@@ -35,6 +35,10 @@ It points at: [Model](editor-model.md), [Sound](editor-sound.md), [Damage type](
 
 Other things that open the same editor: [Pet](thing-pet.md), [Mount](thing-mount.md), [Flying mount](thing-flyingMount.md), [Sea mount](thing-seaMount.md), [Boss](thing-boss.md).
 
+## A recipe
+
+[Make a creature](make-a-creature.md) shows a creature made in a few steps.
+
 ## Picture
 
 ![Mob](/media/docs/editor-creature.webp)

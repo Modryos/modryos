@@ -18,8 +18,8 @@ The main settings are below. The [Block](editor-block.md) editor lists every set
 
 | Setting | What it does |
 | --- | --- |
-| Name | What players read in the game, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short id the game uses instead. You can change it any time. |
-| Game name | The id the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's id and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
+| Name | What players read in the game, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short name the game uses instead. You can change it any time. |
+| Game name | The short name the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's short name and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
 | Texture | The picture on every face of the block. |
 | Time to break | How hard the block is; stone is 1.5, dirt 0.5. Higher is slower; obsidian is 50. The overview shows the seconds by hand. From 0 to 3600. |
 | Form | The game's own shapes, each drawn from this block's picture and working as the game's own does: stairs you walk up, a slab that doubles, a fence and a wall that join their neighbours, a door and a trapdoor that open, a button and a pressure plate that give a redstone signal, a pane, a carpet, leaves that fall away when no log is near, a pillar that lies the way it is placed, and a rail the game's carts ride. Choose one of: A full block, Stairs, A slab, A wall, A fence, A fence gate, A door, A trapdoor, A pressure plate, A button, A pane, as glass and bars, A carpet, Leaves, A pillar, as a log, A rail, A slope, A slope, outer corner, A slope, inner corner, A ridge, as a roof top, A quarter round, as an arch, A round pillar, A window frame. |
@@ -41,6 +41,10 @@ It is added to the game, so a player needs your mod to see it.
 It points at: [Model](editor-model.md), [Sound](editor-sound.md), [Particle](editor-particle.md), [Item](editor-item.md), [Code](editor-code.md).
 
 Other things that open the same editor: [Machine](thing-machine.md), [Generator](thing-generator.md), [Cable](thing-cable.md), [Pipe](thing-pipe.md), [Item pipe](thing-itemPipe.md), [Tank](thing-tank.md), [Transmitter](thing-wirelessTransmitter.md), [Receiver](thing-wirelessReceiver.md), [Wireless energy node](thing-wirelessNode.md), [Shared chest](thing-sharedChest.md), [Shared tank](thing-sharedTank.md), [Chest](thing-chest.md), [Drawer](thing-drawer.md), [Storage crate](thing-crate.md), [Mailbox](thing-mailbox.md), [Trade station](thing-tradeStation.md), [Asking chest](thing-askingChest.md), [Terminal](thing-terminal.md), [Storage cell](thing-storageCell.md), [Storage cable](thing-storageCable.md), [Drive](thing-drive.md), [Network heart](thing-networkHeart.md), [Dense cable](thing-denseCable.md), [Link](thing-storeLink.md), [Access point](thing-accessPoint.md), [Crafter](thing-crafter.md), [Pattern table](thing-patternTable.md), [Matter tank](thing-matterTank.md), [Altar](thing-altar.md), [Pedestal](thing-pedestal.md), [Formed machine](thing-formedMachine.md), [Machine casing](thing-machineCasing.md), [Waypoint](thing-waypointBlock.md), [Aiming block](thing-aimingBlock.md), [Berry bush](thing-berryBush.md), [Matter pipe](thing-matterPipe.md), [Assembly station](thing-assemblyStation.md), [Carved block](thing-carvedBlock.md), [Ore](thing-ore.md), [Crop](thing-crop.md), [Plant](thing-plant.md).
+
+## A recipe
+
+[A block with your own picture](block-with-your-own-picture.md) shows how to draw or import the picture for the **Texture** setting.
 
 ## Picture
 

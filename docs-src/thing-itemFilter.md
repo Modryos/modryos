@@ -19,7 +19,7 @@ A filter as an item: marked in the filter of a pipe's face, that face lets throu
 | Setting | What it does |
 | --- | --- |
 | Items and tags | The items it names, or every item of a tag. Names nothing and no mods: every item. |
-| Mods | Every item of these mods, by the mod's id (minecraft for the game's own). |
+| Mods | Every item of these mods, by the mod's game name (minecraft for the game's own). |
 | Wear | Which items pass by their wear: any, unworn (and things that never wear), worn, or a quarter of their uses or less left. Choose one of: Any, Unworn, Worn, Nearly broken. |
 | Enchanted | Whether items must be enchanted, must not be, or either. Choose one of: Either, Only enchanted, Only plain. |
 | Genes | Genes an item must show to pass, every line at once, such as species Goldbloom or Growth at least 5. An item with no genes does not pass. Each row has: Gene, Is, Value. |

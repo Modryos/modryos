@@ -28,7 +28,7 @@ Take recipes the game has out of the game.
 | Map cloning | On keeps the game's special recipe. Off takes it away. |
 | Rule | The tests that pick recipes, kept as text. Change them in the editor. |
 | Folder of the pack's mods | The folder with the mod files of your pack. Every recipe in them counts too. Leave it empty to use the game and the mods this project is built on. |
-| Recipes the rule picked | The ids the rule picked when you last pressed Use these recipes. The build writes these. |
+| Recipes the rule picked | The game names the rule picked when you last pressed Use these recipes. The build writes these. |
 
 ## What it becomes in the game
 

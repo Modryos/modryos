@@ -16,7 +16,7 @@ A thing that flies, drawn by a model: a spell, a dart, a boomerang, a homing mis
 | Setting | What it does |
 | --- | --- |
 | Name | What players see it called. |
-| Game name | Its id in the game, small letters and underscores; the shoot words fire it by this. |
+| Game name | Its game name in the game, small letters and underscores; the shoot words fire it by this. |
 | Model | The model it is drawn by, made in the model editor. Its front faces where it flies. |
 | Speed | How fast it leaves, in blocks a second; a snowball flies 30, an arrow from a full bow 60. It flies at this speed whatever fires it; 0 is set down where it is made, as a lit charge. From 0 to 200 blocksPerSecond. |
 | Gravity | How fast it falls: 1 falls as a snowball does, 0 flies straight as a fireball, below 0 floats up as a balloon. From -10 to 10 normal. |

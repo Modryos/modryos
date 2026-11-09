@@ -17,7 +17,7 @@ A mod can hold every kind of thing in the New thing dialog.
 
 ## What it becomes in the game
 
-A jar for each loader and game version you pick, made by Cook.
+A [jar](glossary.md#jar) for each [loader](glossary.md#loader) and game version you pick, made by [Cook](glossary.md#cook).
 
 ## What it works with
 

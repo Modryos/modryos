@@ -16,11 +16,15 @@ The pixels a block, item or mob wears.
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 
 It does not point at other things.
+
+## In plain words
+
+A texture is a picture. **Replaces** is for when your picture takes the place of one the game already has. Leave it empty for a picture of your own. For example, `minecraft:block/stone` is the game's name for the picture on stone, so a texture that replaces it makes every stone block in the game wear your picture. To make or import one, see [Pictures and textures](pictures-and-textures.md). To put your own picture on a new block, see [A block with your own picture](block-with-your-own-picture.md).
 
 ## Picture
 

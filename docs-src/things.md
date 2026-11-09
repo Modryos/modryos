@@ -29,7 +29,7 @@ Press New thing, pick a category, then the thing. Each page says what it is and 
 - [Crate](thing-lootCrate.md): An item that opens into a loot table when used, made with its table.
 - [Crop](thing-crop.md): A plant that grows stage by stage on farmland from its own seeds, as wheat, and gives what it grows when it is ripe.
 - [Crossbow](thing-crossbow.md): The game's own crossbow, loaded and then fired, to change.
-- [Designator](thing-designator.md): An item the player uses on a block to remember a place, then on an aiming block to give it that place as its target.
+- [Designator](thing-designator.md): An item the player uses on a block to remember a place, then on an aiming block to give it that place as its [target](glossary.md#target).
 - [Fishing rod](thing-fishingRod.md): The game's own fishing rod: cast into water and reeled in with a catch.
 - [Food](thing-food.md): Something eaten.
 - [Forms for every material](thing-formSet.md): Makes a dust, a plate, a gear or any other form for every metal and gem the game has when it starts, other mods too.
@@ -181,7 +181,7 @@ Press New thing, pick a category, then the thing. Each page says what it is and 
 
 - [Access transformer (NeoForge)](thing-accessTransformer.md): Opens members the game keeps private, on NeoForge.
 - [Access widener (Fabric)](thing-accessWidener.md): Opens members the game keeps private, on Fabric, in the game's own names.
-- [Another mod](thing-dependency.md): A mod this one uses or works with, such as a recipe viewer: compiled against, in the test game, and named in both manifests.
+- [Another mod](thing-dependency.md): A mod this one uses or works with, such as a recipe viewer: built against, in the test game, and named in both manifests.
 - [Behavior](thing-behaviour.md): What happens when something happens: when this sword hits, set the target on fire.
 - [Code](thing-code.md): A Java class of your own, kept safe when the mod is rebuilt.
 - [Command](thing-command.md): A command typed in chat with a slash, whose rules run when a player types it.
@@ -194,7 +194,7 @@ Press New thing, pick a category, then the thing. Each page says what it is and 
 - [Look of a block made in code](thing-blockLook.md): The blockstate, models, loot table and name a block registered in your own code needs.
 - [Mixin](thing-mixin.md): A piece of your own code that changes one of the game's classes, listed in your mixin config for you.
 - [Mixin config](thing-mixinConfig.md): Your own mixins: notes placed inside the game's code.
-- [Mod settings](thing-configValue.md): A setting players can change after the mod is built, in its config file: a number, on or off, one word out of a list, or a list of entries they edit.
+- [Mod settings](thing-configValue.md): A setting players can change after the mod is built, in its settings file: a number, on or off, one word out of a list, or a list of entries they edit.
 - [Pack file](thing-packFile.md): One file of a data pack or a resource pack, in any folder the game reads, yours or the game's changed.
 - [Tag](thing-tag.md): A named group of blocks or items other rules can point at.
 - [Translation](thing-translation.md): The names of your things in another language.

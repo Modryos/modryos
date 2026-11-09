@@ -18,8 +18,8 @@ The main settings are below. The [Thing](editor-thing.md) editor lists every set
 
 | Setting | What it does |
 | --- | --- |
-| Name | What players read above it, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short id the game uses instead. |
-| Game name | The id the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's id and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
+| Name | What players read above it, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short name the game uses instead. |
+| Game name | The short name the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's short name and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
 | Model | The model it is drawn by, made in the model editor. Its front faces out of a wall it hangs on. |
 | Animation | A clip it plays over and over as it stands. |
 | Drawn size | How big its model is drawn: 1 is the model's own size. From 0.0625 to 16. |

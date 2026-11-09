@@ -11,7 +11,7 @@ A spell of its own: what it does as rules (when it is cast, when it reaches a mo
 | Setting | What it does |
 | --- | --- |
 | Name | What the spell is called in the game. |
-| Game name | The spell's id in the game; another mod casts it by this. |
+| Game name | The spell's game name in the game; another mod casts it by this. |
 | What it is | A whole spell, or a part a spell is put together from: a medium says how a made spell reaches, a modifier changes it. A whole spell is also the part that says what a made spell does. Choose one of: A whole spell (or an effect), A medium (how it reaches), A modifier (what changes it). |
 | Made of parts | Put this spell together from parts: a medium, effects (whole spells, this mod's or another mod's) and modifiers. Their costs add up and every part's moments run. Empty: it is a spell of its own. Each row has: Part. |
 | Reaches | How it reaches what it does: the caster alone, what the caster touches, along where the caster looks, as a projectile, every mob around, or as a construct left where its ray ends. Choose one of: On the caster, By touch, Along a ray, As a missile, All around, Left in the world. |

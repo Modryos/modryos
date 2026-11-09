@@ -9,11 +9,11 @@ order: 4
 
 ## Which version and loader
 
-Play starts the version and loader you pick in **Play on**. A project can have more than one. Pick another one there and press Play again. See [Versions and loaders](versions-and-loaders.md).
+[Play](glossary.md#play) starts the version and [loader](glossary.md#loader) you pick in **Play on**. A project can have more than one. Pick another one there and press Play again. See [Versions and loaders](versions-and-loaders.md).
 
 ## The first start
 
-The first time, Modryos downloads the game and its tools (about 1.7 GB) and builds your mod. That takes a few minutes. Later starts are much faster. You are asked to accept the Minecraft EULA once, with **Accept and Play**.
+The first time, Modryos downloads the game and its tools (about 1.7 GB) and builds your mod. That takes a few minutes. Later starts are much faster. You are asked to accept the Minecraft [EULA](glossary.md#eula) once, with **Accept and Play**.
 
 ## In the game
 
@@ -25,7 +25,7 @@ Change something in Modryos and press **Reload in the game**. Most changes show 
 
 ## The Cook window
 
-Cooking is how Modryos makes the mod file. Play does it for you. You can also open it with **File > Export > Make the mod file (.jar)**. It shows four steps:
+[Cooking](glossary.md#cook) is how Modryos makes the mod file. Play does it for you. You can also open it with **File > Export > Make the mod file (.jar)**. It shows four steps:
 
 1. **Write the project**
 2. **Resolve what the game needs**

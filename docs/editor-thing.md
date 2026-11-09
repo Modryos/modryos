@@ -10,8 +10,8 @@ Something in the world that is not a mob and does not fly: a spell's ward, a fra
 
 | Setting | What it does |
 | --- | --- |
-| Name | What players read above it, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short id the game uses instead. |
-| Game name | The id the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's id and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
+| Name | What players read above it, in any words: spaces and capitals are fine, like "Ruby Blade of Sam". The Game name is the short name the game uses instead. |
+| Game name | The short name the game and its commands use: small letters, digits and underscores, like katana. In commands and recipes the mod's short name and a colon go in front: for a mod called rubygear, katana is written rubygear, a colon, then katana. Players never read it; that is the Name. Change it later and it is renamed everywhere. |
 | Model | The model it is drawn by, made in the model editor. Its front faces out of a wall it hangs on. |
 | Animation | A clip it plays over and over as it stands. |
 | Picture | A picture it wears in place of its model's own. |
@@ -42,7 +42,7 @@ Something in the world that is not a mob and does not fly: a spell's ward, a fra
 | Slows it by | How much it slows what it sticks to, in percent. From 0 to 100 percent. |
 | Lets go after | Seconds before it lets go. 0 never lets go (until what it sticks to dies). From 0 to 600 seconds. |
 | Joins others of its kind | Two of the same kind that touch become one. The new one is as big as both added, up to what it grows to. |
-| Hurt only by | anything, nothing, or a list split by commas of damage kinds (magic, fire, explosion, projectile, player) or damage type ids. |
+| Hurt only by | anything, nothing, or a list split by commas of damage kinds (magic, fire, explosion, projectile, player) or damage type game names. |
 | Health | How much damage it takes before it breaks, when only some things hurt it. Its Breaks after number wins when that is set. From 0.5 to 1000 hearts. |
 | Fire-proof | Fire and lava do not hurt or burn it. |
 | Glows | Drawn at full light, even in the dark. |

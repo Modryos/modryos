@@ -34,11 +34,11 @@ The beta installer is not signed yet. Check the file as shown in [Install](insta
 
 ## Play takes a long time the first time.
 
-The first Play downloads the game and its tools once, about 1.7 GB. Later starts are fast.
+The first [Play](glossary.md#play) downloads the game and its tools once, about 1.7 GB. Later starts are fast.
 
 ## My mod is not in the game.
 
-Look for its name in the mod list. If it is missing, open the Cook window and read the first red line. See [Troubleshooting](troubleshooting.md).
+Look for its name in the mod list. If it is missing, open the [Cook](glossary.md#cook) window and read the first red line. See [Troubleshooting](troubleshooting.md).
 
 ## How do I put my mod on Modrinth or CurseForge?
 

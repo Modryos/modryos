@@ -95,7 +95,7 @@ A machine built of many blocks: it works only while the blocks around it stand a
 | Made of | The block every place of the pattern must hold. |
 | Drawn pattern | The pattern drawn on the Pattern tab, layer by layer: each cell a test a block must pass (a block, a tag, any of several, a fluid, air, anything), and one cell the machine itself. |
 | Stands | As it faces: the pattern turns with the machine's front. Any way round: it forms whichever of the four ways it was built. Choose one of: as it faces, any way. |
-| Mirrored too | Its mirror image forms as well, left and right swapped. |
+| Mirrored too | Its mirror copy forms as well, left and right swapped. |
 | Several sizes | A band of the drawing that may repeat, so a taller or a longer build forms as well. It forms the largest size that stands. Choose one of: one size, taller, longer. |
 | Band from | The first layer (or row, from the front) of the band that repeats, counted from 1. From 1 to 48. |
 | Band to | The last layer (or row) of the band that repeats. From 1 to 48. |

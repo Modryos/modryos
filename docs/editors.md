@@ -69,7 +69,7 @@ Each editor is where you set one kind of thing. Pick one to see its settings.
 
 ## Logic and code
 
-- [Another mod](editor-dependency.md): A mod this one uses or works with, such as a recipe viewer: compiled against, in the test game, and named in both manifests.
+- [Another mod](editor-dependency.md): A mod this one uses or works with, such as a recipe viewer: built against, in the test game, and named in both manifests.
 - [Behavior](editor-behaviour.md): What happens when something happens: when this sword hits, set the target on fire.
 - [Code](editor-code.md): A Java class of your own, kept safe when the mod is rebuilt.
 - [Command](editor-command.md): A command typed in chat with a slash, whose rules run when a player types it.
@@ -78,7 +78,7 @@ Each editor is where you set one kind of thing. Pick one to see its settings.
 - [File of your own](editor-ownFile.md): Any file the mod ships as it is, under resources/: data, assets, anything the game reads.
 - [Game rule](editor-gameRule.md): A rule of the world, set with the gamerule command.
 - [Locks](editor-locks.md): What a player may not use, wear, break, place, hit, enter or ride until they reach a skill level, a value or an advancement.
-- [Mod settings](editor-configValue.md): A setting players can change after the mod is built, in its config file: a number, on or off, one word out of a list, or a list of entries they edit.
+- [Mod settings](editor-configValue.md): A setting players can change after the mod is built, in its settings file: a number, on or off, one word out of a list, or a list of entries they edit.
 - [Tag](editor-tag.md): A named group of blocks or items other rules can point at.
 - [Translation](editor-translation.md): The names of your things in another language.
 - [Word of your own](editor-ownWord.md): A few lines you name once and use in any rule as one line: it is given as many things as it needs, and it can give back an answer.

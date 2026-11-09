@@ -5,7 +5,7 @@ section: Things you can make
 order: 14
 ---
 
-A block that keeps a target place: a launcher's, a gate's other end. Where it comes from is your choice, and rules change it any time.
+A block that keeps a [target](glossary.md#target) place: a launcher's, a gate's other end. Where it comes from is your choice, and rules change it any time.
 
 ## How to add it
 

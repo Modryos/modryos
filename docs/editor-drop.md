@@ -27,7 +27,7 @@ What falls out when a block breaks or a mob dies.
 
 ## What it becomes in the game
 
-It is written into the mod when you Cook or press Play.
+It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glossary.md#play).
 
 ## What it works with
 

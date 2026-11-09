@@ -1,6 +1,6 @@
 # Designator
 
-An item the player uses on a block to remember a place, then on an aiming block to give it that place as its target.
+An item the player uses on a block to remember a place, then on an aiming block to give it that place as its [target](glossary.md#target).
 
 ## How to add it
 

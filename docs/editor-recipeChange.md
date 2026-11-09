@@ -15,7 +15,7 @@ Change a recipe the game or another mod already has. Swap an input or the result
 | Recipes | The recipes this changes: the game's, or those of a mod you build on. Find them by what they make or use, then read them. |
 | Rule | The tests that pick recipes, kept as text. Change them in the editor. |
 | Folder of the pack's mods | The folder with the mod files of your pack. Every recipe in them counts too. Leave it empty to use the game and the mods this project is built on. |
-| Recipes the rule picked | The ids the rule picked when you last pressed Use these recipes. The build writes these. |
+| Recipes the rule picked | The game names the rule picked when you last pressed Use these recipes. The build writes these. |
 | What changes | A thing put in place of another wherever the recipe names it. Each row has: Swap, for, in. |
 | Also needs | Things the recipe needs as well: in a shapeless recipe's list, or in the first free cell of a shaped grid. Each row has: Slot. |
 | Also gives | More things a crafting grid gives with the result, each by its own chance. They come back as leftovers do: into the grid, else into the inventory; a crafter puts them out. On a furnace, blast furnace or smoker recipe they are given when you take the result out. Each row has: Thing, How many, Chance. |

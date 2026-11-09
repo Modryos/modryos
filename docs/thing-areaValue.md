@@ -14,7 +14,7 @@ The main settings are below. The [Area value](editor-areaValue.md) editor lists 
 | Setting | What it does |
 | --- | --- |
 | Name | What the value is called in the game, such as Aura or Oil. |
-| Game name | The value's id in the game; the world saves it by this, and rules of another mod read it by it. |
+| Game name | The value's game name in the game; the world saves it by this, and rules of another mod read it by it. |
 | Kept for each | The area that holds one number: each chunk (16 by 16 blocks, all the way down), each square of chunks, each biome, or each dimension. Choose one of: Chunk, Square of chunks, Biome, Dimension, Block, Sealed room. |
 | Square size | How many chunks across one square is. From 2 to 64 chunks. |
 | Starts as | What a place has the first time it is asked of: the number below, a random number between the two (the same in the same world), or a smooth noise between them so nearby places are alike. Choose one of: The number, Random in a range, Smooth noise. |

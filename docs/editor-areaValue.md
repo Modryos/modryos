@@ -11,7 +11,7 @@ A number the world keeps by place, not by player or item: an aura in each chunk,
 | Setting | What it does |
 | --- | --- |
 | Name | What the value is called in the game, such as Aura or Oil. |
-| Game name | The value's id in the game; the world saves it by this, and rules of another mod read it by it. |
+| Game name | The value's game name in the game; the world saves it by this, and rules of another mod read it by it. |
 | Kept by another mod | Another mod's area value this one stands for, such as its aura. Your rules read and change that mod's amount, hear when it rises or falls, and your HUD shows it. |
 | Kept for each | The area that holds one number: each chunk (16 by 16 blocks, all the way down), each square of chunks, each biome, or each dimension. Choose one of: Chunk, Square of chunks, Biome, Dimension, Block, Sealed room. |
 | Square size | How many chunks across one square is. From 2 to 64 chunks. |
