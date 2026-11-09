@@ -1,0 +1,35 @@
+---
+title: Ore with a pickaxe
+description: An ore that needs an iron pickaxe, its ingot and a pickaxe.
+section: Things you can make
+order: 128
+---
+
+An ore that needs an iron pickaxe, its ingot and a pickaxe.
+
+## How to add it
+
+- New thing > Blocks and items > Ore with a pickaxe
+
+This makes several things at once: [Ore](thing-ore.md), [Tool](thing-tool.md), [Recipe](thing-recipe.md), [Drop](thing-drop.md).
+
+## What you can set
+
+You set each part in its own editor, linked above.
+
+## What it becomes in the game
+
+Each part becomes what its own page says.
+
+## What it works with
+
+It does not point at other things.
+
+## Picture
+
+![Ore with a pickaxe](/media/docs/thing-oreWithTier.webp)
+
+## Related pages
+
+- [Templates and samples](templates-and-samples.md)
+- [Glossary](glossary.md)

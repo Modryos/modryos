@@ -1,0 +1,88 @@
+---
+title: Matter tank
+description: A block that holds a matter of your own and joins pipes of it on every side: a chemical tank, a mana pool, a store of heat.
+section: Things you can make
+order: 114
+---
+
+A block that holds a matter of your own and joins pipes of it on every side: a chemical tank, a mana pool, a store of heat.
+
+## How to add it
+
+- New thing > Machines and networks > Matter tank
+
+
+## What you can set
+
+### Matter
+
+| Setting | What it does |
+| --- | --- |
+| Holds | The one matter it holds, refusing any other; left empty it holds any, one kind at a time. |
+| Most it holds | How much of it the block holds at most. From 0 to 1000000000. |
+| Most a second | How much of it moves in or out each second. From 0 to 1000000000. |
+| No limit | On: matter cross this block as fast as the blocks at both ends can give and take. The number above is ignored. |
+| Only this type | One type of its kind alone, by name, refusing the others: a jar of fire. Left empty, any type of the kind. |
+| Labelled by | An item that, used on it, keeps it to the type it holds even when it is emptied. Used while crouching, the label comes off. |
+| Tanks of stock | Tanks beside its own, each of a kind or one type, reached through the sides you pick: a machine taking water in and giving two gases out by two sides. Each row has: Holds, Only this type, Most it holds, Reached from, Pipes. |
+| Turns items into | Items put in it become what they hold of this kind's types, one at a time, while its tanks have room for all of it: a log into tree and earth. |
+| Seconds an item | How long it takes to turn one item. From 0.05 to 3600 seconds. |
+| Into first types | A type made of others comes out as the types it is made of, each as much. |
+| Lets through only | The types or kinds that may pass it, by name and split by commas. Put an exclamation mark in front of one to let all but it through. |
+
+### Connections
+
+| Setting | What it does |
+| --- | --- |
+| Faces | Which of the six faces connect, and to what. Open the Connections tab to set them. |
+| What arrives | A cable or a pipe passes it on and holds nothing. A machine, a tank or a battery keeps it. Choose one of: It keeps it, It passes it on. |
+| Served before others | When several blocks want the same thing and there is not enough, the higher number is filled first. Equal numbers take turns. From -64 to 64. |
+| Serves first | Whom what leaves it goes to first, for items, fluids and every stock: shared by priority, each block in turn, or the nearest along the pipes. Choose one of: By priority, Each in turn, The nearest. |
+| Faces have colours | A coloured face joins only faces of its colour. Off, faces ignore colour. |
+| Dyes a face steps through | How many of the sixteen dyes a channel can be set to. From 1 to 16. |
+| Face modes | What pressing a face goes through, in order. Empty keeps Off, In, Out, Both. Each row has: Name, Colour, Does. |
+| Players set each face | A player right-clicks a face with an empty hand and sets what it does on that placed block alone. The table is where every placed block starts. |
+| Face screen | The screen a player opens by right-clicking a face of the placed block, laid out on the Face screen tab. Until it is changed there, the product draws its own rows. |
+| Items a face filters | How many items a player can mark on a face, to let only those through or to keep them out. A mark is not the item: nothing is taken from the player. From 0 to 9. |
+| Filter of your own | A piece of your own code that answers yes or no for each item, asked on every face beside the marks, for what the marks cannot say: damage, data, a stock level. |
+| Speed upgrade | An item a player puts into a face's upgrade slot on its screen. Each one moves that face's rate again, eight at most; they drop when the block is broken. |
+| Reserve room for items | An item riding through this pipe holds its place in the chest or machine it is going to, so two stacks never fight for one slot and nothing has to turn round. Turn it off and a stack just goes to the nearest place with room right now. |
+| Item to link a chest | Pick an item and this block becomes a node that reaches a chest or machine without a cable. A player right-clicks the chest with the item, then right-clicks this block with it, and the network uses that chest as if it stood against the top of this block. Sneak and right-click the block to cut the link. Leave empty for a plain block. |
+| How far a link reaches | The most blocks between this node and the chest it is linked to, in the same dimension. 0 means any distance. From 0 to 1024 blocks. |
+| When it is broken | A block that carries more than one thing (items and fluid and energy, say) can come apart one thing at a time: mining it takes off the one added last and leaves the rest standing. Sneaking while you mine breaks the whole block. Choose one of: The whole block goes, One piece at a time. |
+| Item for the items piece | What drops when the items part is taken off, and what a player uses on the block to put it back. Leave empty and a part taken off is gone. |
+| Item for the fluid piece | What drops when the fluid part is taken off, and what a player uses on the block to put it back. Leave empty and a part taken off is gone. |
+| Item for the energy piece | What drops when the energy part is taken off, and what a player uses on the block to put it back. Leave empty and a part taken off is gone. |
+| Holds parts | Face parts go on its faces, one a face and one in the middle, and covers take another block's look. A face with no part joins only blocks of this mod, never a chest. |
+| Moves by itself | Its out sides push into the blocks beside them and its in sides pull from them, with no pipe between: a machine filling the chest next to it, a block emptying a cart in front of it. Works for items, fluids, energy and your own stocks. Choose one of: No, Pushes out, Pulls in, Pushes and pulls. |
+| How much a second | How much it moves each second through each side: items, or the units of a fluid, energy or stock. From 1 to 100000 perSecond. |
+| Holds a cart | Stops the cart that rolls up beside it while it works, so the cart stays until the block has moved all it can, or until a rule lets it go. Needs Moves by itself. Choose one of: No, Until it has nothing more to move, Until a rule lets it go. |
+| Longest it holds | The most seconds it holds one cart, so a cart is never kept for good. 0 holds as long as it takes. From 0 to 86400 seconds. |
+| Destroys what none take | What no other block on its pipes takes is destroyed here, after every other block had its turn. Marks on its sides say what it destroys; with none, everything. |
+| Fills a block | Whether its sides fill a block whenever it has room, or only while it holds none of what comes (one stack in each furnace, never two). Choose one of: Whenever it has room, Only when it holds none. |
+| Stands in for a far block | Linked to a far chest or machine with the linking item, this block is that chest to hoppers, pipes and other mods: what goes in here goes there, and what is taken from here comes from there. |
+| Joins without a seam | Where an arm of this block meets one of these, neither draws the end of its arm, so a run of them reads as one tube. A machine or a chest it meets keeps its end and its plate. Choose one of: As its pictures say, Blocks like it, Every cable or pipe it joins, Nothing. |
+
+Every block also has the settings on the [Block](editor-block.md) page.
+
+## What it becomes in the game
+
+It is added to the game, so a player needs your mod to see it.
+
+It comes with these abilities already on: Matter, Connections.
+
+## What it works with
+
+It points at: [Model](editor-model.md), [Sound](editor-sound.md), [Particle](editor-particle.md), [Item](editor-item.md), [Code](editor-code.md).
+
+Other things that open the same editor: [Block](thing-block.md), [Machine](thing-machine.md), [Generator](thing-generator.md), [Cable](thing-cable.md), [Pipe](thing-pipe.md), [Item pipe](thing-itemPipe.md), [Tank](thing-tank.md), [Transmitter](thing-wirelessTransmitter.md), [Receiver](thing-wirelessReceiver.md), [Wireless energy node](thing-wirelessNode.md), [Shared chest](thing-sharedChest.md), [Shared tank](thing-sharedTank.md), [Chest](thing-chest.md), [Drawer](thing-drawer.md), [Storage crate](thing-crate.md), [Mailbox](thing-mailbox.md), [Trade station](thing-tradeStation.md), [Asking chest](thing-askingChest.md), [Terminal](thing-terminal.md), [Storage cell](thing-storageCell.md), [Storage cable](thing-storageCable.md), [Drive](thing-drive.md), [Network heart](thing-networkHeart.md), [Dense cable](thing-denseCable.md), [Link](thing-storeLink.md), [Access point](thing-accessPoint.md), [Crafter](thing-crafter.md), [Pattern table](thing-patternTable.md), [Altar](thing-altar.md), [Pedestal](thing-pedestal.md), [Formed machine](thing-formedMachine.md), [Machine casing](thing-machineCasing.md), [Waypoint](thing-waypointBlock.md), [Aiming block](thing-aimingBlock.md), [Berry bush](thing-berryBush.md), [Matter pipe](thing-matterPipe.md), [Assembly station](thing-assemblyStation.md), [Carved block](thing-carvedBlock.md), [Ore](thing-ore.md), [Crop](thing-crop.md), [Plant](thing-plant.md).
+
+## Picture
+
+![Block](/media/docs/editor-block.webp)
+
+## Related pages
+
+- [Block](editor-block.md)
+- [Templates and samples](templates-and-samples.md)
+- [Glossary](glossary.md)
