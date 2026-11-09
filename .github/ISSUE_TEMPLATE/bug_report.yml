@@ -1,0 +1,118 @@
+name: Bug report
+description: Something in Modryos does not work as it should.
+title: "[Bug] "
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug. Please fill in every required field.
+        Reports without steps to reproduce or without a version may be closed.
+        Questions are answered on our Discord, in Modryos-Help.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you report
+      options:
+        - label: I searched the open and closed issues and this bug is not reported yet.
+          required: true
+        - label: I am using the latest Modryos version.
+          required: true
+  - type: input
+    id: version
+    attributes:
+      label: Modryos version
+      description: The version you are using.
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: System
+      description: Operating system and version.
+      placeholder: Windows 11
+    validations:
+      required: true
+  - type: dropdown
+    id: target
+    attributes:
+      label: Minecraft version and loader
+      description: The target of the mod, if the bug is in the game.
+      options:
+        - Not related to the game
+        - 1.21.1 NeoForge
+        - 1.21.1 Fabric
+        - 1.21.11 NeoForge
+        - 1.21.11 Fabric
+        - 26.1.2 NeoForge
+        - 26.1.2 Fabric
+        - 26.2 NeoForge
+        - 26.2 Fabric
+        - 26.3 NeoForge
+        - 26.3 Fabric
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Models
+        - Textures
+        - Animations
+        - Screens and HUD
+        - Quests
+        - Rules (logic)
+        - Versions
+        - Building or exporting the mod
+        - In the game
+        - Install, update or sign-in
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Exact steps, so we can see the bug ourselves.
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+      description: What should have happened.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: What happened instead. Copy any error message here.
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does it happen?
+      options:
+        - Every time
+        - Sometimes
+        - Only once
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or video
+      description: Drag images or a short video here. Required for visual problems.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Paste the log or the error text. Remove any personal information first.
+      render: text

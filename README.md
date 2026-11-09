@@ -74,6 +74,18 @@ Save a version, compare any two, and see what changed, element by element.
 - 1.0.0 is coming soon
 - The first mod made with it: [Goat Apples](https://www.curseforge.com/minecraft/mc-mods/goat-apples) ([source](https://github.com/NeryosX/goat-apples))
 
+## Download
+
+Modryos is not released yet. When it is, the latest version will be on the
+[Releases](https://github.com/Modryos/modryos/releases) page and on [modryos.com](https://modryos.com).
+
+## Report a bug or suggest an idea
+
+- **Bug:** [open a bug report](https://github.com/Modryos/modryos/issues/new?template=bug_report.yml).
+  The form asks for your version, the steps to reproduce and screenshots.
+- **Idea:** [open a suggestion](https://github.com/Modryos/modryos/issues/new?template=feature_request.yml).
+- **Question:** ask on our [Discord](https://discord.gg/ccWxeu8BVh) (choose Modryos, then Modryos-Help).
+
 Website: [modryos.com](https://modryos.com): [features](https://modryos.com/features.html)
 and [questions and answers](https://modryos.com/faq.html).
 

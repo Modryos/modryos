@@ -1,0 +1,35 @@
+name: Suggestion
+description: An idea to improve Modryos.
+title: "[Suggestion] "
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        One suggestion per issue, please. Search first - if it already exists, add a 👍 to it instead.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you suggest
+      options:
+        - label: I searched the issues and this suggestion is not there yet.
+          required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What do you want to do?
+      description: The task you are trying to do, and what is missing today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your suggestion
+      description: How you would like it to work.
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Examples or pictures
+      description: Optional. A sketch, a screenshot or an example from another tool.

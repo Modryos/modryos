@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or help
+    url: https://discord.gg/ccWxeu8BVh
+    about: Ask on our Discord (choose Modryos, then post in Modryos-Help).
+  - name: Private or security problem
+    url: https://discord.gg/ccWxeu8BVh
+    about: Do not post it here. Open a ticket on our Discord and choose "Modryos - Problem".
