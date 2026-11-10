@@ -1,6 +1,4 @@
 (() => {
-  // The community link lives here once, so every page's footer gets it.
-  document.querySelectorAll("footer nav").forEach(n => n.append(Object.assign(document.createElement("a"), { href: "https://discord.com/invite/ccWxeu8BVh", target: "_blank", rel: "noopener", textContent: "The Modryos community" })));
   const head = document.querySelector("header.top");
   if (head) {
     const onScroll = () => head.classList.toggle("scrolled", scrollY > 8);
@@ -43,7 +41,7 @@
 
   // Videos load only when they come near the screen; autoplay would otherwise fetch them all at once.
   const videos = document.querySelectorAll("video[data-src]");
-  const start = v => { if (v.dataset.webm) { v.innerHTML = `<source src="${v.dataset.src}" type="video/mp4"><source src="${v.dataset.webm}" type="video/webm">`; v.load(); } else v.src = v.dataset.src; v.play?.().catch(() => {}); };
+  const start = v => { v.src = v.dataset.src; v.play?.().catch(() => {}); };
   if ("IntersectionObserver" in window) {
     const vo = new IntersectionObserver(entries => {
       for (const e of entries) if (e.isIntersecting) { start(e.target); vo.unobserve(e.target); }
