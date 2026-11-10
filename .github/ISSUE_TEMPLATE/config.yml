@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions
+    url: https://discord.gg/ccWxeu8BVh
+    about: Ask in the Help channel on our Discord.
+  - name: Private or security issue
+    url: https://discord.gg/ccWxeu8BVh
+    about: Open a ticket on our Discord.

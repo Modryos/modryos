@@ -1,0 +1,112 @@
+name: Bug report
+description: Report a problem in Modryos.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Please fill in all required fields. For questions, use our Discord.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched the existing issues and this bug is not reported yet.
+          required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Modryos version
+      options:
+        # versions-start (updated automatically on every release)
+        - Beta
+        # versions-end
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Operating system
+      placeholder: Windows 11
+    validations:
+      required: true
+  - type: dropdown
+    id: target
+    attributes:
+      label: Minecraft version
+      options:
+        - Not in the game
+        - 1.21.1 NeoForge
+        - 1.21.1 Fabric
+        - 1.21.11 NeoForge
+        - 1.21.11 Fabric
+        - 26.1.2 NeoForge
+        - 26.1.2 Fabric
+        - 26.2 NeoForge
+        - 26.2 Fabric
+        - 26.3 NeoForge
+        - 26.3 Fabric
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Part of Modryos
+      options:
+        - Models
+        - Textures
+        - Animations
+        - Screens and HUD
+        - Quests
+        - Rules
+        - Versions
+        - Building the mod
+        - In the game
+        - Installation or sign-in
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: Include the error message, if there is one.
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does it happen?
+      options:
+        - Every time
+        - Sometimes
+        - Once
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or video
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log
+      description: Remove personal information before you paste.
+      render: text

@@ -1,0 +1,28 @@
+name: Suggestion
+description: Suggest a feature or a change.
+title: "[Suggestion] "
+labels: ["suggestion"]
+body:
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched the existing issues and this suggestion is not there yet.
+          required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What do you need?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Suggested solution
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Examples or screenshots

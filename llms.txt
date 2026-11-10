@@ -15,8 +15,8 @@ Facts, as of 22 October 2026:
 
 ## Pages
 
-- [Home](https://modryos.com/): what Modryos is, with pictures from the studio and the game
-- [Features](https://modryos.com/features.html): each capability, how it is made in the studio and how it looks in the game
+- [Home](https://modryos.com/): what Modryos is, with pictures from the app and the game
+- [Features](https://modryos.com/features.html): each capability, how it is made and how it looks in the game
 - [Questions and answers](https://modryos.com/faq.html): making mods without coding, Java, versions, loaders, Bedrock, price, release
 
 <!-- docs:start -->
