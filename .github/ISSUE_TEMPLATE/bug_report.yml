@@ -19,7 +19,7 @@ body:
       label: Modryos version
       options:
         # versions-start (updated automatically on every release)
-        - Beta
+        - v0.1.1-beta.20 (latest)
         # versions-end
       default: 0
     validations:
