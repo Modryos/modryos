@@ -26,6 +26,9 @@ It points at: [Effect](editor-effect.md).
 
 These point at it: [Recipe](editor-recipe.md).
 
+## Picture
+
+![Potion editor](/media/docs/editor-potion.webp)
 
 ## Related pages
 

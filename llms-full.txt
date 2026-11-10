@@ -817,6 +817,9 @@ It points at: [Block](editor-block.md), [Item](editor-item.md), [Mob](editor-cre
 
 To make a sword set things on fire, see [Make a fire sword](make-a-fire-sword.md). It uses one rule, step by step.
 
+## Picture
+
+![Behavior editor](/media/docs/editor-behaviour.webp)
 
 ## Related pages
 
@@ -2144,6 +2147,9 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It does not point at other things.
 
+## Picture
+
+![Forms for every material editor](/media/docs/editor-formSet.webp)
 
 ## Related pages
 
@@ -3339,6 +3345,9 @@ It points at: [Effect](editor-effect.md).
 
 These point at it: [Recipe](editor-recipe.md).
 
+## Picture
+
+![Potion editor](/media/docs/editor-potion.webp)
 
 ## Related pages
 
@@ -4261,6 +4270,9 @@ It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glo
 
 It does not point at other things.
 
+## Picture
+
+![Tag editor](/media/docs/editor-tag.webp)
 
 ## Related pages
 
@@ -4347,6 +4359,9 @@ It does not point at other things.
 
 These point at it: [Behavior](editor-behaviour.md), [Value](editor-value.md).
 
+## Picture
+
+![The player editor](/media/docs/editor-player.webp)
 
 ## Related pages
 
@@ -6183,6 +6198,9 @@ It points at: [Block](editor-block.md), [Item](editor-item.md), [Mob](editor-cre
 
 To make a sword set things on fire, see [Make a fire sword](make-a-fire-sword.md). It uses one rule, step by step.
 
+## Picture
+
+![Behavior](/media/docs/editor-behaviour.webp)
 
 ## Related pages
 
@@ -9299,6 +9317,9 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It does not point at other things.
 
+## Picture
+
+![Forms for every material](/media/docs/editor-formSet.webp)
 
 ## Related pages
 
@@ -12469,6 +12490,9 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It points at: [Effect](editor-effect.md).
 
+## Picture
+
+![Potion](/media/docs/editor-potion.webp)
 
 ## Related pages
 
@@ -14627,6 +14651,9 @@ It is written into the mod when you [Cook](glossary.md#cook) or press [Play](glo
 
 It does not point at other things.
 
+## Picture
+
+![Tag](/media/docs/editor-tag.webp)
 
 ## Related pages
 
@@ -14845,6 +14872,9 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It does not point at other things.
 
+## Picture
+
+![The player](/media/docs/editor-player.webp)
 
 ## Related pages
 
