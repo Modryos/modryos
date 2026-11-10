@@ -28,6 +28,9 @@ It does not point at other things.
 
 These point at it: [Block](editor-block.md), [Mob](editor-creature.md).
 
+## Picture
+
+![Code editor](/media/docs/editor-code.webp)
 
 ## Related pages
 

@@ -27,6 +27,9 @@ It runs on the player's side of the game.
 
 It does not point at other things.
 
+## Picture
+
+![Satellite](/media/docs/editor-satellite.webp)
 
 ## Related pages
 

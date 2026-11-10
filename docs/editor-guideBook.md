@@ -29,6 +29,9 @@ It does not point at other things.
 
 These point at it: [Behavior](editor-behaviour.md).
 
+## Picture
+
+![Guide book editor](/media/docs/editor-guideBook.webp)
 
 ## Related pages
 

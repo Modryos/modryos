@@ -33,6 +33,9 @@ It points at: [Value](editor-value.md).
 
 These point at it: [Behavior](editor-behaviour.md).
 
+## Picture
+
+![Skill tree editor](/media/docs/editor-skillTree.webp)
 
 ## Related pages
 

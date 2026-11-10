@@ -29,6 +29,9 @@ It points at: [Value](editor-value.md).
 
 Other things that open the same editor: [Research](thing-research.md).
 
+## Picture
+
+![Skill tree](/media/docs/editor-skillTree.webp)
 
 ## Related pages
 

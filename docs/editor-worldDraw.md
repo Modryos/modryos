@@ -26,6 +26,9 @@ It is not part of the game itself: it describes another mod or a file, so it has
 
 It points at: [Key binding](editor-keyBinding.md), [Item](editor-item.md).
 
+## Picture
+
+![Drawing in the world editor](/media/docs/editor-worldDraw.webp)
 
 ## Related pages
 

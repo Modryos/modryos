@@ -49,6 +49,9 @@ It points at: [Screen](editor-screen.md).
 
 These point at it: [Behavior](editor-behaviour.md).
 
+## Picture
+
+![Quests editor](/media/docs/editor-questBook.webp)
 
 ## Related pages
 
