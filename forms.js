@@ -50,3 +50,24 @@ document.querySelectorAll("form[data-api]").forEach(form => {
     window.turnstile?.reset(); // a token works once
   });
 });
+
+// Once the owner opens the beta, the download page shows the invite-code box (the server says so; nothing changes here).
+const box = document.getElementById("have-invite");
+if (box) {
+  fetch("https://api.modryos.com/v1/beta").then(r => r.ok ? r.json() : null).then(b => {
+    if (!b || !b.open || !/^Modryos-Install-[\w.-]+\.exe$/.test(b.installer)) return;
+    box.hidden = false;
+    const h1 = document.querySelector(".beta-hero h1"), lede = document.querySelector(".beta-hero .lede"), pill = document.querySelector(".beta-hero .pill");
+    if (h1) h1.textContent = "The beta is open.";
+    if (pill) pill.textContent = "Open beta";
+    if (lede) lede.textContent = "Got your invite? Download with your code. No invite yet? Join the waitlist.";
+    document.getElementById("invite-dl").addEventListener("submit", e => {
+      e.preventDefault();
+      const code = document.getElementById("inv-code").value.trim().toUpperCase();
+      const msg = e.target.querySelector(".status-msg");
+      if (!/^[A-Z0-9-]{6,40}$/.test(code)) { msg.textContent = "Type the code from your invite email."; return; }
+      msg.textContent = "Your download starts in a moment.";
+      location.href = "https://api.modryos.com/v1/download/" + encodeURIComponent(b.installer) + "?code=" + encodeURIComponent(code);
+    });
+  }).catch(() => {});
+}

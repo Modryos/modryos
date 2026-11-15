@@ -256,7 +256,7 @@ table.compare { width: 100%; border-collapse: collapse; font-size: 15px; line-he
 .news .sub { color: var(--muted); }
 .news .form { margin: 0 auto; }
 .form label { font-size: 14px; font-weight: 600; }
-.form input[type=email] {
+.form input[type=email], .form input[type=text] {
   width: 100%; padding: 11px 14px; border-radius: 10px; border: 1px solid var(--line);
   background: var(--panel); color: var(--text); font: inherit;
 }
@@ -299,9 +299,9 @@ table.compare { width: 100%; border-collapse: collapse; font-size: 15px; line-he
 .info-card li { padding: 12px 0; border-top: 1px solid var(--line); color: var(--muted); display: flex; justify-content: space-between; gap: 16px; }
 .info-card li b { color: var(--text); font-weight: 600; }
 .form-card .form { max-width: none; }
-.form input[type=email] { transition: border-color .2s, box-shadow .2s; }
-.form input[type=email]:hover { border-color: #3a404b; }
-.form input[type=email]:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-dim); }
+.form input[type=email], .form input[type=text] { transition: border-color .2s, box-shadow .2s; }
+.form input[type=email], .form input[type=text]:hover { border-color: #3a404b; }
+.form input[type=email], .form input[type=text]:focus-visible { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-dim); }
 .form input[aria-invalid=true] { border-color: var(--text); }
 .form button[type=submit] { width: 100%; justify-self: stretch; padding: 13px 20px; font-size: 16px; text-align: center; }
 .status-msg.ok, .status-msg.err { display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); }
@@ -415,3 +415,6 @@ footer nav a, footer nav a:first-child { margin: 0; }
 
 /* Links inside running text are underlined so they do not rely on colour alone */
 p a:not(.btn), li a:not(.btn), td a { text-decoration: underline; text-underline-offset: 2px; }
+
+/* the hidden attribute always wins over a display rule (the invite box waits for the beta to open) */
+[hidden] { display: none !important; }

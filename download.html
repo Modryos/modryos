@@ -43,6 +43,17 @@
         <p class="more">Meanwhile, see what people make in the <a href="https://discord.com/invite/ccWxeu8BVh">Modryos community</a>.</p>
       </div>
       <div class="form-card">
+        <div id="have-invite" hidden>
+        <form class="form" id="invite-dl" novalidate>
+          <h2>Got your invite?</h2>
+          <p class="more">The beta is open. Type the code from your invite email to download Modryos.</p>
+          <label for="inv-code">Invite code</label>
+          <input id="inv-code" name="code" type="text" required autocomplete="off" spellcheck="false" placeholder="ABCD-EFGH-IJKL" pattern="[A-Za-z0-9-]{6,40}">
+          <button class="btn primary" type="submit">Download Modryos</button>
+          <p class="status-msg" role="status" aria-live="polite"></p>
+        </form>
+          <p class="more" style="margin:20px 0">No invite yet? Join the waitlist:</p>
+        </div>
         <form class="form" data-api="https://api.modryos.com/v1/waitlist" data-ok="Check your inbox: we sent a link to confirm your email." novalidate>
           <label for="wl-email">Email</label>
           <input id="wl-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
