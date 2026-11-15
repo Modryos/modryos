@@ -25,6 +25,11 @@ document.querySelectorAll("form[data-api]").forEach(form => {
     if (!f.age15.checked) bad.push([f.age15, "You need to be 15 or older to join."]);
     if (f.terms && !f.terms.checked) bad.push([f.terms, "Please agree to the Terms of Use, the Privacy Policy and the Closed Beta Addendum."]);
     if (bad.length) { bad.forEach(([el, t]) => flag(el, t)); bad[0][0].focus(); return; }
+    // The same address again from this browser (the owner, 2026-11-16: refresh and join again): say so, send nothing.
+    // The server also ignores a repeat, with the same reply for anyone, so a stranger never learns who is on the list.
+    const key = "joined:" + form.dataset.api, mail = f.email.value.trim().toLowerCase();
+    const joined = (() => { try { return JSON.parse(localStorage.getItem(key) || "[]"); } catch { return []; } })();
+    if (joined.includes(mail)) { say("You already signed up with this email. Look for our email to confirm (check spam too); a second sign-up changes nothing.", "ok"); return; }
     const body = { email: f.email.value.trim(), age15: true };
     if (f.terms) body.terms = true;
     if (f.news) body.news = f.news.checked;
@@ -39,7 +44,7 @@ document.querySelectorAll("form[data-api]").forEach(form => {
     try {
       const r = await fetch(form.dataset.api, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
       const data = await r.json().catch(() => ({}));
-      if (r.ok) { say(form.dataset.ok, "ok"); form.reset(); form.querySelector(".cf-turnstile")?.remove(); btn.remove(); return; } // done: no second check pops up
+      if (r.ok) { try { localStorage.setItem(key, JSON.stringify([...joined, mail].slice(-20))); } catch { /* private window */ } say(form.dataset.ok, "ok"); form.reset(); form.querySelector(".cf-turnstile")?.remove(); btn.remove(); return; } // done: no second check pops up
       else if (data.error === "waitlist_full") { showFull(); }
       else if (data.error === "signups_paused") say("Sign-ups are paused for a short while. Try again later.", "err");
       else if (data.error === "captcha_required" || data.error === "captcha_failed") say("The check did not pass. Please wait for it to finish, then try again.", "err");
@@ -54,17 +59,18 @@ document.querySelectorAll("form[data-api]").forEach(form => {
   });
 });
 
-// The server says whether the beta is open and whether the waitlist is full (nothing to publish here when either changes).
-const COMMUNITY = "https://discord.com/invite/ccWxeu8BVh";
+// The server says whether the beta is open and whether the wave is full (nothing to publish here when either changes).
+// A full wave never closes the form (the owner, 2026-11-16): later sign-ups wait in line for the next wave.
+const FULL = "Wave 1 is full. You're in line for the next wave. We'll email you.";
 function showFull() {
   document.querySelectorAll('form[data-api$="/v1/waitlist"]').forEach(form => {
-    const p = document.createElement("div");
-    p.className = "status-msg ok";
-    p.setAttribute("role", "status");
-    p.innerHTML = "<span><b>Sign-ups are closed for now.</b> All places in this wave are taken, and a new wave opens soon. Join our <a href=\"" + COMMUNITY + "\">Discord community</a> to hear first.</span>";
-    form.replaceWith(p);
+    if (form.previousElementSibling?.classList.contains("wave-full")) return;
+    const p = document.createElement("p");
+    p.className = "status-msg ok wave-full";
+    p.textContent = FULL;
+    form.before(p);
   });
-  document.querySelectorAll(".beta-hero .lede").forEach(l => { l.textContent = "All places in this wave are taken. A new wave opens soon: join our Discord community to hear first."; });
+  document.querySelectorAll(".beta-hero .lede").forEach(l => { l.textContent = FULL; });
 }
 const box = document.getElementById("have-invite");
 if (box || document.querySelector('form[data-api$="/v1/waitlist"]')) {
