@@ -3,7 +3,7 @@
 Branch beta-closed, not published, not pushed.
 
 - Legal pages (terms, privacy, beta-terms) come from the approved files in modcraft-app/docs/legal/approved-2026-11-09 via tools/legal.mjs; re-run it if they change. Never edit those html files by hand. tools/links.mjs checks local links.
-- No CSP meta exists on any page, so connect-src was not added. If one is added, allow https://api.modryos.com.
+- Every page carries a CSP and referrer <meta> (tools/csp.mjs; docs.mjs and legal.mjs stamp it, `node tools/csp.mjs` stamps the root pages). A new inline script or outside host must be added there; check-pages.mjs fails on a missing tag or a CSP refusal.
 - Forms follow the API: 200 sent, 400 invalid_email / age_required / terms_required, 429 rate_limited. Not run against the live API.
 - Pages were not opened in a browser: look at request-access.html and download.html once on desktop and phone.
 - Legal text mentions "Privacy Policy" etc. as plain words, not links.

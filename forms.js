@@ -44,7 +44,7 @@ document.querySelectorAll("form[data-api]").forEach(form => {
       else if (data.error === "signups_paused") say("Sign-ups are paused for a short while. Try again later.", "err");
       else if (data.error === "captcha_required" || data.error === "captcha_failed") say("The check did not pass. Please wait for it to finish, then try again.", "err");
       else if (r.status === 429) say("Too many tries, please wait a few minutes.", "err");
-      else if (data.error === "invalid_email") { msg.textContent = ""; msg.className = "status-msg"; flag(f.email, "That email does not look right. Please check it."); f.email.focus(); }
+      else if (data.error === "invalid_email" || data.error === "bad_email") { msg.textContent = ""; msg.className = "status-msg"; flag(f.email, "That email does not look right. Please check it."); f.email.focus(); }
       else if (data.error === "age_required") { msg.textContent = ""; msg.className = "status-msg"; flag(f.age15, "You need to be 15 or older to join."); }
       else if (data.error === "terms_required") { msg.textContent = ""; msg.className = "status-msg"; flag(f.terms, "Please agree to the Terms of Use, the Privacy Policy and the Closed Beta Addendum."); }
       else say("Something went wrong on our side. Please try again later.", "err");
@@ -70,21 +70,19 @@ const box = document.getElementById("have-invite");
 if (box || document.querySelector('form[data-api$="/v1/waitlist"]')) {
   fetch("https://api.modryos.com/v1/beta").then(r => r.ok ? r.json() : null).then(b => {
     if (!b) return;
-    if (b.open && box && /^Modryos-Install-[\w.-]+\.exe$/.test(b.installer)) {
+    const ver = b.open && box && /^Modryos-Install-([\w.-]+)\.exe$/.exec(b.installer || "");
+    if (ver) {
       box.hidden = false;
       const h1 = document.querySelector(".beta-hero h1"), lede = document.querySelector(".beta-hero .lede"), pill = document.querySelector(".beta-hero .pill");
       if (h1) h1.textContent = "The beta is open.";
       if (pill) pill.textContent = "Open beta";
-      if (lede) lede.textContent = "Got your invite? Download with your code. No invite yet? Join the waitlist: invites go out by email in sign-up order, usually within a day.";
+      if (lede) lede.textContent = "Got your invite? Download Modryos and type your code in the studio. No invite yet? Join the waitlist: invites go out by email in sign-up order, usually within a day.";
       document.querySelectorAll('form[data-api$="/v1/waitlist"]').forEach(f => { f.dataset.ok = "Check your inbox: we sent a link to confirm your email. Once you confirm, your invite goes out in sign-up order, usually within a day."; });
-      document.getElementById("invite-dl").addEventListener("submit", e => {
-        e.preventDefault();
-        const code = document.getElementById("inv-code").value.trim().toUpperCase();
-        const msg = e.target.querySelector(".status-msg");
-        if (!/^[A-Z0-9-]{6,40}$/.test(code)) { msg.textContent = "Type the code from your invite email."; return; }
-        msg.textContent = "Your download starts in a moment.";
-        location.href = "https://api.modryos.com/v1/download/" + encodeURIComponent(b.installer) + "?code=" + encodeURIComponent(code);
-      });
+      // The installer is a GitHub release asset (the owner, 2026-11-15); the studio itself opens only with a redeemed invite.
+      const rel = "https://github.com/Modryos/modryos/releases/download/v" + ver[1] + "/";
+      document.getElementById("dl-link").href = rel + b.installer;
+      const sum = document.getElementById("dl-sum");
+      sum.append("Windows 10 or 11. Check the file against ", Object.assign(document.createElement("a"), { href: rel + "SHA256SUMS", textContent: "SHA256SUMS" }), ".");
     }
     if (b.full) showFull();
   }).catch(() => {});

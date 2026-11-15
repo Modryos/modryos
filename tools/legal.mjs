@@ -1,6 +1,7 @@
 // Turns the lawyer-approved Markdown into the legal pages. Usage: node tools/legal.mjs [sourceDir]
 import { readFileSync, writeFileSync } from "node:fs";
 import assert from "node:assert";
+import { SECURITY_META } from "./csp.mjs";
 
 const SRC = process.argv[2] || "C:/Users/Neryos/Desktop/Coding/CodingWithAI/ModCraft/docs/legal/approved-2026-11-09";
 const PAGES = [
@@ -64,6 +65,7 @@ const page = (title, desc, slug, body) => `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
+${SECURITY_META}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${title} - Modryos</title>
 <meta name="description" content="${desc}">

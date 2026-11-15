@@ -2,6 +2,7 @@
 // Adding a page = adding one .md file with front matter (title, description, section, order).
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, rmSync, existsSync } from "node:fs";
 import assert from "node:assert";
+import { SECURITY_META } from "./csp.mjs";
 
 const BASE = "https://modryos.com";
 const SECTIONS = ["Getting started", "Editors", "Things you can make", "Templates and samples", "Versions and loaders", "Publishing", "Troubleshooting", "Account and privacy", "FAQ", "Glossary"];
@@ -125,6 +126,7 @@ const pageHtml = (p, idx) => {
 <html lang="en">
 <head>
 <meta charset="utf-8">
+${SECURITY_META}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(p.description)}">

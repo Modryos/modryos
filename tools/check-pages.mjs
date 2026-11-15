@@ -1,4 +1,4 @@
-// Opens every page at 375, 768 and 1440 wide and fails on sideways scroll, overflowing elements or missing head tags.
+// Opens every page at 375, 768 and 1440 wide and fails on sideways scroll, overflowing elements, missing head tags or a CSP refusal.
 // Usage: node tools/check-pages.mjs [--shots <dir>] [--only root]   (root pages only with --only root; docs all)
 import { createServer } from "node:http";
 import { readFileSync, readdirSync, existsSync, mkdirSync, statSync } from "node:fs";
@@ -30,11 +30,15 @@ if (shots) mkdirSync(shots, { recursive: true });
 const browser = await chromium.launch();
 const ctx = await browser.newContext({ reducedMotion: "reduce" });
 const page = await ctx.newPage();
+let cur = "";
+// A CSP refusal shows only in the console: any one fails the page (pentest 2026-11-15, L1).
+page.on("console", (m) => { if (/Content Security Policy/i.test(m.text())) fail(cur, `CSP: ${m.text().slice(0, 200)}`); });
 let fails = 0;
 const fail = (f, m) => { console.log(`FAIL ${f}: ${m}`); fails++; };
 for (const f of pages) {
+  cur = f;
   const html = readFileSync(f, "utf8");
-  for (const [re, what] of [[/<title>[^<]+<\/title>/, "title"], [/<meta name="description" content="[^"]+"/, "description"], [/<link rel="canonical" href="https:[^"]+"/, "canonical"], [/<meta property="og:title"/, "og:title"], [/<meta property="og:description"/, "og:description"], [/<meta property="og:image"/, "og:image"], [/<meta property="og:url"/, "og:url"]])
+  for (const [re, what] of [[/<title>[^<]+<\/title>/, "title"], [/<meta name="description" content="[^"]+"/, "description"], [/<link rel="canonical" href="https:[^"]+"/, "canonical"], [/<meta property="og:title"/, "og:title"], [/<meta property="og:description"/, "og:description"], [/<meta property="og:image"/, "og:image"], [/<meta property="og:url"/, "og:url"], [/<meta http-equiv="Content-Security-Policy"/, "CSP meta"], [/<meta name="referrer"/, "referrer meta"]])
     if (!re.test(html)) fail(f, `missing ${what}`);
   for (const [w, h] of sizes) {
     await page.setViewportSize({ width: w, height: h });

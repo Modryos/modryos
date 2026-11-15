@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' https://challenges.cloudflare.com 'sha256-qOhFsq0QMV2REqNwk5hGH5bZE9SkX6gt6yeyKdYPv+U='; frame-src https://challenges.cloudflare.com; connect-src 'self' https://api.modryos.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; font-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Beta opening soon - Modryos</title>
 <meta name="description" content="The free Modryos beta opens soon, for the first 25 makers. Join the waitlist.">
@@ -44,14 +46,12 @@
       </div>
       <div class="form-card">
         <div id="have-invite" hidden>
-        <form class="form" id="invite-dl" novalidate>
+        <div class="form" id="invite-dl">
           <h2>Got your invite?</h2>
-          <p class="more">The beta is open. Type the code from your invite email to download Modryos.</p>
-          <label for="inv-code">Invite code</label>
-          <input id="inv-code" name="code" type="text" required autocomplete="off" spellcheck="false" placeholder="ABCD-EFGH-IJKL" pattern="[A-Za-z0-9-]{6,40}">
-          <button class="btn primary" type="submit">Download Modryos</button>
-          <p class="status-msg" role="status" aria-live="polite"></p>
-        </form>
+          <p class="more">The beta is open. Download Modryos, open it and type the code from your invite email.</p>
+          <a class="btn primary" id="dl-link">Download Modryos</a>
+          <p class="more" id="dl-sum"></p>
+        </div>
           <p class="more" style="margin:20px 0">No invite yet? Join the waitlist:</p>
         </div>
         <form class="form" data-api="https://api.modryos.com/v1/waitlist" data-ok="Check your inbox: we sent a link to confirm your email." novalidate>
