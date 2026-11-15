@@ -75,8 +75,8 @@ if (box || document.querySelector('form[data-api$="/v1/waitlist"]')) {
       const h1 = document.querySelector(".beta-hero h1"), lede = document.querySelector(".beta-hero .lede"), pill = document.querySelector(".beta-hero .pill");
       if (h1) h1.textContent = "The beta is open.";
       if (pill) pill.textContent = "Open beta";
-      if (lede) lede.textContent = "Got your invite? Download with your code. No invite yet? Join the waitlist: invites go out by email in sign-up order, so yours may take a few days.";
-      document.querySelectorAll('form[data-api$="/v1/waitlist"]').forEach(f => { f.dataset.ok = "Check your inbox: we sent a link to confirm your email. Once you confirm, your invite goes out in sign-up order and may take a few days."; });
+      if (lede) lede.textContent = "Got your invite? Download with your code. No invite yet? Join the waitlist: invites go out by email in sign-up order, usually within a day.";
+      document.querySelectorAll('form[data-api$="/v1/waitlist"]').forEach(f => { f.dataset.ok = "Check your inbox: we sent a link to confirm your email. Once you confirm, your invite goes out in sign-up order, usually within a day."; });
       document.getElementById("invite-dl").addEventListener("submit", e => {
         e.preventDefault();
         const code = document.getElementById("inv-code").value.trim().toUpperCase();
