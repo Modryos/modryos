@@ -77,7 +77,7 @@ if (box || document.querySelector('form[data-api$="/v1/waitlist"]')) {
       if (h1) h1.textContent = "The beta is open.";
       if (pill) pill.textContent = "Open beta";
       if (lede) lede.textContent = "Got your invite? Download Modryos and type your code in the studio. No invite yet? Join the waitlist: invites go out by email in sign-up order, usually within a day.";
-      document.querySelectorAll('form[data-api$="/v1/waitlist"]').forEach(f => { f.dataset.ok = "Check your inbox: we sent a link to confirm your email. Once you confirm, your invite goes out in sign-up order, usually within a day."; });
+      document.querySelectorAll('form[data-api$="/v1/waitlist"]').forEach(f => { f.dataset.ok = "Your sign-up was received. We'll email you a link to confirm your place, usually within minutes; on busy days it can take until the next day. The email itself doesn't hold a place: pressing Confirm in it does, while places in this wave last. Once you confirm, your invite goes out in sign-up order, usually within a day."; });
       // The installer is a GitHub release asset (the owner, 2026-11-15); the studio itself opens only with a redeemed invite.
       const rel = "https://github.com/Modryos/modryos/releases/download/v" + ver[1] + "/";
       document.getElementById("dl-link").href = rel + b.installer;
