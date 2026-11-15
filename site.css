@@ -419,3 +419,7 @@ p a:not(.btn), li a:not(.btn), td a { text-decoration: underline; text-underline
 
 /* the hidden attribute always wins over a display rule (the invite box waits for the beta to open) */
 [hidden] { display: none !important; }
+/* The 58-second first-mod Short on the home page (9:16): narrow on a desktop, the full gutter width on a phone. */
+.short-film { padding: 24px 0 72px; text-align: center; }
+.short-film figure { margin: 24px auto 0; max-width: 360px; }
+.short-film video { width: 100%; height: auto; aspect-ratio: 9 / 16; border-radius: 16px; background: var(--panel, #15181d); }
