@@ -55,7 +55,7 @@ const FOOTER = `<div class="notice"><div class="wrap">NOT AN OFFICIAL MINECRAFT 
       <a href="terms.html">Terms</a>
       <a href="privacy.html">Privacy</a>
       <a href="beta-terms.html">Beta terms</a>
-      <a href="https://github.com/Modryos/modryos/issues">Contact</a>
+      <a href="mailto:support@modryos.com">Contact</a>
     </nav>
   </div>
 </footer>`;
@@ -92,8 +92,7 @@ const page = (title, desc, slug, body) => `<!doctype html>
       <a href="features.html">Features</a>
       <a href="docs/">Docs</a>
       <a href="faq.html">FAQ</a>
-      <a href="download.html">Download</a>
-      <a class="hide-sm" href="https://github.com/Modryos/modryos">GitHub</a>
+      <a href="download.html">Waitlist</a>
     </nav>
   </div>
 </header>
