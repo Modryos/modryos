@@ -32,12 +32,14 @@ document.querySelectorAll("form[data-api]").forEach(form => {
     body.legalVersion = "2026-11-09"; // the version of the Terms, Privacy and Beta texts the person agreed to
     const token = f["cf-turnstile-response"]?.value; // set by the Turnstile widget, when the page has one
     if (token) body.turnstile = token;
+    // The check runs before the send (and asks the person only when it must); never send without its answer.
+    if (form.querySelector(".cf-turnstile") && !token) { say("One moment: the security check is still running. Try again in a few seconds.", "err"); return; }
     btn.disabled = true;
     say("Sending...", "");
     try {
       const r = await fetch(form.dataset.api, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
       const data = await r.json().catch(() => ({}));
-      if (r.ok) { say(form.dataset.ok, "ok"); form.reset(); }
+      if (r.ok) { say(form.dataset.ok, "ok"); form.reset(); form.querySelector(".cf-turnstile")?.remove(); btn.remove(); return; } // done: no second check pops up
       else if (data.error === "waitlist_full") { showFull(); }
       else if (data.error === "signups_paused") say("Sign-ups are paused for a short while. Try again later.", "err");
       else if (data.error === "captcha_required" || data.error === "captcha_failed") say("The check did not pass. Please wait for it to finish, then try again.", "err");
