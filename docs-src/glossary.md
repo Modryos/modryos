@@ -83,7 +83,7 @@ A separate mod that every Fabric mod needs next to it in the mods folder. NeoFor
 
 ## SHA256
 
-A long code worked out from a file. If the code you get matches the one on the download page, the file was not changed on the way.
+A long code worked out from a file. If the code you get matches the listed one, the file was not changed on the way.
 
 ## Painter
 

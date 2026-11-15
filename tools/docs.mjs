@@ -153,8 +153,7 @@ const pageHtml = (p, idx) => {
       <a href="../features.html">Features</a>
       <a href="./" aria-current="page">Docs</a>
       <a href="../faq.html">FAQ</a>
-      <a href="../download.html">Download</a>
-      <a class="hide-sm" href="https://github.com/Modryos/modryos">GitHub</a>
+      <a href="../download.html">Waitlist</a>
     </nav>
   </div>
 </header>
@@ -200,7 +199,7 @@ const pageHtml = (p, idx) => {
       <a href="../terms.html">Terms</a>
       <a href="../privacy.html">Privacy</a>
       <a href="../beta-terms.html">Beta terms</a>
-      <a href="https://github.com/Modryos/modryos/issues">Contact</a>
+      <a href="mailto:support@modryos.com">Contact</a>
     </nav>
   </div>
 </footer>

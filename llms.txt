@@ -1,6 +1,6 @@
 # Modryos
 
-> Modryos is a desktop studio for making Minecraft Java Edition mods without writing code. Models, textures, animations, creatures, items, recipes, machines, screens, quests and rules are made in one project, and Play opens the mod in the game. It is now in closed beta: request access at https://modryos.com/request-access.html. Testers get the download link in their invite email. Its price and licence are not announced.
+> Modryos is a desktop studio for making Minecraft Java Edition mods without writing code. Models, textures, animations, creatures, items, recipes, machines, screens, quests and rules are made in one project, and Play opens the mod in the game. The free beta opens soon, for the first 100 makers: join the waitlist at https://modryos.com/download.html. Testers get the download link in their invite email. Its price and licence are not announced.
 
 Facts, as of 22 October 2026:
 
@@ -343,5 +343,5 @@ All docs in one file: https://modryos.com/llms-full.txt
 ## Optional
 
 - [Privacy](https://modryos.com/privacy.html): what the website collects (nothing)
-- [Source repository and release notices](https://github.com/Modryos/modryos)
+
 - [Goat Apples on CurseForge](https://www.curseforge.com/minecraft/mc-mods/goat-apples)

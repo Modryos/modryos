@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Download - Modryos</title>
-<meta name="description" content="How to get Modryos during the closed beta.">
+<title>Beta opening soon - Modryos</title>
+<meta name="description" content="The free Modryos beta opens soon, for the first 100 makers. Join the waitlist.">
 <link rel="canonical" href="https://modryos.com/download.html">
 <meta name="theme-color" content="#0d0f12">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Modryos">
 <meta property="og:url" content="https://modryos.com/download.html">
-<meta property="og:title" content="Download - Modryos">
-<meta property="og:description" content="How to get Modryos during the closed beta.">
+<meta property="og:title" content="Beta opening soon - Modryos">
+<meta property="og:description" content="The free Modryos beta opens soon, for the first 100 makers. Join the waitlist.">
 <meta property="og:image" content="https://modryos.com/media/og-card.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -27,45 +27,38 @@
       <a href="features.html">Features</a>
       <a href="docs/">Docs</a>
       <a href="faq.html">FAQ</a>
-      <a href="download.html">Download</a>
-      <a class="hide-sm" href="https://github.com/Modryos/modryos">GitHub</a>
+      <a href="download.html">Waitlist</a>
     </nav>
   </div>
 </header>
 
 <main class="beta">
-  <section class="beta-hero">
+  <section class="beta-hero split">
     <div class="wrap">
-      <span class="pill">Closed beta</span>
-      <h1>Download Modryos.</h1>
-      <p class="lede">Modryos is now in closed beta. Testers get the download link in their invite email.</p>
-      <div class="cta"><a class="btn primary" href="request-access.html">Request access</a></div>
-      <p class="req">Windows 10 and 11, 64-bit</p>
-      <picture><source type="image/avif" srcset="media/start-welcome.avif"><source type="image/webp" srcset="media/start-welcome.webp"><img class="shot hero-img" src="media/start-welcome.png" alt="Modryos' start screen: what are you making today? A mod, a data pack or a resource pack, from empty, from a Minecraft thing or from a finished sample" width="1520" height="774"></picture>
-      <ol class="steps">
-        <li><b>Ask for a place</b><span>Fill in the short form. It takes a minute.</span></li>
-        <li><b>Check your inbox</b><span>When your turn comes, your invite email has the download link.</span></li>
-        <li><b>Install and build</b><span>Open the studio and make your first mod.</span></li>
-      </ol>
-      <div class="info-card">
-        <h2>Only official downloads</h2>
-        <p>The public releases are listed at <a href="https://github.com/Modryos/modryos/releases">github.com/Modryos/modryos/releases</a>. Only downloads from there, from this site or from your invite email are official. Do not trust any other site that offers Modryos.</p>
-        <ul>
-          <li><span>System</span><b>Windows 10 or 11, 64-bit</b></li>
-          <li><span>Games</span><b>Minecraft Java Edition</b></li>
-        </ul>
+      <div class="side">
+        <span class="pill">Coming soon</span>
+        <h1>Beta opening soon.</h1>
+        <p class="lede">The free beta opens soon, for the first 100 makers. Join the waitlist.</p>
+        <p class="perks-line"><span>Early access</span><span>Your say</span><span>Free to try</span></p>
+        <p class="more">Meanwhile, see what people make in the <a href="https://discord.com/invite/ccWxeu8BVh">Modryos community</a>.</p>
       </div>
-      <div class="info-card" id="install">
-        <h2>Installing the beta: Windows will warn you</h2>
-        <p>The beta is not signed with a paid certificate yet, so the first time you open the installer Windows shows a blue box, "Windows protected your PC". That is expected. Press <b>More info</b>, check that the app is <b>Modryos-Install</b>, then press <b>Run anyway</b>.</p>
-        <img class="shot" src="media/smartscreen-steps.svg" alt="The two presses: More info, then Run anyway" width="880" height="330" loading="lazy">
-        <p><b>Check the file first (optional).</b> Every build has a SHA-256 checksum. These are the newest ones:</p>
-        <!-- Checksums: updated by the release step. Keep this one block. -->
-        <pre class="sums" tabindex="0"><code>b08f350a1c1a138b2b710680da3180bba937e49b2a217178f50f7b6f15f68ec9  Modryos-Install-0.1.1-beta.22.exe
-fb25ca17bd653eeb3b5eb1d8ed2afe7a0ae9556340a1143403813770df1517b4  Modryos-Setup-0.1.1-beta.22.exe</code></pre>
-        <p>Our server lists them all at <a href="https://api.modryos.com/v1/releases/SHA256SUMS">api.modryos.com/v1/releases/SHA256SUMS</a>. In PowerShell, go to the folder of the file and run <code>Get-FileHash .\Modryos-Install-0.1.1-beta.22.exe</code> (with your file's name), then compare the long number with the line above. If it does not match, do not run the file; tell us at <a href="mailto:support@modryos.com">support@modryos.com</a>. The studio checks its own updates the same way before it installs them. More help: <a href="docs/install">the install guide</a>.</p>
-        <p><b>Smart App Control.</b> If your Windows has Smart App Control turned on, it blocks apps that are not signed and offers no "Run anyway". Do not turn it off just for Modryos: on many Windows versions it cannot be turned back on without resetting Windows. Wait for the Microsoft Store version instead, which Microsoft signs; we will email you when it is ready.</p>
+      <div class="form-card">
+        <form class="form" data-api="https://api.modryos.com/v1/waitlist" data-ok="Check your inbox: we sent a link to confirm your email." novalidate>
+          <label for="wl-email">Email</label>
+          <input id="wl-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+          <label class="check"><input type="checkbox" name="age15" required> I am 15 or older</label>
+          <label class="check"><input type="checkbox" name="terms" required> <span>I agree to the <a href="terms.html">Terms of Use</a>, the <a href="privacy.html">Privacy Policy</a> and the <a href="beta-terms.html">Closed Beta Addendum</a></span></label>
+          <label class="check"><input type="checkbox" name="news"> Send me launch news (you can unsubscribe any time)</label>
+          <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAAFkTmCbzcu5c-932" data-theme="dark"></div>
+          <button class="btn primary" type="submit">Join the waitlist</button>
+          <p class="status-msg" role="status" aria-live="polite"></p>
+        </form>
       </div>
+      <figure class="window">
+        <div class="bar"><i></i><i></i><i></i></div>
+        <picture><source type="image/avif" srcset="media/g-altar.avif"><source type="image/webp" srcset="media/g-altar.webp"><img src="media/g-altar.png" alt="The Ember Altar inside its ring of Stone Pedestals, in the game" width="960" height="540"></picture>
+      </figure>
     </div>
   </section>
 </main>
@@ -80,11 +73,13 @@ fb25ca17bd653eeb3b5eb1d8ed2afe7a0ae9556340a1143403813770df1517b4  Modryos-Setup-
       <a href="terms.html">Terms</a>
       <a href="privacy.html">Privacy</a>
       <a href="beta-terms.html">Beta terms</a>
-      <a href="https://github.com/Modryos/modryos/issues">Contact</a>
+      <a href="mailto:support@modryos.com">Contact</a>
     </nav>
   </div>
 </footer>
 
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script src="forms.js" defer></script>
 <script src="site.js" defer></script>
 </body>
 </html>

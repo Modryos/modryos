@@ -1,7 +1,7 @@
 # Modryos
 
 [![Website](https://img.shields.io/badge/Website-modryos.com-3fb950)](https://modryos.com)
-[![Closed beta](https://img.shields.io/badge/Now%20in-closed%20beta-3fb950)](https://modryos.com/request-access.html)
+[![Beta opening soon](https://img.shields.io/badge/Beta-opening%20soon-3fb950)](https://modryos.com/download.html)
 [![Made with it: Goat Apples](https://img.shields.io/badge/Made%20with%20it-Goat%20Apples-F16436?logo=curseforge&logoColor=white)](https://www.curseforge.com/minecraft/mc-mods/goat-apples)
 [![Stars](https://img.shields.io/github/stars/Modryos/modryos?label=Stars)](https://github.com/Modryos/modryos/stargazers)
 
@@ -11,8 +11,7 @@ Modryos is a desktop app for making Minecraft Java Edition mods. It includes a m
 painter, an animation timeline, a screen builder, quests and rules, and you can test the mod in the
 game from the app.
 
-> **Modryos is now in closed beta.** [Request access](https://modryos.com/request-access.html). Testers get the
-> download link in their invite email.
+> **The free beta opens soon, for the first 100 makers.** [Join the waitlist](https://modryos.com/download.html).
 
 ![A quest page in the screen builder](media/quest-builder.webp)
 
@@ -72,7 +71,7 @@ Save a version at any time and compare two versions to see what changed.
 ## Status
 
 - Minecraft Java Edition 1.21.1, 1.21.11, 26.1.2, 26.2 and 26.3, on NeoForge and Fabric
-- Now in closed beta - request access at modryos.com
+- The free beta opens soon: join the waitlist at modryos.com
 - The first mod made with it: [Goat Apples](https://www.curseforge.com/minecraft/mc-mods/goat-apples) ([source](https://github.com/NeryosX/goat-apples))
 
 Website: [modryos.com](https://modryos.com): [features](https://modryos.com/features.html)

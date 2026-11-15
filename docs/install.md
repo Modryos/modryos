@@ -9,7 +9,7 @@
 
 ## Download
 
-Get `Modryos-Install-<version>.exe` from the [download page](/download.html). Save it anywhere, for example in Downloads.
+The free beta opens soon, for the first 100 makers. [Join the waitlist](/download.html) and we will email you before it opens. Your invite email tells you where to get `Modryos-Install-<version>.exe`.
 
 ## Windows may warn you
 
@@ -25,13 +25,13 @@ If the window shows **Run** at once, press it.
 
 ## Check the file (optional)
 
-The download page shows a SHA256 checksum for each file. To check yours, open PowerShell (the blue command window that comes with Windows: press Start, type PowerShell, press Enter) in the folder with the file and run one command. A checksum is a long code made from every byte of the file; if one byte changed, the code changes ([what is SHA256?](glossary.md#sha256)):
+Each build has a SHA256 checksum, listed where you download it. To check yours, open PowerShell (the blue command window that comes with Windows: press Start, type PowerShell, press Enter) in the folder with the file and run one command. A checksum is a long code made from every byte of the file; if one byte changed, the code changes ([what is SHA256?](glossary.md#sha256)):
 
 ```
 Get-FileHash .\Modryos-Install-<version>.exe -Algorithm SHA256
 ```
 
-Use your file's real name. The long number it prints must be the same as the one on the download page. If it is not, do not run the file. Write to support@modryos.com.
+Use your file's real name. The long number it prints must be the same as the listed one. If it is not, do not run the file. Write to support@modryos.com.
 
 ## Install
 
