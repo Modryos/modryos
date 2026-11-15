@@ -43,7 +43,9 @@
 
   // Videos load only when they come near the screen; autoplay would otherwise fetch them all at once.
   const videos = document.querySelectorAll("video[data-src]");
-  const start = v => { if (v.dataset.webm) { v.innerHTML = `<source src="${v.dataset.src}" type="video/mp4"><source src="${v.dataset.webm}" type="video/webm">`; v.load(); } else v.src = v.dataset.src; v.play?.().catch(() => {}); };
+  // A visitor who asks for reduced motion gets the poster and the controls, never a video that starts by itself.
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) videos.forEach(v => { v.removeAttribute("autoplay"); v.controls = true; });
+  const start = v => { if (!v.autoplay) { if (v.dataset.webm) v.innerHTML = `<source src="${v.dataset.src}" type="video/mp4"><source src="${v.dataset.webm}" type="video/webm">`; else v.src = v.dataset.src; v.preload = "metadata"; v.load(); return; } if (v.dataset.webm) { v.innerHTML = `<source src="${v.dataset.src}" type="video/mp4"><source src="${v.dataset.webm}" type="video/webm">`; v.load(); } else v.src = v.dataset.src; v.play?.().catch(() => {}); };
   if ("IntersectionObserver" in window) {
     const vo = new IntersectionObserver(entries => {
       for (const e of entries) if (e.isIntersecting) { start(e.target); vo.unobserve(e.target); }
