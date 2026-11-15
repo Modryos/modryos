@@ -11,7 +11,7 @@ Modryos is a desktop app for making Minecraft Java Edition mods. It includes a m
 painter, an animation timeline, a screen builder, quests and rules, and you can test the mod in the
 game from the app.
 
-> **The free beta opens soon, for the first 100 makers.** [Join the waitlist](https://modryos.com/download.html).
+> **The free beta opens soon, for the first 25 makers.** [Join the waitlist](https://modryos.com/download.html).
 
 ![A quest page in the screen builder](media/quest-builder.webp)
 

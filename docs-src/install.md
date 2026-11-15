@@ -14,7 +14,7 @@ order: 2
 
 ## Getting the beta
 
-The free beta opens soon, for the first 100 makers. [Join the waitlist](/download.html) and we will email you before it opens. Your invite email tells you where to get `Modryos-Install-<version>.exe`.
+The free beta opens soon, for the first 25 makers. [Join the waitlist](/download.html) and we will email you before it opens. Your invite email tells you where to get `Modryos-Install-<version>.exe`.
 
 ## Windows may warn you
 
