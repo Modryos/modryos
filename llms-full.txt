@@ -49,7 +49,7 @@ You do not need to know how to code. If you know Minecraft, you can start.
 - About 1.7 GB of free disk space for the game tools. The studio downloads them the first time you press [Play](glossary.md#play).
 - A Minecraft Java Edition account to play your mod in the real game.
 
-## Download
+## Getting the beta
 
 The free beta opens soon, for the first 100 makers. [Join the waitlist](/download.html) and we will email you before it opens. Your invite email tells you where to get `Modryos-Install-<version>.exe`.
 
